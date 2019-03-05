@@ -1,2 +1,2 @@
 # User Interface Design
-An application that shows students events on campus.
+An application that shows club events on campus.
