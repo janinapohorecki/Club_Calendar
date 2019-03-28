@@ -1,47 +1,3 @@
-// const express = require('express');
-// const router = express.Router();
-//
-// // Login Page
-// router.get('/login', (req,res) => res.render('login'));
-//
-// // Register Page
-// router.get('/register', (req,res) => res.render('register'));
-//
-// // Register Handle
-// router.post('/register', (req, res) => {
-//   const { name, email, password, password2} = req.body;
-//   let errors = [];
-//
-//   // Check Required fields
-//   if (!name || !email || !password || !password2) {
-//     errors.push({'Please fill in all fields!'});
-//   }
-//
-//   if(password != password2) {
-//     errors.push({ msg: 'passwords do not match'});
-//   }
-//
-//   // Check Password Length
-//   if(password.Length < 6) {
-//     errors.push({msg: 'Password should be at eleast 6 characters!'});
-//   }
-//
-//   if (errors.length > 0) {
-//     res.render('register', {
-//       errors,
-//       name,
-//       email,
-//       password,
-//       password2
-//     });
-//   } else {
-//     res.send('pass');
-//   }
-// });
-//
-//
-// module.exports = router;
-
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
@@ -82,7 +38,7 @@ router.post('/register', (req, res) => {
       password2
     });
   } else {
-    User.findOne({ email: email }).then(user => {
+    User.findOne({ email: email }).then(user => { // mongoose method that finds one user
       if (user) {
         errors.push({ msg: 'Email already exists' });
         res.render('register', {
@@ -99,17 +55,21 @@ router.post('/register', (req, res) => {
           password
         });
 
+        // Hash Password
         bcrypt.genSalt(10, (err, salt) => {
           bcrypt.hash(newUser.password, salt, (err, hash) => {
             if (err) throw err;
+            // Set password to hash
             newUser.password = hash;
             newUser
+              // Save User
               .save()
               .then(user => {
                 req.flash(
                   'success_msg',
                   'You are now registered and can log in'
                 );
+                // Redirecting user to login page!
                 res.redirect('/users/login');
               })
               .catch(err => console.log(err));
