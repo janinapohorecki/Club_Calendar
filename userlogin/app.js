@@ -28,21 +28,21 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false})); // get data from our form with request.body
 
 // Express Session
-app.use(session({
-  secret: 'secret',
-  resave: true,
-  saveUninitialized: true
-}));
-
-// Connect flash
-app.use(flash());
-
-// Global Vars
-app.use((req, res, next) => {
-  res.locals.success_msg = req.flash('success_msg');
-  res.locals.error_msg = req.flash('error_msg');
-
-})
+// app.use(session({
+//   secret: 'secret',
+//   resave: true,
+//   saveUninitialized: true
+// }));
+//
+// // Connect flash
+// app.use(flash());
+//
+// // Global Vars
+// app.use((req, res, next) => {
+//   res.locals.success_msg = req.flash('success_msg');
+//   res.locals.error_msg = req.flash('error_msg');
+//
+// });
 
 // Routes
 app.use('/', require('./routes/index'))
