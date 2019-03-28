@@ -18,6 +18,15 @@ const UserSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+  userId: {
+    type: Number,
+    required: true
+  },
+  permissionLevel: {
+    type: Number, // default to 3
+    default: '3',
+    required: true
   }
 });
 
