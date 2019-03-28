@@ -5,11 +5,18 @@ const mongoose = require('mongoose');
 const EventSchema = new mongoose.Schema({
   clubID: {
     type: Number,
-    required: true
+    required: true,
+    unique: true
+  },
+  userID: {
+    type: Number,
+    required: true,
+    unique: true
   },
   eventID: {
     type: Number,
-    required: true
+    required: true,
+    unique: true
   },
   name: {
     type: String,

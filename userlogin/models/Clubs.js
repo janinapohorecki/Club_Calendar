@@ -5,14 +5,23 @@ const mongoose = require('mongoose');
 const ClubSchema = new mongoose.Schema({
   clubID: {
     type: Number,
-    required: true
+    required: true,
+    unique: true
   },
   name: {
     type: String,
     required: true
   },
   clubType: {
-    type: string
+    type: String,
+    required: true
+  },
+  followers: {
+    type: Number[100]
+  },
+  clubEmail: {
+    type: String,
+    required: true
   }
 });
 
