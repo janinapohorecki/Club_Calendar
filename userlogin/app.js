@@ -47,6 +47,7 @@ app.use(express.urlencoded({ extended: false})); // get data from our form with 
 // Routes
 app.use('/', require('./routes/index'))
 app.use('/users', require('./routes/users'))
+app.use('/events', require('./routes/events'))
 
 
 const PORT = process.env.PORT || 5000;
