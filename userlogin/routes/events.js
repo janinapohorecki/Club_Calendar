@@ -5,7 +5,6 @@ const passport = require('passport');
 // Load Event model
 const Event = require('../models/Event');
 
-
 // Create Event Page
 router.get('/createevent', (req, res) => res.render('createevent'));
 
@@ -73,9 +72,14 @@ router.post('/createevent', (req, res) => {
         });
       } else {
         const newEvent = new Event({
-          name,
-          email,
-          password // need to update to match events
+          clubID, 
+          userID, 
+          eventID, 
+          name, 
+          description, 
+          StartTime, 
+          EndTime, 
+          Approved
         });
 
         newEvent
@@ -87,7 +91,7 @@ router.post('/createevent', (req, res) => {
               'Your event was submitted and is waiting for approval'
             );
             // Redirecting user to login page!
-            res.redirect('/users/dashboard'); // Should redirect back to calendar
+            res.redirect('/users/register'); // Should redirect back to calendar
           })
           .catch(err => console.log(err));
       }
