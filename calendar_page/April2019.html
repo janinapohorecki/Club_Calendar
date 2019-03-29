@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="title icon" type="image/png" href="CalImages/colorado-mesa-logo.png">
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src ="CalanderJS.js"></script>
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
+    
     <div id="calendar-wrap">
         <header>
             
@@ -25,6 +27,38 @@
         </nav>
         </header>
         
+    <div id="sidebar">
+        <div class="toggle-sidebar" onclick="toggleSidebar()">
+            <span></span>
+             <span></span>
+             <span></span>
+        </div>
+        <h2>Edit View</h2>
+        <input type="checkbox" id="trigger-dropdown" />
+        <ul>
+            
+            <li class="SocialDropDown"><label for="trigger">Social</label><input type="checkbox" id="trigger-dropdown" />
+                <ul class="Social-Sublist">
+                    <li><input type="checkbox" name="PAC-checkbox"><label for="opt-in">PAC</label></li>
+                    <li><input type="checkbox" name="CAB-checkbox"><label for="opt-in">CAB</label></li>
+                    <li><input type="checkbox" name="TableTopGames-checkbox"><label for="opt-in">Table Top Games</label></li>
+                    <li><input type="checkbox" name="ResidenceLife-checkbox"><label for="opt-in">Residence Life</label></li>
+                    <li><input type="checkbox" name="StudentLife-checkbox"><label for="opt-in">Student Life</label></li>
+                </ul>
+            </li>
+            <li>Sports 
+                <ul class="sublist">
+                    <li>Soccer</li>
+                    <li>Football</li>
+                    <li>Volleyball</li>
+                    <li>Hockey</li>
+                    <li>Baseball</li>
+                </ul></li>
+            <li>Academics</li>
+            <li>Religious </li>
+            <li>Other</li>
+        </ul>
+    </div>
         
         <div id="calendar">
             <div class="Top-Cal">

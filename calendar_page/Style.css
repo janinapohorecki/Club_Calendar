@@ -1,16 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    z-index: 7;
 }
 body {
     font-size: 20px;
     font-family: "Quicksand", serif;
     background: #FFF;
+    z-index: 7;
 }
 
 
 .wrapper {
     width: 100%;
+    
 }
 
 li {
@@ -30,7 +33,7 @@ section:after {
 header {
     background: #FFF;
     overflow: hidden;
-    border-bottom: 1px solid #000;
+    border-bottom: 0px solid #000;
     height: 100px;
     width: 100%;
 }
@@ -42,7 +45,7 @@ header div.logo img {
     padding-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 145px;
 }
 
 header div.headtit  {
@@ -68,7 +71,7 @@ header button {
     color: black;
     float: right;
     display: inline-block;
-    margin-right: 2%;
+    margin-right: 142px;
     margin-top: -4.8%;
     margin-bottom: px;
     text-align: center;
@@ -78,7 +81,6 @@ header button {
     transition: all 0.5s;
     cursor: pointer;
     border-radius: 30px; 
-    border
 }
 
 
@@ -115,7 +117,7 @@ i {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 7px; 
+  padding: 6px; 
 }
 
 .left {
@@ -307,9 +309,80 @@ i {
 }
 
 #calendar .day-other-month {
-    background: #f5f5f5;
+    background: #dbd2d2;
 }
 
+#sidebar * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #FFF;
+    left: -200px;
+    transition: all .5s linear;
+}
+
+#sidebar.active {
+    left: 0px;
+   /* overflow: scroll;*/
+}
+
+#sidebar ul li {
+    color: #000;
+    list-style: none;
+    padding: 20px 10px;
+     border-bottom: 1px solid rgba(100, 100, 100, .3)
+    overflow: scroll;
+}
+
+#sidebar .toggle-sidebar {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-sidebar span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #000;
+    margin: 3px 0px;
+}
+
+ 
+
+#trigger-dropdown + .sublist {
+    display: none;
+    padding-left: 15px;
+}
+
+#trigger-dropdown:checked + .sublist {
+    display: block;
+}
+
+#sidebar #trigger-dropdown  {
+    display: none;
+}
+
+#sidebar #trigger-dropdown:checked + #sidebar #trigger-dropdown:hover .sublist{
+  display: block;
+}
+
+#sidebar i:hover {
+    
+}
+
+#sidebar i {
+    height:10px;
+    width: 10px;
+    transform: rotate(45deg);
+    margin-bottom: 3px; 
+    margin-left: 3px;
+}
 /* END CALANDER PAGE */
 
 /* Start Footer */
@@ -384,9 +457,129 @@ section.CreateAccount-Section button {
 
 /* End Create Account Page */
 
+/* Start Login Page */
+.Login-Section .Elements {
+  display: inline-flex;
+  width: 280px;
+  height: 40px;
+  background-color:  transparent;
+  border-width: 2px;
+  margin-left: 41%;
+  margin-top: 30px;
+    
+  border-style: solid;
+  border-color: #A62645;
+  border-radius: 12px;
+}
+
+.Login-Section h1 {
+    text-align: center;
+    margin-top: 50px;
+} 
+
+.Login-Section .itemright input{
+  text-align: center;
+  border: 0px solid;
+  border-color: transparent;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 6px;
+  margin-left: 1px;
+  height: 95%;
+  width: 165px;
+    font-size: 16px;
+  
+}
+
+.Login-Section .itemright input:hover{
+ 
+    background-color: #E4E4E4;
+  
+}
+.Login-Section .itemleft {
+  color: #FFF;
+  background-color: #A62645;
+  border-style: solid;
+  border-color: #A62645;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 6px;
+  width: 100px;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+
+.Login-Section .itemright input:focus{
+    outline: none;
+}
+
+.Login-Section button {
+    width: 130px;
+    height: 50px;
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    display: inline-block;
+    margin-left: -72%;
+    margin-top: 30%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+
+.Login-Section button i {
+    margin-top: -4px;
+}
+
+
+.Login-Section button:hover {
+ background-color: #f29f3a;
+}
+
+.Revert-To-Sign-Up h1{
+    text-align: center;
+    margin-top: 220px;
+}
+
+.Revert-To-Sign-Up p{
+    text-align: center;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+.Revert-To-Sign-Up button {
+    width: 150px;
+    height: 50px;
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+.Revert-To-Sign-Up button:hover {
+    background-color: #f29f3a; 
+}
+/* End Login Page */
+
 /* Start Side Margins */
 #bg-right {
-  background-color: #E4E4E4;
+  background-color: #E4E4E4;*/
+    background: linear-gradient(#c1bfbf, #e4e4e4);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -397,7 +590,8 @@ section.CreateAccount-Section button {
 }
 
 #bg-left {
-  background-color: #E4E4E4;
+  /*background-color: #E4E4E4;*/
+  background: linear-gradient(#e4e4e4, #e4e4e4);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -406,8 +600,10 @@ section.CreateAccount-Section button {
   z-index: -1;
 }
 #bg-top {
-  background-color: #E4E4E4;
+  background: linear-gradient(#686666, #e4e4e4);
+   /* background-color: #c1bfbf;*/
   position: absolute;
+filter: blur(2px);
   top: 0;
   bottom: 81%;
   left: 0;
