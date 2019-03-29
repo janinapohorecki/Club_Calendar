@@ -14,7 +14,6 @@ router.get('/register', (req, res) => res.render('register'));
 // Register
 router.post('/register', (req, res) => {
   const { name, email, password, password2 } = req.body;
-  console.log(req.body);
   let errors = [];
 
   if (!name || !email || !password || !password2) {
@@ -38,7 +37,7 @@ router.post('/register', (req, res) => {
       password2
     });
   } else {
-    User.findOne({ email: email }).then(user => { // mongoose method that finds one user
+    User.findOne({ email: email }).then(user => {
       if (user) {
         errors.push({ msg: 'Email already exists' });
         res.render('register', {
@@ -55,21 +54,17 @@ router.post('/register', (req, res) => {
           password
         });
 
-        // Hash Password
         bcrypt.genSalt(10, (err, salt) => {
           bcrypt.hash(newUser.password, salt, (err, hash) => {
             if (err) throw err;
-            // Set password to hash
             newUser.password = hash;
             newUser
-              // Save User
               .save()
               .then(user => {
                 req.flash(
                   'success_msg',
                   'You are now registered and can log in'
                 );
-                // Redirecting user to login page!
                 res.redirect('/users/login');
               })
               .catch(err => console.log(err));
