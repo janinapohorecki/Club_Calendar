@@ -21,7 +21,7 @@ const UserSchema = new mongoose.Schema({
   },
   userId: {
     type: Number,
-    required: true
+    required: false
   },
   permissionLevel: {
     type: Number, // default to 3
