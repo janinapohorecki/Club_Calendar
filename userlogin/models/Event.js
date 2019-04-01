@@ -36,7 +36,8 @@ const EventSchema = new mongoose.Schema({
     },
   Approved: {
     type: Boolean,
-    required: true
+    required: true,
+    default: true
     }
 });
 
