@@ -1,25 +1,23 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
+const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
-const passport = require('passport');
 
 const app = express();
 
-// Passport config
+// Passport Config
 require('./config/passport')(passport);
-
-// All Below is Middle Ware
 
 // DB Config
 const db = require('./config/keys').MongoURI;
 
-// Connect to Mongo
+// Connect to MongoDB
 mongoose
   .connect(
     db,
-    { useNewUrlParser: true } // have to put this object here otherwise error out, this returns a promise.. see below.
+    { useNewUrlParser: true }
   )
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
@@ -28,35 +26,36 @@ mongoose
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
-// Body Parser
-app.use(express.urlencoded({ extended: false})); // get data from our form with request.body
+// Express body parser
+app.use(express.urlencoded({ extended: true }));  // get data from our form with request.body
 
-//Express Session
-app.use(session({
-  secret: 'secret',
-  resave: true,
-  saveUninitialized: true
-}));
+// Express session
+app.use(
+  session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+  })
+);
 
-//Passport Middleware
+// Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
 
 // Connect flash
 app.use(flash());
 
-// Global Vars
-app.use((req, res, next) => {
+// Global variables
+app.use(function(req, res, next) {
   res.locals.success_msg = req.flash('success_msg');
   res.locals.error_msg = req.flash('error_msg');
-
+  res.locals.error = req.flash('error');
+  next();
 });
 
 // Routes
-app.use('/', require('./routes/index'))
-app.use('/users', require('./routes/users'))
-app.use('/events', require('./routes/events'))
-
+app.use('/', require('./routes/index.js'));
+app.use('/users', require('./routes/users.js'));
 
 const PORT = process.env.PORT || 5000;
 
