@@ -29,16 +29,20 @@
         
     <div id="sidebar">
         <div class="toggle-sidebar" onclick="toggleSidebar()">
-            <span></span>
+            <!--<span></span>
              <span></span>
-             <span></span>
+             <span></span>-->
+            <i class="fas fa-angle-double-right" style="color:white"></i>
+            <i class="fas fa-angle-double-right"></i>
+            <i class="fas fa-angle-double-right"></i>
         </div>
-        <h2>Edit View</h2>
-        <input type="checkbox" id="trigger-dropdown" />
-        <ul>
+        <h2 class="sidebar-header">Edit View</h2>
+        <ul id="Begin-List">
             
-            <li class="SocialDropDown"><label for="trigger">Social</label><input type="checkbox" id="trigger-dropdown" />
-                <ul class="Social-Sublist">
+            <!--<li class="SocialDropDown">Social <button id="Social-Drop"><i class="fa fa-angle-double-right"></i></button>-->
+            <li><input id="check01" type="checkbox" name="menu"/>
+            <label  id="check1" for="check01">Social <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id="Social-Sublist">
                     <li><input type="checkbox" name="PAC-checkbox"><label for="opt-in">PAC</label></li>
                     <li><input type="checkbox" name="CAB-checkbox"><label for="opt-in">CAB</label></li>
                     <li><input type="checkbox" name="TableTopGames-checkbox"><label for="opt-in">Table Top Games</label></li>
@@ -46,17 +50,42 @@
                     <li><input type="checkbox" name="StudentLife-checkbox"><label for="opt-in">Student Life</label></li>
                 </ul>
             </li>
-            <li>Sports 
-                <ul class="sublist">
-                    <li>Soccer</li>
-                    <li>Football</li>
-                    <li>Volleyball</li>
-                    <li>Hockey</li>
-                    <li>Baseball</li>
+            <li><input id="check02" type="checkbox" name="menu"/>
+            <label id="check2" for="check02">Sports <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id="Sport-Sublist">
+                    <li><input type="checkbox" name="Soccer-checkbox"><label for="opt-in">Soccer</label></li>
+                    <li><input type="checkbox" name="Football-checkbox"><label for="opt-in">Football</label></li>
+                    <li><input type="checkbox" name="Volleyball-checkbox"><label for="opt-in">Volleyball</label></li>
+                    <li><input type="checkbox" name="Hockey-checkbox"><label for="opt-in">Hockey</label></li>
+                    <li><input type="checkbox" name="Baseball-checkbox"><label for="opt-in">Baseball</label></li>
                 </ul></li>
-            <li>Academics</li>
-            <li>Religious </li>
-            <li>Other</li>
+            <li><input id="check03" type="checkbox" name="menu"/>
+            <label id="check3" for="check03">Academic <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id = "Academic-Sublist">
+                    <li><input type="checkbox" name="AccountingClub-checkbox"><label for="opt-in">Accounting Club</label></li>
+                    <li><input type="checkbox" name="ACM-checkbox"><label for="opt-in">Association for Computing Machinery</label></li>
+                    <li><input type="checkbox" name="GEMS-checkbox"><label for="opt-in">GEMS</label></li>
+                    <li><input type="checkbox" name="SignLanguage-checkbox"><label for="opt-in">Sign Language Club</label></li>
+                    <li><input type="checkbox" name="EngineeringClub-checkbox"><label for="opt-in">Engineering Club</label></li>
+                </ul></li>
+            <li><input id="check04" type="checkbox" name="menu"/>
+            <label id="check4" for="check04">Religious <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id = "Religious-Sublist">
+                    <li><input type="checkbox" name="7Thunders-checkbox"><label for="opt-in">7 Thunders Club</label></li>
+                    <li><input type="checkbox" name="FaithLife-checkbox"><label for="opt-in">Faith Life</label></li>
+                    <li><input type="checkbox" name="GrandValleyCM-checkbox"><label for="opt-in">Grand Valley Campus Ministry</label></li>
+                    <li><input type="checkbox" name="MesaCatholic-checkbox"><label for="opt-in">Mesa Catholic Campus Ministry</label></li>
+                    <li><input type="checkbox" name="YoungLife-checkbox"><label for="opt-in">Young Life Grand Valley</label></li>
+                </ul>
+            <li><input id="check05" type="checkbox" name="menu"/>
+            <label id="check5" for="check05">Other <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id = "Other-Sublist">
+                     <li><input type="checkbox" name="FishWildlife-checkbox"><label for="opt-in">Fish and Wildlife Club</label></li>
+                    <li><input type="checkbox" name="CMUTV-checkbox"><label for="opt-in">CMU-TV Club</label></li>
+                    <li><input type="checkbox" name="Aggies-checkbox"><label for="opt-in">Aggies</label></li>
+                    <li><input type="checkbox" name="CircleK-checkbox"><label for="opt-in">Circle K International</label></li>
+                    <li><input type="checkbox" name="Alumni-checkbox"><label for="opt-in">CMU Alumni Association</label></li>
+                </ul></li>
         </ul>
     </div>
         

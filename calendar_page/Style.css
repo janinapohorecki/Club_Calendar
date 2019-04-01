@@ -319,24 +319,36 @@ i {
 
 #sidebar {
     position: fixed;
-    width: 200px;
+    width: 300px;
     height: 100%;
     background: #FFF;
-    left: -200px;
+    left: -220px;
     transition: all .5s linear;
+    border: 0px solid transparent;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: #A62645;
 }
 
 #sidebar.active {
-    left: 0px;
-   /* overflow: scroll;*/
+    left: 10px;
+}
+
+#sidebar #Begin-List {
+    max-height: 600px;
+    overflow-y: scroll;
 }
 
 #sidebar ul li {
     color: #000;
     list-style: none;
     padding: 20px 10px;
-     border-bottom: 1px solid rgba(100, 100, 100, .3)
-    overflow: scroll;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    /*overf;low: scroll;*/
+}
+
+#sidebar #Begin-List{
+   /*overflow: scroll;*/
 }
 
 #sidebar .toggle-sidebar {
@@ -349,31 +361,83 @@ i {
     display: block;
     width: 30px;
     height: 5px;
-    background: #000;
-    margin: 3px 0px;
+    background-color: #000;
+    /*margin: 3px 0px;*/
+    margin-top: 3px;
+    margin-left: 20px;
+    padding-bottom: 1px;
 }
 
- 
-
-#trigger-dropdown + .sublist {
-    display: none;
-    padding-left: 15px;
-}
-
-#trigger-dropdown:checked + .sublist {
-    display: block;
-}
-
-#sidebar #trigger-dropdown  {
-    display: none;
-}
-
-#sidebar #trigger-dropdown:checked + #sidebar #trigger-dropdown:hover .sublist{
-  display: block;
-}
-
-#sidebar i:hover {
+#sidebar .toggle-sidebar i {
+    border-color:  white;
+    margin-top: -7px;
+    margin-bottom: 35px;
+    transform: rotate(315deg);
+    margin-left:-2px;
+    background-color: #A62645;
+    color: white !important;
     
+}
+
+.sidebar-header {
+    background-color: #A62645;
+    margin-top: 10px;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+ul#Social-Sublist{
+  /*max-height:0;*/
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Sport-Sublist {
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Academic-Sublist {
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Religious-Sublist {
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Other-Sublist {
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
 }
 
 #sidebar i {
@@ -383,6 +447,135 @@ i {
     margin-bottom: 3px; 
     margin-left: 3px;
 }
+
+.Social-Drop {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-color: 1px black;
+}
+
+#check01 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+#sidebar ul li ul li input {
+    position: relative;
+    padding-right:
+  cursor: pointer;
+  height: 15px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+#check05 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#check02 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#check03 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#check04 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+}
+
+input:checked ~ ul#Social-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+#sidebar #check1:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+
+#sidebar #check2:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+#sidebar #check3:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+#sidebar #check4:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+#sidebar #check5:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+
+#down-carrot:hover {
+    border-color: #A62645;
+}
+
+input:checked ~ ul#Sport-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+#input:checked ~ #down-carrot {
+    transform: rotate(224deg);
+}
+
+input:checked ~ ul#Academic-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+input:checked ~ ul#Religious-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+input:checked ~ ul#Other-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+.show {display:block;}
 /* END CALANDER PAGE */
 
 /* Start Footer */
