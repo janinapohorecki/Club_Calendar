@@ -1,0 +1,61 @@
+
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3">
+          <i class="fas fa-user-plus"></i> Create_Club
+        </h1>
+        <%- include ./partials/messages %>
+        <form action="/clubs/createclub" method="POST">
+          <div class="form-group">
+            <label for="clubID">Club ID</label>
+            <input
+              type="clubID"
+              id="clubID"
+              name="clubID"
+              class="form-control"
+              placeholder="Enter clubID"
+              value="<%= typeof clubID != 'undefined' ? clubID : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="name"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Club Name"
+              value="<%= typeof name != 'undefined' ? name : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="clubType">Club Type</label>
+            <input
+              type="clubType"
+              id="clubType"
+              name="clubType"
+              class="form-control"
+              placeholder="Club Type"
+              value="<%= typeof clubType != 'undefined' ? clubType : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="clubEmail">Club Email</label>
+            <input
+              type="email"
+              id="clubEmail"
+              name="clubEmail"
+              class="form-control"
+              placeholder="Email"
+              value="<%= typeof clubEmail != 'undefined' ? clubEmail : '' %>"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Create Club
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

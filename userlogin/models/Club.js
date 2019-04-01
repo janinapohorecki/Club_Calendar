@@ -16,15 +16,17 @@ const ClubSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  followers: {
-    type: Number[100]
-  },
   clubEmail: {
     type: String,
     required: true
+  },
+  followers: {
+    type: [Number],
+    default: undefined,
+    required: false
   }
 });
 
-const Event = mongoose.model('Club', ClubSchema); // putting into a variable and passing in model name and then model schema then exports
+const Club = mongoose.model('Club', ClubSchema); // putting into a variable and passing in model name and then model schema then exports
 
 module.exports = Club; // can use this in other files
