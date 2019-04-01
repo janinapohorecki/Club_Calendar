@@ -17,33 +17,34 @@ router.post('/createevent', (req, res) => {
   if (!clubID || !userID || !eventID || !name || !description || !StartTime || !EndTime) {
     errors.push({ msg: 'Please enter all fields' });
   }
-  
-  // Creating date variables for event
-  var d1 = new Date(StartTime);
-  var d2 = new Date(EndTime);
-  
-  var currentDate = new Date();
-  var check = new Date();
-  check.setDate(d1.getDate()-1);
-
-  // Checking if the dates/times are correct
-  if (check < currentDate) {
-    errors.push({ msg: 'You must create an event at least one day in advance' });
-  }
   else {
+      // Creating date variables for event
+      var d1 = new Date(StartTime);
+      var d2 = new Date(EndTime);
+      
+      var currentDate = new Date();
+      var check = new Date();
+      check.setDate(d1.getDate()-1);
+      
+    // Checking if the dates/times are correct
+    if (check < currentDate) {
+      errors.push({ msg: 'You must create an event at least one day in advance' });
+    }
+    else {
         if (d1.getDate() > d2.getDate()) {
-          errors.push({ msg: 'Cannot create event with end date before start date'});
-          }
-        else {
-          if(!(d1.getDate() < d2.getDate())) {
-            if(!(d1.getTime() < d2.getTime()))
-            {
-              errors.push({ msg: 'Cannot create an event with an end time before the start time'});
-            }
+          errors.push({ msg: 'Cannot create event with start date before the current date'});
+        }
+      else {
+        if(!(d1.getDate() < d2.getDate())) {
+          if(!(d1.getTime() < d2.getTime()))
+          {
+            errors.push({ msg: 'Cannot create an event with an end time before the start time'});
           }
         }
       }
-
+    }
+  }
+  
   if (errors.length > 0) {
     res.render('createevent', {
       errors,
