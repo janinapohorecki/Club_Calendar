@@ -30,18 +30,19 @@ router.post('/createevent', (req, res) => {
   if (check < currentDate) {
     errors.push({ msg: 'You must create an event at least one day in advance' });
   }
-
-  if (d1.getDate() > d2.getDate()) {
-    errors.push({ msg: 'Cannot create event with end date before start date'});
-  }
   else {
-    if(!(d1.getDate() < d2.getDate())) {
-      if(!(d1.getTime() < d2.getTime()))
-      {
-        errors.push({ msg: 'Cannot create an event with an end time before the start time'});
+        if (d1.getDate() > d2.getDate()) {
+          errors.push({ msg: 'Cannot create event with end date before start date'});
+          }
+        else {
+          if(!(d1.getDate() < d2.getDate())) {
+            if(!(d1.getTime() < d2.getTime()))
+            {
+              errors.push({ msg: 'Cannot create an event with an end time before the start time'});
+            }
+          }
+        }
       }
-    }
-  }
 
   if (errors.length > 0) {
     res.render('createevent', {
