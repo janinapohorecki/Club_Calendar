@@ -3,12 +3,12 @@
     <div class="col-md-6 m-auto">
       <div class="card card-body">
         <h1 class="text-center mb-3">
-          <i class="fas fa-user-plus"></i> Create_Event
+          <i class="fas fa-user-plus"></i> Create_Club
         </h1>
         <%- include ./partials/messages %>
-        <form action="/events/createevent" method="POST">
+        <form action="/clubs/createclub" method="POST">
           <div class="form-group">
-            <label for="clubID">clubID</label>
+            <label for="clubID">Club ID</label>
             <input
               type="clubID"
               id="clubID"
@@ -19,73 +19,40 @@
             />
           </div>
           <div class="form-group">
-            <label for="userID">userID</label>
-            <input
-              type="userID"
-              id="userID"
-              name="userID"
-              class="form-control"
-              placeholder="Enter userID"
-              value="<%= typeof userID != 'undefined' ? userID : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="eventID">eventID</label>
-            <input
-              type="eventID"
-              id="eventID"
-              name="eventID"
-              class="form-control"
-              placeholder="Create eventID"
-              value="<%= typeof eventID != 'undefined' ? eventID : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="name">name</label>
+            <label for="name">Name</label>
             <input
               type="name"
               id="name"
               name="name"
               class="form-control"
-              placeholder="Event Name"
+              placeholder="Club Name"
               value="<%= typeof name != 'undefined' ? name : '' %>"
             />
           </div>
           <div class="form-group">
-            <label for="description">description</label>
+            <label for="clubType">Club Type</label>
             <input
-              type="description"
-              id="description"
-              name="description"
+              type="clubType"
+              id="clubType"
+              name="clubType"
               class="form-control"
-              placeholder="Event Description"
-              value="<%= typeof description != 'undefined' ? description : '' %>"
+              placeholder="Club Type"
+              value="<%= typeof clubType != 'undefined' ? clubType : '' %>"
             />
           </div>
           <div class="form-group">
-            <label for="StartTime">StartTime</label>
+            <label for="clubEmail">Club Email</label>
             <input
-              type="date"
-              id="StartTime"
-              name="StartTime"
+              type="email"
+              id="clubEmail"
+              name="clubEmail"
               class="form-control"
-              placeholder="StartTime"
-              value="<%= typeof StartTime != 'undefined' ? StartTime : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="EndTime">EndTime</label>
-            <input
-              type="date"
-              id="EndTime"
-              name="EndTime"
-              class="form-control"
-              placeholder="EndTime"
-              value="<%= typeof EndTime != 'undefined' ? EndTime : '' %>"
+              placeholder="Email"
+              value="<%= typeof clubEmail != 'undefined' ? clubEmail : '' %>"
             />
           </div>
           <button type="submit" class="btn btn-primary btn-block">
-            Create Event
+            Create Club
           </button>
         </form>
       </div>
