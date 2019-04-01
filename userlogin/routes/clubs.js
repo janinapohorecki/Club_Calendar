@@ -9,12 +9,12 @@ const Event = require('../models/Club');
 router.get('/createclub', (req, res) => res.render('createclub'));
 
 // Create event
-router.post('/createevent', (req, res) => {
-  const { clubID, userID, eventID, name, description, StartTime, EndTime, Approved } = req.body;
+router.post('/createclub', (req, res) => {
+  const { clubID, name, clubType, followers, clubEmail } = req.body;
   console.log(req.body);
   let errors = [];
 
-  if (!clubID || !userID || !eventID || !name || !description || !StartTime || !EndTime) {
+  if (!clubID || !name || !clubType || !clubEmail) {
     errors.push({ msg: 'Please enter all fields' });
   }
   else {
