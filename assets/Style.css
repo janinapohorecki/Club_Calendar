@@ -1,0 +1,853 @@
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 7;
+}
+body {
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+    background: #FFF;
+    z-index: 7;
+}
+
+
+.wrapper {
+    width: 100%;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+header {
+    background: #FFF;
+    overflow: hidden;
+    border-bottom: 0px solid #000;
+    height: 100px;
+    width: 100%;
+}
+
+header div.logo img {
+    width: 5%;
+    height: 5%;
+    float: left;
+    padding-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 145px;
+}
+
+header div.headtit  {
+    width: 20%;
+    text-align: left;
+    font-size: 100%;
+    padding-top: 60px;
+    border: transparent;
+    display: inline;
+    margin-right: 30px;
+}
+
+/*header div.headtit {
+    float: left;
+    margin-right: 30px;
+    margin-top: -47px; 
+    transform: scale(1.2, 1.2);
+}*/
+
+header button {
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    float: right;
+    display: inline-block;
+    margin-right: 142px;
+    margin-top: -4.8%;
+    margin-bottom: px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+
+
+header button:hover {
+ background-color: #f29f3a;
+}
+
+nav #MyUser {
+    float: right;
+    margin-top: -4.3%;
+    margin-right: 12%;
+    background-color: transparent;
+    color: black;
+    width: 130px;
+}
+
+nav #Add {
+    margin-right: 350px;
+}
+
+
+nav #MyUser input{
+    display: none;
+}
+
+nav .UserDropDown {
+    margin-top: -6%;
+    margin-left: 900px;
+    background: #e4e4e4;
+    text-align: left;
+    width: 250px;
+}
+
+
+
+#NameDrop {
+  /*position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;*/
+}
+
+nav #MyUser input:checked ~ nav ul li{
+    margin-left: 10px;
+}
+
+nav i {
+    transform: rotate(130deg);
+    margin-bottom: -2.1px;
+}
+
+
+/* End Header */
+
+
+/* Start Calendar Page */
+
+#calendar{
+    width: 79.0%;
+    margin-left: 10.3%;
+    font-size: 14px;
+
+}
+
+#calendar .Top-Cal{
+    display: inline-flex;
+    text-align: center;
+    float: center;
+    margin-top: 5.5%;
+    margin-bottom: 2.5%;
+    margin-left: 43%;
+}
+
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px; 
+}
+
+nav i {
+    transform: rotate(315deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+    text-align: center;
+    margin-left: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+    text-align: center;
+    margin-left: 4px;
+}
+
+#calendar .Top-Cal button {
+    background-color: #FFCE56;
+    height: 50px;
+    width: 50px;
+    border: black 3px;
+    color: black;
+    /*float: right;*/
+    display: inline-block;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+#calendar .Top-Cal button:hover {
+    background: #f29f3a; 
+}
+
+.parent {
+  display: flex;
+  width: 140px;
+  background-color: transparent;
+  float: right;
+  margin-top: 65px;
+  margin-right: 120px;    
+}
+.bs {
+  background-color: #FFF;
+  color: #000;
+  border-color: #e4e4e4;
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+  
+}
+/*.parent > span {
+  flex: 1 1 0;
+}*/
+.parent .itemcenter {
+  text-align: center;
+}
+.parent .itemright {
+  text-align: right;
+}
+.parent .itemleft .bs {
+	border-top-left-radius: 12px; 
+    border-bottom-left-radius: 12px;
+}
+.parent .itemright .bs{
+	border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #e4e4e4;
+}
+
+.parent .itemright .bs:active{
+	background-color: #ccc;
+}
+
+.parent .itemleft .bs:focus{
+	background-color: #ccc;
+}
+
+.parent .itemright .bs:hover{
+	background-color: #E4E4E4;
+}
+
+.parent .itemleft .bs:hover{
+	background-color: #E4E4E4;
+}
+
+
+
+#calendar .Top-Cal h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 300%;
+}
+#calendar a{
+    color: #666;
+    text-decoration: none;
+}
+
+#calendar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    width: 100.8%;
+}
+
+#calendar li{
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+    height: 40px;
+    background: #A62645;
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #FFCE56;
+    font-size: 18px;
+    
+}
+
+
+#calendar .days li{
+    height: 140px;
+}
+
+#calendar .days li:hover{
+    background: #eee;
+}
+
+#calendar .date {
+    text-align: center;
+    width: 25px;
+    background: #A62645;
+    color: #fff;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+#calendar .Event-Name {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+
+/*#calendar .Event-Name::before {
+   content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}*/
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #FFCE56;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#calendar .Event-Time {
+    display: none;
+}
+
+#calendar .day-other-month {
+    background: #dbd2d2;
+}
+
+#sidebar * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #FFF;
+    left: -220px;
+    transition: all .5s linear;
+    border: 0px solid transparent;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: #A62645;
+}
+
+#sidebar.active {
+    left: 10px;
+}
+
+#sidebar #Begin-List {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+#sidebar ul li {
+    color: #000;
+    list-style: none;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    /*overf;low: scroll;*/
+}
+
+#sidebar #Begin-List{
+   /*overflow: scroll;*/
+}
+
+#sidebar .toggle-sidebar {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-sidebar span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    /*margin: 3px 0px;*/
+    margin-top: 3px;
+    margin-left: 20px;
+    padding-bottom: 1px;
+}
+
+#sidebar .toggle-sidebar i {
+    border-color:  white;
+    margin-top: -7px;
+    margin-bottom: 35px;
+    transform: rotate(315deg);
+    margin-left:-2px;
+    background-color: #A62645;
+    color: white !important;
+    
+}
+
+.sidebar-header {
+    background-color: #A62645;
+    margin-top: 10px;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+ul#Social-Sublist{
+  /*max-height:0;*/
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Sport-Sublist {
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Academic-Sublist {
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Religious-Sublist {
+  display: none;
+  padding:0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+ul#Other-Sublist {
+  display: none;
+  padding: 0;
+  overflow: none;
+  list-style-type:none;
+  box-shadow:0 0 1px rgba(0,0,0,.3);
+  transition:max-height 0.5s ease-out;
+  min-width:100%;
+}
+
+#sidebar i {
+    height:10px;
+    width: 10px;
+    transform: rotate(45deg);
+    margin-bottom: 3px; 
+    margin-left: 3px;
+}
+
+.Social-Drop {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-color: 1px black;
+}
+
+#check01 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+#sidebar ul li ul li input {
+    position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+#check05 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#check02 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#check03 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#check04 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+}
+
+input:checked ~ ul#Social-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+#sidebar #check1:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+
+#sidebar #check2:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+#sidebar #check3:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+#sidebar #check4:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+#sidebar #check5:hover {
+    color: #A62645;
+    border-color: #A62645;
+}
+
+#down-carrot:hover {
+    border-color: #A62645;
+}
+
+input:checked ~ ul#Sport-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+#input:checked ~ #down-carrot {
+    transform: rotate(224deg);
+}
+
+input:checked ~ ul#Academic-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+input:checked ~ ul#Religious-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+input:checked ~ ul#Other-Sublist{
+  display: block;
+  transition:max-height 0.5s ease-in;
+}
+
+.show {display:block;}
+/* END CALANDER PAGE */
+
+/* Start Footer */
+
+footer {
+    margin-top: 150px;
+    height: 20px;
+    width: 100%;
+    background-color: #E4E4E4;
+}
+
+/* End Footer */
+
+/* Start Create Account Page */
+section.CreateAccount-Section button {
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    margin-left: 45%;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+    margin-bottom: 10px;
+}
+
+
+
+section.CreateAccount-Section h1 {
+    margin-left: 40%;
+    margin-top: 39px;
+    padding-bottom: 10px;
+}
+
+section.CreateAccount-Section form input {
+    padding: 5px 10px;
+    margin: 1% 0;
+    font-size: 90%;
+    border-radius: 10px;
+    margin-left: 47%;
+}
+
+section.CreateAccount-Section form input:last-child {
+    margin: 1% 0;
+    font-size: 90%;
+    border-radius: 10px;
+    margin-left: 47%;
+    padding-bottom:10px;
+}
+
+section.CreateAccount-Section form label {
+    text-align: center;
+    margin-left: 47%;
+}
+
+section.CreateAccount-Section button:hover {
+ background-color: #f29f3a;
+}
+
+section.CreateAccount-Section button {
+    margin-left: 50%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* End Create Account Page */
+
+/* Start Login Page */
+.Login-Section .Elements {
+  display: inline-flex;
+  width: 280px;
+  height: 40px;
+  background-color:  transparent;
+  border-width: 2px;
+  margin-left: 41%;
+  margin-top: 30px;
+    
+  border-style: solid;
+  border-color: #A62645;
+  border-radius: 12px;
+}
+
+.Login-Section h1 {
+    text-align: center;
+    margin-top: 50px;
+} 
+
+.Login-Section .itemright input{
+  text-align: center;
+  border: 0px solid;
+  border-color: transparent;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 6px;
+  margin-left: 1px;
+  height: 95%;
+  width: 165px;
+    font-size: 16px;
+  
+}
+
+.Login-Section .itemright input:hover{
+ 
+    background-color: #E4E4E4;
+  
+}
+.Login-Section .itemleft {
+  color: #FFF;
+  background-color: #A62645;
+  border-style: solid;
+  border-color: #A62645;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 6px;
+  width: 100px;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+
+.Login-Section .itemright input:focus{
+    outline: none;
+}
+
+.Login-Section button {
+    width: 130px;
+    height: 50px;
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    display: inline-block;
+    margin-left: -72%;
+    margin-top: 30%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+
+.Login-Section button i {
+    margin-top: -4px;
+}
+
+
+.Login-Section button:hover {
+ background-color: #f29f3a;
+}
+
+.Revert-To-Sign-Up h1{
+    text-align: center;
+    margin-top: 220px;
+}
+
+.Revert-To-Sign-Up p{
+    text-align: center;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+.Revert-To-Sign-Up button {
+    width: 150px;
+    height: 50px;
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+.Revert-To-Sign-Up button:hover {
+    background-color: #f29f3a; 
+}
+/* End Login Page */
+
+/* Start Side Margins */
+#bg-right {
+  background-color: #E4E4E4;
+  background: linear-gradient(#c1bfbf, #e4e4e4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 90.0%;
+  right: 0;
+  z-index: -1;
+}
+
+#bg-left {
+  /*background-color: #E4E4E4;*/
+  background: linear-gradient(#e4e4e4, #e4e4e4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 90.0%;
+  z-index: -1;
+}
+#bg-top {
+  background: linear-gradient(#686666, #e4e4e4);
+   /* background-color: #c1bfbf;*/
+  position: absolute;
+filter: blur(2px);
+  top: 0;
+  bottom: 81%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+    height: 140px;
+} 
+/* End Side Margins */
