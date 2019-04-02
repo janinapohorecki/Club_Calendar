@@ -91,29 +91,42 @@ header button:hover {
 
 nav #MyUser {
     float: right;
-    margin-top: 1%;
+    margin-top: -4.3%;
     margin-right: 12%;
     background-color: transparent;
     color: black;
-    width: 120px;
+    width: 130px;
 }
+
+nav #Add {
+    margin-right: 350px;
+}
+
 
 nav #MyUser input{
     display: none;
 }
 
 nav .UserDropDown {
-    display: block;
-    margin-top: -5%;
-    margin-left: 800px;
-    overflow:visible;
-    background: #ccc;
+    margin-top: -6%;
+    margin-left: 900px;
+    background: #e4e4e4;
     text-align: left;
     width: 250px;
 }
 
-nav li {
-    border-color: black;
+
+
+#NameDrop {
+  /*position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;*/
+}
+
+nav #MyUser input:checked ~ nav ul li{
+    margin-left: 10px;
 }
 
 nav i {
@@ -149,6 +162,10 @@ i {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 6px; 
+}
+
+nav i {
+    transform: rotate(315deg);
 }
 
 .left {
@@ -272,7 +289,7 @@ i {
 
 #calendar ul.weekdays {
     height: 40px;
-    background: #A62645
+    background: #A62645;
 }
 
 #calendar ul.weekdays li {
