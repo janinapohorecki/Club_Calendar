@@ -30,26 +30,30 @@
         <section class = "Login-Section">
             <h1>Login</h1>
             
-            <div class="Elements" id ="UserEle">
-                <span class="itemleft">
-                    <label for="username">Username</label>
-                </span>
-                <span class="itemright">
-                     <input type="text" name="username" placeholder="Enter Username">
-                </span>
-            </div>
-            <div class="Elements" id ="PassEle">
-                 <span class="itemleft">
-                    <label for="username">Password</label>
-                </span>
-                <span class="itemright">
-                     <input type="password" name="password" placeholder="Enter Password">
-                </span>
-                
-                <br>
-                
-            <button class="button" style="vertical-align:middle"><span>Login<i class="arrow right"></i> </span></button>
-            </div>
+            <form action="/users/login" method="POST">
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Enter Password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
             
         </section>
         
