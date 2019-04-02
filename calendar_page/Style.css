@@ -89,7 +89,13 @@ header button:hover {
  background-color: #f29f3a;
 }
 
-
+nav #MyUser {
+    background-color: red;
+    float: right;
+    margin-top: 10%;
+    margin-right: 10%;
+    background-color: red;
+}
 
 /* End Header */
 
