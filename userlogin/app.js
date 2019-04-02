@@ -7,6 +7,7 @@ const session = require('express-session');
 
 const app = express();
 
+
 // Passport Config
 require('./config/passport')(passport);
 
@@ -53,6 +54,12 @@ app.use(function(req, res, next) {
   res.locals.error = req.flash('error');
   next();
 });
+
+// CSS middleware
+// app.use("../calendar_page", express.static("calendar_page"));
+// app.use('../calendar_page', express.static('calendar_page'));
+//app.use(express.static('userlogin'))
+
 
 // Routes
 app.use('/', require('./routes/index.js'));

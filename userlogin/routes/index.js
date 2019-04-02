@@ -10,5 +10,10 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
+// router.get('../../calendar_page/April2019.html', ensureAuthenticated, (req, res) =>
+//   res.render('../../calendar_page/April2019.html', {
+//     user: req.user
+//   })
+// );
 
 module.exports = router;

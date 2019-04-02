@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+    background: #FFF;
+}
+
+
+.wrapper {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+header {
+    background: #FFF;
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+    height: 100px;
+    width: 100%;
+}
+
+header div.logo img {
+    width: 5%;
+    height: 5%;
+    float: left;
+    padding-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+header div.headtit  {
+    width: 20%;
+    text-align: left;
+    font-size: 100%;
+    padding-top: 60px;
+    border: transparent;
+    display: inline;
+    margin-right: 30px;
+}
+
+/*header div.headtit {
+    float: left;
+    margin-right: 30px;
+    margin-top: -47px;
+    transform: scale(1.2, 1.2);
+}*/
+
+header button {
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    float: right;
+    display: inline-block;
+    margin-right: 2%;
+    margin-top: -4.8%;
+    margin-bottom: px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    border
+}
+
+
+
+header button:hover {
+ background-color: #f29f3a;
+}
+
+
+
+/* End Header */
+
+
+/* Start Calendar Page */
+
+#calendar{
+    width: 79.0%;
+    margin-left: 10.3%;
+    font-size: 14px;
+
+}
+
+#calendar .Top-Cal{
+    display: inline-flex;
+    text-align: center;
+    float: center;
+    margin-top: 5.5%;
+    margin-bottom: 2.5%;
+    margin-left: 43%;
+}
+
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+    text-align: center;
+    margin-left: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+    text-align: center;
+    margin-left: 4px;
+}
+
+#calendar .Top-Cal button {
+    background-color: #FFCE56;
+    height: 50px;
+    width: 50px;
+    border: black 3px;
+    color: black;
+    /*float: right;*/
+    display: inline-block;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+#calendar .Top-Cal button:hover {
+    background: #f29f3a;
+}
+
+.parent {
+  display: flex;
+  width: 140px;
+  background-color: transparent;
+  float: right;
+  margin-top: 65px;
+  margin-right: 120px;
+}
+.bs {
+  background-color: #FFF;
+  color: #000;
+  border-color: #e4e4e4;
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+
+}
+/*.parent > span {
+  flex: 1 1 0;
+}*/
+.parent .itemcenter {
+  text-align: center;
+}
+.parent .itemright {
+  text-align: right;
+}
+.parent .itemleft .bs {
+	border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.parent .itemright .bs{
+	border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #e4e4e4;
+}
+
+.parent .itemright .bs:active{
+	background-color: #ccc;
+}
+
+.parent .itemleft .bs:focus{
+	background-color: #ccc;
+}
+
+.parent .itemright .bs:hover{
+	background-color: #E4E4E4;
+}
+
+.parent .itemleft .bs:hover{
+	background-color: #E4E4E4;
+}
+
+
+
+#calendar .Top-Cal h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 300%;
+}
+#calendar a{
+    color: #666;
+    text-decoration: none;
+}
+
+#calendar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    width: 100.8%;
+}
+
+#calendar li{
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+    height: 40px;
+    background: #A62645
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #FFCE56;
+    font-size: 18px;
+
+}
+
+
+#calendar .days li{
+    height: 140px;
+}
+
+#calendar .days li:hover{
+    background: #eee;
+}
+
+#calendar .date {
+    text-align: center;
+    width: 25px;
+    background: #A62645;
+    color: #fff;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+#calendar .Event-Name {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+
+/*#calendar .Event-Name::before {
+   content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}*/
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #FFCE56;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#calendar .Event-Time {
+    display: none;
+}
+
+#calendar .day-other-month {
+    background: #f5f5f5;
+}
+
+/* END CALANDER PAGE */
+
+/* Start Footer */
+
+footer {
+    margin-top: 150px;
+    height: 20px;
+    width: 100%;
+    background-color: #E4E4E4;
+}
+
+/* End Footer */
+
+/* Start Create Account Page */
+section.CreateAccount-Section button {
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    margin-left: 45%;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+section.CreateAccount-Section h1 {
+    margin-left: 40%;
+    margin-top: 39px;
+    padding-bottom: 10px;
+}
+
+section.CreateAccount-Section form input {
+    padding: 5px 10px;
+    margin: 1% 0;
+    font-size: 90%;
+    border-radius: 10px;
+    margin-left: 47%;
+}
+
+section.CreateAccount-Section form input:last-child {
+    margin: 1% 0;
+    font-size: 90%;
+    border-radius: 10px;
+    margin-left: 47%;
+    padding-bottom:10px;
+}
+
+section.CreateAccount-Section form label {
+    text-align: center;
+    margin-left: 47%;
+}
+
+section.CreateAccount-Section button:hover {
+ background-color: #f29f3a;
+}
+
+section.CreateAccount-Section button {
+    margin-left: 50%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* End Create Account Page */
+
+/* Start Side Margins */
+#bg-right {
+  background-color: #E4E4E4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 90.0%;
+  right: 0;
+  z-index: -1;
+
+}
+
+#bg-left {
+  background-color: #E4E4E4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 90.0%;
+  z-index: -1;
+}
+#bg-top {
+  background-color: #E4E4E4;
+  position: absolute;
+  top: 0;
+  bottom: 81%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+/* End Side Margins */
