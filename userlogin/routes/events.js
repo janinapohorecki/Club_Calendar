@@ -92,8 +92,7 @@ router.post('/createevent', (req, res) => {
               'success_msg',
               'Your event was submitted and is waiting for approval'
             );
-            // Redirecting user to login page!
-            res.redirect('/users/register'); // Should redirect back to calendar
+            res.sendFile('~/OneDrive/Desktop/CCP/calendar_page/UserApril2019.html'); // Should redirect back to calendar
           })
           .catch(err => console.log(err));
       }
