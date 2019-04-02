@@ -33,26 +33,34 @@
             <form action="/users/login" method="POST">
 
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Enter Email"
-                  />
+                    <span class="itemleft">
+                        <label for="email">Email</label>
+                    </span>
+                    <span class="itemright">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Enter Email"
+                        />
+                    </span>
                 </div>
                 <div class="form-group">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    class="form-control"
-                    placeholder="Enter Password"
-                  />
+                    <span class="itemleft">
+                        <label for="username">Password</label>
+                    </span>
+                    <span class="itemright">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            class="form-control"
+                            placeholder="Enter Password"
+                        />
+                    </span>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <button type="submit" class="btn btn-primary btn-block" style="vertical-align:middle"><span>Login<i class="arrow right"></i></span></button>
         </form>
             
         </section>
