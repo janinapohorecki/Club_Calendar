@@ -512,11 +512,7 @@ ul#Other-Sublist {
 }
 
 #sidebar ul li ul li input {
-<<<<<<< HEAD
     position: relative;
-=======
-  position: relative;
->>>>>>> d4a8baee7445da3e85cb1c9e29c9963ab94e955d
   cursor: pointer;
   height: 15px;
   width: 25px;
@@ -827,7 +823,6 @@ section.CreateAccount-Section button {
     background: linear-gradient(#c1bfbf, #e4e4e4);
 =======
   background: linear-gradient(#c1bfbf, #e4e4e4);
->>>>>>> d4a8baee7445da3e85cb1c9e29c9963ab94e955d
   position: fixed;
   top: 0;
   bottom: 0;
