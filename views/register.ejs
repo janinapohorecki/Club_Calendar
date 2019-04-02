@@ -31,29 +31,67 @@
         <section class="CreateAccount-Section">
             
             <h1>Let's fill out some information...</h1>
-            <form action="">
-                
-                <label for="firstname">First Name</label><br>
-                <input type="firstname" name = "firstname" placeholder="Enter First Name"><br> 
-                
-                <label for="lastname">Last Name</label><br>
-                <input type="lastname" name = "lastname" placeholder="Enter Last Name"><br> 
-                
-                <label for="email">Mav E-Mail</label><br>
-                <input type="email" name = "email" placeholder="Enter Email"><br>
-                
-                <label for="username">Username</label><br>
-                <input type="text" name="username" placeholder="Enter Username"><br>
-                
-                <label for="password">Password</label><br>
-                <input type="password" name="Password" placeholder="Enter Password" ><br>
-                
-                <label for="password">Re-Enter Password</label><br>
-                <input type="password" name="Password" placeholder="Enter Password" ><br>
-                
-                
-            </form>
-            <button class="button" style="vertical-align:middle"><span>Sign Up <i class="arrow right"></i>  </span></button>
+            <%- include ./partials/messages %>
+            <form action="/users/register" method="POST">
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                    type="name"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    placeholder="Enter Name"
+                    value="<%= typeof name != 'undefined' ? name : '' %>"
+                />
+                </div>
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    value="<%= typeof email != 'undefined' ? email : '' %>"
+                />
+                </div>
+                <div class="form-group">
+                        <label for="userName">Username</label>
+                        <input
+                            type="userName"
+                            id="userName"
+                            name="userName"
+                            class="form-control"
+                            placeholder="Enter Username"
+                            value="<%= typeof userName != 'undefined' ? userName : '' %>"
+                        />
+                        </div>
+                <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Create Password"
+                    value="<%= typeof password != 'undefined' ? password : '' %>"
+                />
+                </div>
+                <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input
+                    type="password"
+                    id="password2"
+                    name="password2"
+                    class="form-control"
+                    placeholder="Confirm Password"
+                    value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+                />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                Register
+                </button>
+        </form>
         </section>
         <!--End Third Section-->
         <footer>
