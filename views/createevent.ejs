@@ -1,94 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Club Calendar</title>
+    <link rel="stylesheet" type="text/css" href="/assets/Style.css">
+     <link rel="title icon" type="image/png" href="/assets/colorado-mesa-logo.png">
+    <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    <header>
 
-<div class="row mt-5">
-    <div class="col-md-6 m-auto">
-      <div class="card card-body">
-        <h1 class="text-center mb-3">
-          <i class="fas fa-user-plus"></i> Create_Event
-        </h1>
-        <%- include ./partials/messages %>
-        <form action="/events/createevent" method="POST">
-          <div class="form-group">
-            <label for="clubID">Club ID</label>
-            <input
-              type="clubID"
-              id="clubID"
-              name="clubID"
-              class="form-control"
-              placeholder="Enter clubID"
-              value="<%= typeof clubID != 'undefined' ? clubID : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="userID">User ID</label>
-            <input
-              type="userID"
-              id="userID"
-              name="userID"
-              class="form-control"
-              placeholder="Enter userID"
-              value="<%= typeof userID != 'undefined' ? userID : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="eventID">Event ID</label>
-            <input
-              type="eventID"
-              id="eventID"
-              name="eventID"
-              class="form-control"
-              placeholder="Create eventID"
-              value="<%= typeof eventID != 'undefined' ? eventID : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="name"
-              id="name"
-              name="name"
-              class="form-control"
-              placeholder="Event Name"
-              value="<%= typeof name != 'undefined' ? name : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="description">Description</label>
-            <input
-              type="description"
-              id="description"
-              name="description"
-              class="form-control"
-              placeholder="Event Description"
-              value="<%= typeof description != 'undefined' ? description : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="StartTime">Start Time</label>
-            <input
-              type="date"
-              id="StartTime"
-              name="StartTime"
-              class="form-control"
-              placeholder="StartTime"
-              value="<%= typeof StartTime != 'undefined' ? StartTime : '' %>"
-            />
-          </div>
-          <div class="form-group">
-            <label for="EndTime">End Time</label>
-            <input
-              type="date"
-              id="EndTime"
-              name="EndTime"
-              class="form-control"
-              placeholder="EndTime"
-              value="<%= typeof EndTime != 'undefined' ? EndTime : '' %>"
-            />
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">
-            Create Event
-          </button>
+        <div class="logo">
+            <img src="/assets/colorado-mesa-logo.png">
+        </div>
+
+        <div class="headtit">
+            <h1><span>Club Calendar</span></h1>
+            <!--<img src="LoginImages/cce7e979-783a-49da-a126-7bf8855ba52e.png">-->
+        </div>
+
+        <nav>
+            <a href="/"><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calender  </span></button></a>
+        </nav>
+
+        </header>
+
+
+        <section class="CreateAccount-Section">
+
+            <h1>Enter the event details</h1>
+            <%- include ./partials/messages %>
+            <form action="/events/createevent" method="POST">
+                <div class="form-group">
+                <label for="clubID">Club ID</label>
+                <input
+                    type="clubID"
+                    id="clubID"
+                    name="clubID"
+                    class="form-control"
+                    value="<%= typeof clubID != 'undefined' ? clubID : '' %>"
+                />
+                </div>
+                <div class="form-group">
+                <label for="userID">User ID</label>
+                <input
+                    type="userID"
+                    id="userID"
+                    name="userID"
+                    class="form-control"
+                    value="<%= typeof userID != 'undefined' ? userID : '' %>"
+                />
+                </div>
+                <div class="form-group">
+                        <label for="eventID">Event ID</label>
+                        <input
+                            type="eventID"
+                            id="eventID"
+                            name="eventID"
+                            class="form-control"
+                            value="<%= typeof eventID != 'undefined' ? eventID : '' %>"
+                        />
+                        </div>
+                <div class="form-group">
+                <label for="name">Event Name</label>
+                <input
+                    type="name"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    value="<%= typeof name != 'undefined' ? name : '' %>"
+                />
+                </div>
+                <div class="form-group">
+                  <label for="description">Event Name</label>
+                  <input
+                      type="description"
+                      id="description"
+                      name="description"
+                      class="form-control"
+                      value="<%= typeof description != 'undefined' ? description : '' %>"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="startTime">Start Time</label>
+                  <input
+                      type="datetime"
+                      id="startTime"
+                      name="startTime"
+                      class="form-control"
+                      value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="startTime">Start Time</label>
+                  <input
+                      type="datetime"
+                      id="startTime"
+                      name="startTime"
+                      class="form-control"
+                      value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                Submit for Approval
+                </button>
         </form>
-      </div>
+        </section>
+        <!--End Third Section-->
+        <footer>
+
+        </footer>
     </div>
-  </div>
-  
+
+    <div id="bg-right"></div>
+    <div id="bg-left"></div>
+    <div id="bg-top"></div>
+
+</body>
+</html>
