@@ -32,7 +32,7 @@
 
             <form action="/users/login" method="POST">
 
-                <div class="form-group">
+                <div class="Elements" id ="UserEle">
                     <span class="itemleft">
                         <label for="email">Email</label>
                     </span>
@@ -46,9 +46,9 @@
                         />
                     </span>
                 </div>
-                <div class="form-group">
+                <div class="Elements" id="PassEle">
                     <span class="itemleft">
-                        <label for="username">Password</label>
+                        <label for="password">Password</label>
                     </span>
                     <span class="itemright">
                         <input
@@ -59,10 +59,12 @@
                             placeholder="Enter Password"
                         />
                     </span>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block" style="vertical-align:middle"><span>Login<i class="arrow right"></i></span></button>
-        </form>
 
+                    <br>
+                    
+                    <a href="/dashboard"><button type="button" class="btn btn-primary btn-block" style="vertical-align:middle"><span>Login<i class="arrow right"></i></span></button></a> 
+                </div>
+            </form>
         </section>
 
         <section class="Revert-To-Sign-Up">
