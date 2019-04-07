@@ -11,25 +11,25 @@
 <body>
     <div class = "wrapper">
         <header>
-        
+
         <div class="logo">
             <img src="/assets/colorado-mesa-logo.png">
         </div>
-        
+
         <div class="headtit">
             <h1><span>Club Calendar</span></h1>
             <!--<img src="LoginImages/cce7e979-783a-49da-a126-7bf8855ba52e.png">-->
         </div>
-        
+
         <nav>
-            <button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calander  </span></button>
+          <a href="/">  <button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calander  </span></button> </a>
         </nav>
-        
+
         </header>
-        
+
         <section class = "Login-Section">
             <h1>Login</h1>
-            
+
             <form action="/users/login" method="POST">
 
                 <div class="form-group">
@@ -62,17 +62,17 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block" style="vertical-align:middle"><span>Login<i class="arrow right"></i></span></button>
         </form>
-            
+
         </section>
-        
+
         <section class="Revert-To-Sign-Up">
             <h1>Sign Up</h1>
             <p>Making an account allows you to save all your calendar preferences and it also gives you an opportunity to become a contributer to the calender. Let's set up your account!</p>
-            <button class="button" style="vertical-align:middle"><span>Sign Up<i class="arrow right"></i> </span></button>
-            
+          <a href="/users/register"><button class="button" style="vertical-align:middle"><span>Sign Up<i class="arrow right"></i> </span></button></a>
+
         </section>
         <footer>
-            
+
         </footer>
     </div>
     <div id="bg-right"></div>
