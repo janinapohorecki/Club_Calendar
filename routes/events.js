@@ -13,15 +13,21 @@ router.post('/createevent', (req, res) => {
   const { clubID, userID, eventID, name, description, StartTime, EndTime, Approved } = req.body;
   console.log(req.body);
   let errors = [];
+/*
+Error catching works, but the input needs to be converted to the js Date object, this is called d1 and d2.
+
 
   if (!clubID || !userID || !eventID || !name || !description || !StartTime || !EndTime) {
     errors.push({ msg: 'Please enter all fields' });
   }
   else {
       // Creating date variables for event
-      var d1 = new Date(StartTime);
-      var d2 = new Date(EndTime);
-      
+      //var x = document.getElementById("StartDate").value; <-- This could be added to the submit button for create an event, might work
+      //console.log(x);
+      var d1 = new Date();
+      //tempval= EndDate+"T"+EndTime;
+      var d2 = new Date();
+      console.log(d1);
       var currentDate = new Date();
       var check = new Date();
       check.setDate(d1.getDate()-1);
@@ -44,7 +50,7 @@ router.post('/createevent', (req, res) => {
       }
     }
   }
-  
+  */
   if (errors.length > 0) {
     res.render('createevent', {
       errors,
@@ -53,8 +59,8 @@ router.post('/createevent', (req, res) => {
       eventID, 
       name, 
       description, 
-      StartTime, 
-      EndTime, 
+      d1, 
+      d2, 
       Approved
     });
   } else {
@@ -68,8 +74,8 @@ router.post('/createevent', (req, res) => {
           eventID, 
           name, 
           description, 
-          StartTime, 
-          EndTime, 
+          d1, 
+          d2, 
           Approved
         });
       } else {
@@ -79,8 +85,8 @@ router.post('/createevent', (req, res) => {
           eventID, 
           name, 
           description, 
-          StartTime, 
-          EndTime, 
+          d1, 
+          d2, 
           Approved
         });
 
