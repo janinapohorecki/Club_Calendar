@@ -7,27 +7,20 @@ const Event = require('../models/Event');
 
 // Create Event Page
 router.get('/createevent', (req, res) => res.render('createevent'));
-
 // Create event
 router.post('/createevent', (req, res) => {
-  const { clubID, userID, eventID, name, description, StartTime, EndTime, Approved } = req.body;
+  const { clubID, userID, eventID, name, description, date, startTime, endTime, Approved } = req.body;
   console.log(req.body);
   let errors = [];
-/*
-Error catching works, but the input needs to be converted to the js Date object, this is called d1 and d2.
 
-
-  if (!clubID || !userID || !eventID || !name || !description || !StartTime || !EndTime) {
+  if (!clubID || !userID || !eventID || !name || !description || !date || !startTime || !endTime) {
     errors.push({ msg: 'Please enter all fields' });
   }
   else {
-      // Creating date variables for event
-      //var x = document.getElementById("StartDate").value; <-- This could be added to the submit button for create an event, might work
-      //console.log(x);
-      var d1 = new Date();
-      //tempval= EndDate+"T"+EndTime;
-      var d2 = new Date();
-      console.log(d1);
+      var d1 = new Date(Date.parse(date+"T"+startTime));
+      var d2 = new Date(Date.parse(date+"T"+endTime));
+      d1.setHours(d1.getHours()-5);
+      d2.setHours(d2.getHours()-5);
       var currentDate = new Date();
       var check = new Date();
       check.setDate(d1.getDate()-1);
@@ -50,7 +43,8 @@ Error catching works, but the input needs to be converted to the js Date object,
       }
     }
   }
-  */
+  var StartTime=d1;
+  var EndTime=d2;
   if (errors.length > 0) {
     res.render('createevent', {
       errors,
@@ -59,8 +53,9 @@ Error catching works, but the input needs to be converted to the js Date object,
       eventID, 
       name, 
       description, 
-      d1, 
-      d2, 
+      date, 
+      startTime,
+      endTime, 
       Approved
     });
   } else {
@@ -74,8 +69,9 @@ Error catching works, but the input needs to be converted to the js Date object,
           eventID, 
           name, 
           description, 
-          d1, 
-          d2, 
+          date, 
+          startTime,
+          endTime, 
           Approved
         });
       } else {
@@ -85,8 +81,8 @@ Error catching works, but the input needs to be converted to the js Date object,
           eventID, 
           name, 
           description, 
-          d1, 
-          d2, 
+          StartTime, 
+          EndTime, 
           Approved
         });
 
