@@ -22,7 +22,7 @@
         </div>
 
         <nav>
-            <a href="/"><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calender  </span></button></a>
+            <a href="/dashboard"><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calender  </span></button></a>
         </nav>
 
         </header>
@@ -74,7 +74,7 @@
                 />
                 </div>
                 <div class="form-group">
-                  <label for="description">Event Name</label>
+                  <label for="description">Event Description</label>
                   <input
                       type="description"
                       id="description"
@@ -84,25 +84,35 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="startTime">Start Time</label>
+                  <label for="date">Date</label>
                   <input
-                      type="datetime"
-                      id="startTime"
-                      name="startTime"
+                      type="date"
+                      id="date"
+                      name="date"
                       class="form-control"
-                      value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
+                      value="<%= typeof date != 'undefined' ? date : '' %>"
                   />
                 </div>
                 <div class="form-group">
-                  <label for="startTime">Start Time</label>
-                  <input
-                      type="datetime"
-                      id="startTime"
-                      name="startTime"
-                      class="form-control"
-                      value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
-                  />
+                    <label for="startTime">Start Time</label>
+                    <input
+                        type="time"
+                        id="startTime"
+                        name="startTime"
+                        class="form-control"
+                        value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
+                    /> 
                 </div>
+                <div class="form-group">
+                    <label for="endTime">End Time</label>
+                    <input
+                        type="time"
+                        id="endTime"
+                        name="endTime"
+                        class="form-control"
+                        value="<%= typeof endTime != 'undefined' ? endTime : '' %>"
+                    />
+                  </div>
                 <button type="submit" class="btn btn-primary btn-block">
                 Submit for Approval
                 </button>
