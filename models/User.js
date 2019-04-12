@@ -1,6 +1,7 @@
 // creating a schema for all the different fields for our user
 
 const mongoose = require('mongoose');
+mongoose.set('useCreateIndex', true);
 
 const UserSchema = new mongoose.Schema({
   name: {

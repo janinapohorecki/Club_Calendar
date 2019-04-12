@@ -9,40 +9,42 @@
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
-    
+
     <div id="calendar-wrap">
         <header>
-            
+
             <div class="logo">
             <img src="/assets/colorado-mesa-logo.png">
         </div>
-        
+
         <div class="headtit">
             <h1><span>Club Calendar</span></h1>
-            <!--<img src="LoginImages/cce7e979-783a-49da-a126-7bf8855ba52e.png">-->
         </div>
-        
-        <nav>  
-                <button id="Add" class="button" style="vertical-align:middle"><span> Add an Event <i class="fa fa-angle-right" id ="right-carrot"></i> </span></button>
-                <span id="MyUser"> 
+<<<<<<< HEAD
+
+        <nav>
+                <!-- <button id="Add" class="button" style="vertical-align:middle"><span> Add an Event <i class="fa fa-angle-right" id ="right-carrot"></i> </span></button>
+                <span id="MyUser"> -->
+
+        <nav>
+            <a href="/events/createevent"> <button id="Add" class="button" style="vertical-align:middle"><span> Add an Event <i class="fa fa-angle-right" id ="right-carrot"></i> </span></button></a>
+                <span id="MyUser">
                       <input id="NameDrop" type="checkbox" name="menu"/>
-                      <label id="check00" rsfor="NameDrop"> <!--<i class="fas fa-angle-down" id ="left-carrot"></i>--> John Doe </label></span>
+                      <label id="check00" rsfor="NameDrop">John Doe </label>
+                </span>
+
         </nav>
         </header>
-        
+
     <div id="sidebar">
         <div class="toggle-sidebar" onclick="toggleSidebar()">
-            <!--<span></span>
-             <span></span>
-             <span></span>-->
             <i class="fas fa-angle-double-right" style="color:white"></i>
             <i class="fas fa-angle-double-right"></i>
             <i class="fas fa-angle-double-right"></i>
         </div>
         <h2 class="sidebar-header">Edit View</h2>
         <ul id="Begin-List">
-            
-            <!--<li class="SocialDropDown">Social <button id="Social-Drop"><i class="fa fa-angle-double-right"></i></button>-->
+
             <li><input id="check01" type="checkbox" name="menu"/>
             <label  id="check1" for="check01">Social <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id="Social-Sublist">
@@ -91,15 +93,15 @@
                 </ul></li>
         </ul>
     </div>
-        
+
         <div id="calendar">
             <div class="Top-Cal">
                 <button class="button" style="vertical-align:middle" onclick="window.location.href = '/March2019.html';"> <i class="arrow left"></i>   </button>
-                
+
                 <h2>April</h2>
-                
+
                 <button class="button" style="vertical-align:middle" onclick="window.location.href = '/May2019.html';">    <i class="arrow right"></i>   </button>
-                
+
                 </div>
             <div class="parent">
                     <span class="itemleft">
@@ -108,7 +110,7 @@
                    <span class="itemright">
                         <button class="bs">Month</button>
                        </span>
-            
+
             </div>
             <ul class="weekdays">
                 <li>Sunday</li>
@@ -119,7 +121,7 @@
                 <li>Friday</li>
                 <li>Saturday</li>
             </ul>
-            <ul class="days"> <!--Week 1 -->
+            <ul class="days">
                 <li class="day-other-month">
                     <div class="date">31</div>
                 <li class="day">
@@ -145,8 +147,8 @@
                      </div>
                 </li>
             </ul>
-            
-            <ul class="days"> <!-- Week 2 -->
+
+            <ul class="days">
                 <li class="day">
                     <div class="date">7</div>
                 <li class="day">
@@ -170,8 +172,8 @@
                     <div class="date">13</div>
                 </li>
             </ul>
-            
-            <ul class="days"> <!-- Week 3 -->
+
+            <ul class="days">
                 <li class="day">
                     <div class="date">14</div>
                 <li class="day">
@@ -193,8 +195,8 @@
                     <div class="date">20</div>
                 </li>
             </ul>
-            
-            <ul class="days"> <!-- Week 4 -->
+
+            <ul class="days">
                 <li class="day">
                     <div class="date">21</div>
                 <li class="day">
@@ -216,8 +218,8 @@
                     <div class="date">27</div>
                 </li>
             </ul>
-            
-             <ul class="days"> <!-- Week 4 -->
+
+             <ul class="days">
                 <li class="day">
                     <div class="date">21</div>
                 <li class="day">
@@ -239,8 +241,8 @@
                     <div class="date">27</div>
                 </li>
             </ul>
-            
-             <ul class="days"> <!-- Week 5 -->
+
+             <ul class="days">
                 <li class="day">
                     <div class="date">28</div>
                 <li class="day">
@@ -262,8 +264,8 @@
                     <div class="date">4</div>
                 </li>
             </ul>
-            
-            <ul class="days"> <!-- Week 6 -->
+
+            <ul class="days">
                 <li class="day-other-month">
                     <div class="date">5</div>
                 <li class="day-other-month">
@@ -285,13 +287,13 @@
                     <div class="date">11</div>
                 </li>
             </ul>
-        </div><!-- End Calendar -->
-    </div> <!-- End Calendar Wrap -->
+        </div>
+    </div>
     <div id="bg-right"></div>
     <div id="bg-left"></div>
     <div id="bg-top"></div>
     <footer>
-            
+
     </footer>
 </body>
 </html>

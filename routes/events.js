@@ -7,21 +7,20 @@ const Event = require('../models/Event');
 
 // Create Event Page
 router.get('/createevent', (req, res) => res.render('createevent'));
-
 // Create event
 router.post('/createevent', (req, res) => {
-  const { clubID, userID, eventID, name, description, StartTime, EndTime, Approved } = req.body;
+  const { clubID, userID, eventID, name, description, date, startTime, endTime, Approved } = req.body;
   console.log(req.body);
   let errors = [];
 
-  if (!clubID || !userID || !eventID || !name || !description || !StartTime || !EndTime) {
+  if (!clubID || !userID || !eventID || !name || !description || !date || !startTime || !endTime) {
     errors.push({ msg: 'Please enter all fields' });
   }
   else {
-      // Creating date variables for event
-      var d1 = new Date(StartTime);
-      var d2 = new Date(EndTime);
-      
+      var d1 = new Date(Date.parse(date+"T"+startTime));
+      var d2 = new Date(Date.parse(date+"T"+endTime));
+      d1.setHours(d1.getHours()-5);
+      d2.setHours(d2.getHours()-5);
       var currentDate = new Date();
       var check = new Date();
       check.setDate(d1.getDate()-1);
@@ -44,7 +43,11 @@ router.post('/createevent', (req, res) => {
       }
     }
   }
-  
+
+  // Prepares dates for submission
+  var StartTime=d1;
+  var EndTime=d2;
+
   if (errors.length > 0) {
     res.render('createevent', {
       errors,
@@ -53,8 +56,9 @@ router.post('/createevent', (req, res) => {
       eventID, 
       name, 
       description, 
-      StartTime, 
-      EndTime, 
+      date, 
+      startTime,
+      endTime, 
       Approved
     });
   } else {
@@ -68,8 +72,9 @@ router.post('/createevent', (req, res) => {
           eventID, 
           name, 
           description, 
-          StartTime, 
-          EndTime, 
+          date, 
+          startTime,
+          endTime, 
           Approved
         });
       } else {
