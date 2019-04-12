@@ -6,11 +6,10 @@ const passport = require('passport');
 const Event = require('../models/Event');
 
 router.get('/moderator', (req, res) => res.render('moderator'));
-
-var query = Event.where({Approved:true});
+var i=0;
+var query = Event.where({Approved:false});
 query.find(function(err,event) {
-  let errors = [];
-  if(err) err => console.log(err);
+  if(err) console.log(err);
   else {
       console.log(event);
   }
