@@ -312,6 +312,7 @@ nav i {
     background: #eee;
 }
 
+
 #calendar .date {
     text-align: center;
     width: 25px;
@@ -821,6 +822,105 @@ section.CreateAccount-Section button {
     background-color: #f29f3a; 
 }
 /* End Login Page */
+
+/* Start Moderator Page */
+
+
+.ApproveEvent-Section h1 {
+    text-align: center;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    
+}
+
+.ApproveEvent-Section button {
+    width: 150px;
+    height: 50px;
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+.ApproveEvent-Section button:hover {
+    background-color: #f29f3a; 
+}
+
+
+.ApproveEvent-Section li{
+    display: block;
+    float:left;
+    width: 20.1%;
+    /*padding: 5px;*/
+    padding-left: 10px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    border: 0px solid #fff;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+.ApproveEvent-Section ul.Approve-Table {
+    height: 40px;
+    background: #A62645;
+    width: 60%;
+    margin-left: 20%;
+    color: #fff;
+    text-align: center;
+    
+}
+
+#ApproveEvent-Section ul.Approve-Table li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #FFCE56;
+    font-size: 18px;
+    display:inline-flex;
+    
+}
+
+.ApproveEvent-Section ul.AT-Record li {
+    height: 65px;
+    width: 15.08%;
+    float: left;
+    text-align: center;
+    border: 1px solid #ccc;
+
+}
+
+.ApproveEvent-Section ul.AT-Record {
+    margin-left: 20%;
+}
+
+.ApproveEvent-Section input {
+    transform: scale(2.5);
+    margin-top: 17px;
+}
+
+#row-2 {
+    margin-top: -5px;
+}
+#row-3 {
+    margin-top: -5px;
+}
+#row-4 {
+    margin-top: -5px;
+}
+
+/* End Moderator Page */
 
 /* Start Side Margins */
 #bg-right {

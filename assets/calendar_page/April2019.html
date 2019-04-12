@@ -6,6 +6,30 @@
     <link rel="title icon" type="image/png" href="CalImages/colorado-mesa-logo.png">
     <link rel="stylesheet" type="text/css" href="Style.css">
     <script src ="CalanderJS.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $("#PAC-checkbox").click(function(){
+    $("#PAC-EVENTS").toggle();
+  });
+});
+         $(document).ready(function(){
+  $("#GEMS-checkbox").click(function(){
+    $("#GEMS-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#CAB-checkbox").click(function(){
+    $("#CAB-EVENTS").toggle();
+  });
+});
+
+        $(document).ready(function(){
+  $("#TableTopGames-checkbox").click(function(){
+    $("#TableTopGames-EVENTS").toggle();
+  });
+});
+    </script>
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
@@ -43,9 +67,9 @@
             <li><input id="check01" type="checkbox" name="menu"/>
             <label  id="check1" for="check01">Social <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id="Social-Sublist">
-                    <li><input type="checkbox" name="PAC-checkbox"><label for="opt-in">PAC</label></li>
-                    <li><input type="checkbox" name="CAB-checkbox"><label for="opt-in">CAB</label></li>
-                    <li><input type="checkbox" name="TableTopGames-checkbox"><label for="opt-in">Table Top Games</label></li>
+                    <li><input type="checkbox" id="PAC-checkbox"><label for="opt-in">PAC</label></li>
+                    <li><input type="checkbox" id="CAB-checkbox"><label for="opt-in">CAB</label></li>
+                    <li><input type="checkbox" id="TableTopGames-checkbox"><label for="opt-in">Table Top Games</label></li>
                     <li><input type="checkbox" name="ResidenceLife-checkbox"><label for="opt-in">Residence Life</label></li>
                     <li><input type="checkbox" name="StudentLife-checkbox"><label for="opt-in">Student Life</label></li>
                 </ul>
@@ -64,7 +88,7 @@
                 <ul id = "Academic-Sublist">
                     <li><input type="checkbox" name="AccountingClub-checkbox"><label for="opt-in">Accounting Club</label></li>
                     <li><input type="checkbox" name="ACM-checkbox"><label for="opt-in">Association for Computing Machinery</label></li>
-                    <li><input type="checkbox" name="GEMS-checkbox"><label for="opt-in">GEMS</label></li>
+                    <li><input type="checkbox" id="GEMS-checkbox"><label for="opt-in">GEMS</label></li>
                     <li><input type="checkbox" name="SignLanguage-checkbox"><label for="opt-in">Sign Language Club</label></li>
                     <li><input type="checkbox" name="EngineeringClub-checkbox"><label for="opt-in">Engineering Club</label></li>
                 </ul></li>
@@ -151,7 +175,13 @@
                 </li>
                  <li class="day">
                     <div class="date">9</div>
-                     <div class="Event-Name"><span class="dot"></span> PAC</div>
+                     <div class="Event-Name" id="PAC-EVENTS" style = "display: none;"><span class="dot"></span> PAC</div>
+                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
+                     <div class="Event-Name" id="GEMS-EVENTS" style = "display: none;"><span class="dot"></span> GEMS</div>
+                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
+                       <div class="Event-Name" id="CAB-EVENTS" style = "display: none;"><span class="dot"></span> CAB</div>
+                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
+                     <div class="Event-Name" id="TableTopGames-EVENTS" style = "display: none;"><span class="dot"></span> Table Top Club</div>
                          <div class="Event-Time">10:00 AM - 12:00 PM</div>
                 </li>
                  <li class="day">
