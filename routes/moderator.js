@@ -5,13 +5,14 @@ const passport = require('passport');
 // Load Event model
 const Event = require('../models/Event');
 
-router.get('/moderator', (req, res) => res.render('moderator'));
-var i=0;
 var query = Event.where({Approved:false});
+query.select('-_id name')
 query.find(function(err,event) {
   if(err) console.log(err);
   else {
-      console.log(event);
+          router.get('/moderator', function(req, res) {
+          res.render('moderator', {blah: event});
+      })
   }
 });
 module.exports = router;
