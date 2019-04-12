@@ -43,8 +43,11 @@ router.post('/createevent', (req, res) => {
       }
     }
   }
+
+  // Prepares dates for submission
   var StartTime=d1;
   var EndTime=d2;
+
   if (errors.length > 0) {
     res.render('createevent', {
       errors,
