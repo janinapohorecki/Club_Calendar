@@ -12,7 +12,7 @@ require('./config/passport')(passport);
 
 // DB Config
 const db = require('./config/keys').MongoURI;
-console.log(db);
+
 // Connect to MongoDB
 mongoose
   .connect(
