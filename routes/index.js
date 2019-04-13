@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const { ensureAuthenticated } = require('../config/auth');
-const User = require('../models/User');
+
+//const User = require('../models/User');
 
 router.get('/', (req, res) => res.render('homepage'));
 
-router.get('/dashboard', (req, res) => res.render('dashboard'));
+//router.get('/dashboard', (req, res) => res.render('dashboard'));
 /*
 var query = Event.where({Approved:false});
 query.select('-_id name')
