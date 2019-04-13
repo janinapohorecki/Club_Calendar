@@ -322,7 +322,7 @@ nav i {
     border-radius: 30px;
 }
 
-#calendar .Event-Name {
+#calendar .PAC-EVENTS {
     clear: both;
     display: block;
     font-weight: bold;
@@ -335,6 +335,8 @@ nav i {
     line-height:14px;
     background: transparent;
 }
+
+
 
 /*#calendar .Event-Name::before {
    content: "\2022";
@@ -354,6 +356,14 @@ nav i {
 }
 
 #calendar .Event-Time {
+    display: none;
+}
+
+#calendar .Event-Desc {
+    display: none;
+}
+
+#calendar .Event-Location {
     display: none;
 }
 
@@ -426,6 +436,14 @@ nav i {
     background-color: #A62645;
     color: white !important;
     
+}
+
+.toggle-sidebar:hover {
+    cursor: pointer;
+}
+
+.toggle-sidebar:hover ~ .toggle-sider bar i {
+    border-color: #FFCE56; 
 }
 
 .sidebar-header {
@@ -925,9 +943,6 @@ section.CreateAccount-Section button {
 /* Start Side Margins */
 #bg-right {
   background-color: #E4E4E4;
-<<<<<<< HEAD
-    background: linear-gradient(#c1bfbf, #e4e4e4);
-=======
   background: linear-gradient(#c1bfbf, #e4e4e4);
   position: fixed;
   top: 0;
