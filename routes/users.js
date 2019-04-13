@@ -38,7 +38,8 @@ router.post('/register', (req, res) => {
       name,
       email,
       password,
-      password2
+      password2,
+      userName
     });
   } else {
     User.findOne({ email: email }).then(user => {
@@ -96,7 +97,5 @@ router.get('/logout', (req, res) => {
   req.flash('success_msg', 'You are logged out');
   res.redirect('/users/login');
 });
-
-
 
 module.exports = router;
