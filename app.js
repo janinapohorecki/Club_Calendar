@@ -24,8 +24,8 @@ mongoose
 
 // EJS
 //app.use(expressLayouts);
-app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
+app.set('view engine', 'ejs');
 
 // Express body parser
 app.use(express.urlencoded({ extended: true }));  // get data from our form with request.body
