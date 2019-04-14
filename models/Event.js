@@ -6,7 +6,6 @@ const EventSchema = new mongoose.Schema({
   club: {
     type: String,
     required: true,
-    unique: true
   },
   userID: {
     type: Number,
@@ -26,6 +25,10 @@ const EventSchema = new mongoose.Schema({
     type: String,
     required: true
     },
+  location: {
+    type: String,
+    required: true
+    },
   StartTime: {
     type: Date,
     required: true
@@ -36,7 +39,7 @@ const EventSchema = new mongoose.Schema({
     },
   Approved: {
     type: Boolean,
-    required: true,
+    required: false,
     default: true
     }
 });

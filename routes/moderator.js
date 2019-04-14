@@ -4,7 +4,6 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 // Load Event model
 const Event = require('../models/Event');
-const Club = require('../models/Club');
 
 
 var query = Event.where({Approved:false});
