@@ -8,7 +8,7 @@ const Club = require('../models/Club');
 
 
 var query = Event.where({Approved:false});
-query.select('-_id name StartTime EndTime club')
+query.select('-_id name description StartTime EndTime club')
 query.find(function(err,event) {
   if(err) console.log(err);
   else {
