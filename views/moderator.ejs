@@ -50,7 +50,6 @@
                datemonth = events[i].StartTime.getMonth() + 1;
                dateyear = events[i].StartTime.getYear();
                name = events[i].name;
-               description = events[i].description;
                clubName = events[i].club;
 
                stimeH = events[i].StartTime.getHours();
@@ -65,7 +64,6 @@
                 <li><%=datemonth + "/" + dateday%></li>
                 <li><%=stimeH + stimeM + " - " + etimeH + etimeM%></li>
                 <li><%=clubName%></li>
-                <li><%=description%></li>
                 <li><input type="checkbox"></li>
             </ul>
             <br>
