@@ -8,27 +8,169 @@
     <script src ="CalanderJS.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-  $("#PAC-checkbox").click(function(){
-    $("#PAC-EVENTS").toggle();
+/* Start "All" Toggles */
+      $(document).ready(function(){
+  $("#AllEvents-checkbox").click(function(){
+    $('#PAC-checkbox').attr('checked', true); // Checks it
+     $(".Soccer-EVENTS").toggle();
   });
-});
-         $(document).ready(function(){
-  $("#GEMS-checkbox").click(function(){
-    $("#GEMS-EVENTS").toggle();
+});  
+        
+/* End "All" Toggles */
+        
+/* Start Social Toggles */
+       /* $(document).ready(function(){
+  $("#PAC-checkbox").click(function(){
+    $(".PAC-EVENTS").toggle();
+  });
+});*/
+        
+        $(document).ready(function(){
+  if ($('input.checkbox_check').is(':checked')) {(function(){
+    $(".PAC-EVENTS").toggle();
   });
 });
         $(document).ready(function(){
   $("#CAB-checkbox").click(function(){
-    $("#CAB-EVENTS").toggle();
+    $(".CAB-EVENTS").toggle();
   });
 });
 
         $(document).ready(function(){
   $("#TableTopGames-checkbox").click(function(){
-    $("#TableTopGames-EVENTS").toggle();
+    $(".TableTopGames-EVENTS").toggle();
   });
 });
+        
+        $(document).ready(function(){
+  $("#ResidenceLife-checkbox").click(function(){
+    $(".ResidenceLife-EVENTS").toggle();
+  });
+});
+        
+         $(document).ready(function(){
+  $("#StudentLife-checkbox").click(function(){
+    $(".StudentLife-EVENTS").toggle();
+  });
+});      
+ /* End Social Toggles */
+        
+/* Start Sports Toggles */
+        $(document).ready(function(){
+  $("#Soccer-checkbox").click(function(){
+    $(".Soccer-EVENTS").toggle();
+  });
+}); 
+        
+        $(document).ready(function(){
+  $("#Football-checkbox").click(function(){
+    $(".Football-EVENTS").toggle();
+  });
+}); 
+      
+       $(document).ready(function(){
+  $("#Volleyball-checkbox").click(function(){
+    $(".Volleyball-EVENTS").toggle();
+  });
+}); 
+        $(document).ready(function(){
+  $("#Hockey-checkbox").click(function(){
+    $(".Hockey-EVENTS").toggle();
+  });
+}); 
+        $(document).ready(function(){
+  $("#Baseball-checkbox").click(function(){
+    $(".Baseball-EVENTS").toggle();
+  });
+});    
+/* End Sports Toggles */
+        
+/* Start Academic Toggels */
+ $(document).ready(function(){
+  $("#AccountingClub-checkbox").click(function(){
+    $(".AccountingClub-EVENTS").toggle();
+  });
+});
+         $(document).ready(function(){
+  $("#ACM-checkbox").click(function(){
+    $(".ACM-EVENTS").toggle();
+  });
+});
+        
+         $(document).ready(function(){
+  $("#GEMS-checkbox").click(function(){
+    $(".GEMS-EVENTS").toggle();
+  });
+});
+        
+         $(document).ready(function(){
+  $("#SignLanguage-checkbox").click(function(){
+    $(".SignLanguage-EVENTS").toggle();
+  });
+});
+        
+         $(document).ready(function(){
+  $("#EngineeringClub-checkbox").click(function(){
+    $(".EngineeringClub-EVENTS").toggle();
+  });
+});
+/* End Academic Toggels */
+    
+/* Start Religious Toggles */
+$(document).ready(function(){
+  $("#7Thunders-checkbox").click(function(){
+    $(".7Thunders-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#FaithLife-checkbox").click(function(){
+    $(".FaithLife-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#GrandValleyCM-checkbox").click(function(){
+    $(".GrandValleyCM-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#MesaCatholic-checkbox").click(function(){
+    $(".MesaCatholic-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#YoungLife-checkbox").click(function(){
+    $(".YoungLife-EVENTS").toggle();
+  });
+});
+/* End Religious Toggles */
+        
+/* Start Other Toggles */ 
+        $(document).ready(function(){
+  $("#FishWildlife-checkbox").click(function(){
+    $(".FishWildlife-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#CMUTV-checkbox").click(function(){
+    $(".CMUTV-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#Aggies-checkbox").click(function(){
+    $(".Aggies-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#CircleK-checkbox").click(function(){
+    $(".CircleK-EVENTS").toggle();
+  });
+});
+        $(document).ready(function(){
+  $("#Alumni-checkbox").click(function(){
+    $(".Alumni-EVENTS").toggle();
+  });
+});
+/* End Other Toggles */
     </script>
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
@@ -64,51 +206,57 @@
         <ul id="Begin-List">
             
             <!--<li class="SocialDropDown">Social <button id="Social-Drop"><i class="fa fa-angle-double-right"></i></button>-->
+            <li><input type="checkbox" id="AllEvents-checkbox"><label for="opt-in">Follow All Events</label></li>
             <li><input id="check01" type="checkbox" name="menu"/>
             <label  id="check1" for="check01">Social <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id="Social-Sublist">
+                    <li><input type="checkbox" id="AllSocial-checkbox"><label for="opt-in">All Social</label></li>
                     <li><input type="checkbox" id="PAC-checkbox"><label for="opt-in">PAC</label></li>
                     <li><input type="checkbox" id="CAB-checkbox"><label for="opt-in">CAB</label></li>
                     <li><input type="checkbox" id="TableTopGames-checkbox"><label for="opt-in">Table Top Games</label></li>
-                    <li><input type="checkbox" name="ResidenceLife-checkbox"><label for="opt-in">Residence Life</label></li>
-                    <li><input type="checkbox" name="StudentLife-checkbox"><label for="opt-in">Student Life</label></li>
+                    <li><input type="checkbox" id="ResidenceLife-checkbox"><label for="opt-in">Residence Life</label></li>
+                    <li><input type="checkbox" id="StudentLife-checkbox"><label for="opt-in">Student Life</label></li>
                 </ul>
             </li>
             <li><input id="check02" type="checkbox" name="menu"/>
             <label id="check2" for="check02">Sports <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id="Sport-Sublist">
-                    <li><input type="checkbox" name="Soccer-checkbox"><label for="opt-in">Soccer</label></li>
-                    <li><input type="checkbox" name="Football-checkbox"><label for="opt-in">Football</label></li>
-                    <li><input type="checkbox" name="Volleyball-checkbox"><label for="opt-in">Volleyball</label></li>
-                    <li><input type="checkbox" name="Hockey-checkbox"><label for="opt-in">Hockey</label></li>
-                    <li><input type="checkbox" name="Baseball-checkbox"><label for="opt-in">Baseball</label></li>
+                    <li><input type="checkbox" id="AllSports-checkbox"><label for="opt-in">All Sports</label></li>
+                    <li><input type="checkbox" id="Soccer-checkbox"><label for="opt-in">Soccer</label></li>
+                    <li><input type="checkbox" id="Football-checkbox"><label for="opt-in">Football</label></li>
+                    <li><input type="checkbox" id="Volleyball-checkbox"><label for="opt-in">Volleyball</label></li>
+                    <li><input type="checkbox" id="Hockey-checkbox"><label for="opt-in">Hockey</label></li>
+                    <li><input type="checkbox" id="Baseball-checkbox"><label for="opt-in">Baseball</label></li>
                 </ul></li>
             <li><input id="check03" type="checkbox" name="menu"/>
             <label id="check3" for="check03">Academic <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id = "Academic-Sublist">
-                    <li><input type="checkbox" name="AccountingClub-checkbox"><label for="opt-in">Accounting Club</label></li>
-                    <li><input type="checkbox" name="ACM-checkbox"><label for="opt-in">Association for Computing Machinery</label></li>
+                    <li><input type="checkbox" id="AllAcademics-checkbox"><label for="opt-in">All Academics</label></li>
+                    <li><input type="checkbox" id="AccountingClub-checkbox"><label for="opt-in">Accounting Club</label></li>
+                    <li><input type="checkbox" id="ACM-checkbox"><label for="opt-in">Association for Computing Machinery</label></li>
                     <li><input type="checkbox" id="GEMS-checkbox"><label for="opt-in">GEMS</label></li>
-                    <li><input type="checkbox" name="SignLanguage-checkbox"><label for="opt-in">Sign Language Club</label></li>
-                    <li><input type="checkbox" name="EngineeringClub-checkbox"><label for="opt-in">Engineering Club</label></li>
+                    <li><input type="checkbox" id="SignLanguage-checkbox"><label for="opt-in">Sign Language Club</label></li>
+                    <li><input type="checkbox" id="EngineeringClub-checkbox"><label for="opt-in">Engineering Club</label></li>
                 </ul></li>
             <li><input id="check04" type="checkbox" name="menu"/>
             <label id="check4" for="check04">Religious <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id = "Religious-Sublist">
-                    <li><input type="checkbox" name="7Thunders-checkbox"><label for="opt-in">7 Thunders Club</label></li>
-                    <li><input type="checkbox" name="FaithLife-checkbox"><label for="opt-in">Faith Life</label></li>
-                    <li><input type="checkbox" name="GrandValleyCM-checkbox"><label for="opt-in">Grand Valley Campus Ministry</label></li>
-                    <li><input type="checkbox" name="MesaCatholic-checkbox"><label for="opt-in">Mesa Catholic Campus Ministry</label></li>
-                    <li><input type="checkbox" name="YoungLife-checkbox"><label for="opt-in">Young Life Grand Valley</label></li>
+                    <li><input type="checkbox" id="AllReligious-checkbox"><label for="opt-in">All Religious</label></li>
+                    <li><input type="checkbox" id="7Thunders-checkbox"><label for="opt-in">7 Thunders Club</label></li>
+                    <li><input type="checkbox" id="FaithLife-checkbox"><label for="opt-in">Faith Life</label></li>
+                    <li><input type="checkbox" id="GrandValleyCM-checkbox"><label for="opt-in">Grand Valley Campus Ministry</label></li>
+                    <li><input type="checkbox" id="MesaCatholic-checkbox"><label for="opt-in">Mesa Catholic Campus Ministry</label></li>
+                    <li><input type="checkbox" id="YoungLife-checkbox"><label for="opt-in">Young Life Grand Valley</label></li>
                 </ul>
             <li><input id="check05" type="checkbox" name="menu"/>
             <label id="check5" for="check05">Other <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id = "Other-Sublist">
-                     <li><input type="checkbox" name="FishWildlife-checkbox"><label for="opt-in">Fish and Wildlife Club</label></li>
-                    <li><input type="checkbox" name="CMUTV-checkbox"><label for="opt-in">CMU-TV Club</label></li>
-                    <li><input type="checkbox" name="Aggies-checkbox"><label for="opt-in">Aggies</label></li>
-                    <li><input type="checkbox" name="CircleK-checkbox"><label for="opt-in">Circle K International</label></li>
-                    <li><input type="checkbox" name="Alumni-checkbox"><label for="opt-in">CMU Alumni Association</label></li>
+                    <li><input type="checkbox" id="AllOther-checkbox"><label for="opt-in">All Other</label></li>
+                     <li><input type="checkbox" id="FishWildlife-checkbox"><label for="opt-in">Fish and Wildlife Club</label></li>
+                    <li><input type="checkbox" id="CMUTV-checkbox"><label for="opt-in">CMU-TV Club</label></li>
+                    <li><input type="checkbox" id="Aggies-checkbox"><label for="opt-in">Aggies</label></li>
+                    <li><input type="checkbox" id="CircleK-checkbox"><label for="opt-in">Circle K International</label></li>
+                    <li><input type="checkbox" id="Alumni-checkbox"><label for="opt-in">CMU Alumni Association</label></li>
                 </ul></li>
         </ul>
     </div>
@@ -159,10 +307,12 @@
                     <div class="date">5</div>
                 </li>
                  <li class="day">
-                    <div class="date">6</div>
-                     <div class="Event">
-                         <div class="Event-Name"><span class="dot"></span>     Frisbee</div>
-                         <div class="Event-Time">1:00 PM - 3:00 PM</div>
+                     <div class="date">6</div>
+                    <div class="Soccer-EVENTS" style = "display: none;">
+                         <div><span class="dot"></span> Men's Soccer Match</div>
+                         <div class="Event-Time">7:00 PM - 9:00 PM</div>
+                         <div class="Event-Location">Walker Field</div>
+                         <div class="Event-Desc">CMU Men's Soccer vs Fort Lewis</div>
                      </div>
                 </li>
             </ul>
@@ -175,14 +325,24 @@
                 </li>
                  <li class="day">
                     <div class="date">9</div>
-                     <div class="Event-Name" id="PAC-EVENTS" style = "display: none;"><span class="dot"></span> PAC</div>
+                     <div class="PAC-EVENTS" style = "display: none;">
+                         <div><span class="dot"></span> PAC Meeting</div>
                          <div class="Event-Time">10:00 AM - 12:00 PM</div>
-                     <div class="Event-Name" id="GEMS-EVENTS" style = "display: none;"><span class="dot"></span> GEMS</div>
-                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
-                       <div class="Event-Name" id="CAB-EVENTS" style = "display: none;"><span class="dot"></span> CAB</div>
-                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
-                     <div class="Event-Name" id="TableTopGames-EVENTS" style = "display: none;"><span class="dot"></span> Table Top Club</div>
-                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
+                         <div class="Event-Location">Escalante 211</div>
+                         <div class="Event-Desc">Discuss Budget</div>
+                     </div>
+                     <div class="GEMS-EVENTS" style = "display: none;">
+                     <div><span class="dot"></span> GEMS Meeting</div>
+                         <div class="Event-Time">5:00 PM - 6:00 PM</div>
+                         <div class="Event-Location">Wubben 137</div>
+                         <div class="Event-Desc">MCAT Prep</div>
+                    </div>
+                     <div class = "CAB-EVENTS" style = "display: none;">
+                       <div><span class="dot"></span> CAB Meeting</div>
+                         <div class="Event-Time">4:00 PM - 4:30 PM</div>
+                         <div class="Event-Location">UC Student Life</div>
+                         <div class="Event-Desc">Vote for Leaders</div>
+                     </div>
                 </li>
                  <li class="day">
                     <div class="date">10</div>
@@ -192,6 +352,8 @@
                 </li>
                  <li class="day">
                     <div class="date">12</div>
+                      <div class="Event-Name" id="TableTopGames-EVENTS" style = "display: none;"><span class="dot"></span> Table Top Club Practice</div>
+                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
                 </li>
                  <li class="day">
                     <div class="date">13</div>
@@ -215,6 +377,12 @@
                 </li>
                  <li class="day">
                     <div class="date">19</div>
+                      <div class="PAC-EVENTS" style = "display: none;">
+                         <div><span class="dot"></span> Flap Jack Friday</div>
+                         <div class="Event-Time">9:00 AM - 11:00 AM</div>
+                         <div class="Event-Location">University Center</div>
+                         <div class="Event-Desc">Free Pancakes to Students!</div>
+                     </div>
                 </li>
                  <li class="day">
                     <div class="date">20</div>
