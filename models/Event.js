@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 const EventSchema = new mongoose.Schema({
-  clubID: {
+  club: {
     type: Number,
     required: true,
     unique: true
@@ -23,10 +23,6 @@ const EventSchema = new mongoose.Schema({
     required: true
   },
   description: {
-    type: String,
-    required: true
-    },
-  location: {
     type: String,
     required: true
     },

@@ -38,22 +38,34 @@
                 <li>Event Name</li>
                 <li>Date</li>
                 <li>Time</li>
+                <!-- <li>Description</li> -->
                 <li>Organization</li>
+
                 <li>Approve</li>
             </ul>
 
             <% for(var i=0; i < events.length; i++) { %>
-            <% var date, name;
-               date = events[i].StartTime;
+            <% var date, name, clubID;
+               dateday = events[i].StartTime.getDate();
+               datemonth = events[i].StartTime.getMonth() + 1;
+               dateyear = events[i].StartTime.getYear();
                name = events[i].name;
                description = events[i].description;
-            %>
+               clubName = clubs.name;
 
+               stimeH = events[i].StartTime.getHours();
+               stimeM = events[i].StartTime.getMinutes();
+               if (stimeM={}) stimeM = ":00";
+               etimeH = events[i].EndTime.getHours();
+               etimeM = events[i].EndTime.getMinutes();
+               if (etimeM={}) etimeM = ":00";
+            %>
             <ul class="AT-Record" id="row-1" >
                 <li><%=name%></li>
-                <li><%=date%></li>
+                <li><%=datemonth + "/" + dateday%></li>
+                <li><%=stimeH + stimeM + " - " + etimeH + etimeM%></li>
                 <li><%=description%></li>
-                <li>PAC</li>
+                <li><%=clubName%></li>
                 <li><input type="checkbox"></li>
             </ul>
             <br>
@@ -61,54 +73,9 @@
             <br>
             <% } %>
 
-            <!-- <ul class="AT-Record" id="row-2">
-                <li>Puppy Petting 2</li>
-                <li><%= blah[i].name%></li>
-
-                <li>07/04/2020</li>
-                <li><%= blah[i].StartTime%></li>
-                <li><%= blah[i].EndTime%></li>
-
-                <li>PAC</li>
-                <li><input type="checkbox"></li>
-            </ul>
-            <br>
-            <br>
-            <br> -->
-
-            <!-- <ul class="AT-Record" id="row-3" >
-                <li>Puppy Petting 3</li>
-                <li>07/04/2020</li>
-                <li>12:00 PM - 1:00 PM</li>
-                <li>PAC</li>
-                <li><input type="checkbox"></li>
-            </ul>
-            <br>
-            <br>
-            <br> -->
-            <!-- <ul class="AT-Record" id="row-4">
-                <li>Puppy Petting 4</li>
-                <li>07/04/2020</li>
-                <li>1:00 PM - 2:00 PM</li>
-                <li>PAC</li>
-                <li><input type="checkbox"></li>
-            </ul> -->
-
-
-            <!-- <p>Event Name</p> <p>description</p> -->
-            <!-- <table>
-              <% for(var i=0; i < blah.length; i++) { %>
-                 <tr>
-                   <td><%= blah[i].name%></td>
-                   <td><%= blah[i].description%></td>
-                 </tr>
-              <% } %>
-            </table> -->
             <button class="button" style="vertical-align:middle" onclick="window.location.href = '/UserApril2019.html';"><span>Submit</span></button>
         </section>
-        <!--End Third Section-->
         <footer>
-
         </footer>
     </div>
 
