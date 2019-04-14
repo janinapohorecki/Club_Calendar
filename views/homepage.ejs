@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="title icon" type="image/png" href="/assets/colorado-mesa-logo.png">
     <link rel="stylesheet" type="text/css" href="/assets/Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src ="/assets/CalanderJS.js"></script>
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
-
+    
     <div id="calendar-wrap">
         <header>
-
+            
             <div class="logo">
             <img src="/assets/colorado-mesa-logo.png">
         </div>
-
+        
         <div class="headtit">
             <h1><span>Club Calendar</span></h1>
             <!--<img src="LoginImages/cce7e979-783a-49da-a126-7bf8855ba52e.png">-->
         </div>
-
+        
         <nav>
-            <a href="/users/login"><button class="button" style="vertical-align:middle"><span> Login or Sign Up </span></button></a>
+            <a href = "/users/login"><button class="button" style="vertical-align:middle"><span> Login or Sign Up </span></button></a>
         </nav>
         </header>
-
+        
     <div id="sidebar">
         <div class="toggle-sidebar" onclick="toggleSidebar()">
             <!--<span></span>
@@ -38,65 +39,71 @@
         </div>
         <h2 class="sidebar-header">Edit View</h2>
         <ul id="Begin-List">
-
+            
             <!--<li class="SocialDropDown">Social <button id="Social-Drop"><i class="fa fa-angle-double-right"></i></button>-->
+            <li><input type="checkbox" id="AllEvents-checkbox"><label for="opt-in">Follow All Events</label></li>
             <li><input id="check01" type="checkbox" name="menu"/>
             <label  id="check1" for="check01">Social <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id="Social-Sublist">
-                    <li><input type="checkbox" name="PAC-checkbox"><label for="opt-in">PAC</label></li>
-                    <li><input type="checkbox" name="CAB-checkbox"><label for="opt-in">CAB</label></li>
-                    <li><input type="checkbox" name="TableTopGames-checkbox"><label for="opt-in">Table Top Games</label></li>
-                    <li><input type="checkbox" name="ResidenceLife-checkbox"><label for="opt-in">Residence Life</label></li>
-                    <li><input type="checkbox" name="StudentLife-checkbox"><label for="opt-in">Student Life</label></li>
+                    <li><input type="checkbox" id="AllSocial-checkbox"><label for="opt-in">All Social</label></li>
+                    <li><input type="checkbox" id="PAC-checkbox"><label for="opt-in">PAC</label></li>
+                    <li><input type="checkbox" id="CAB-checkbox"><label for="opt-in">CAB</label></li>
+                    <li><input type="checkbox" id="TableTopGames-checkbox"><label for="opt-in">Table Top Games</label></li>
+                    <li><input type="checkbox" id="ResidenceLife-checkbox"><label for="opt-in">Residence Life</label></li>
+                    <li><input type="checkbox" id="StudentLife-checkbox"><label for="opt-in">Student Life</label></li>
                 </ul>
             </li>
             <li><input id="check02" type="checkbox" name="menu"/>
             <label id="check2" for="check02">Sports <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id="Sport-Sublist">
-                    <li><input type="checkbox" name="Soccer-checkbox"><label for="opt-in">Soccer</label></li>
-                    <li><input type="checkbox" name="Football-checkbox"><label for="opt-in">Football</label></li>
-                    <li><input type="checkbox" name="Volleyball-checkbox"><label for="opt-in">Volleyball</label></li>
-                    <li><input type="checkbox" name="Hockey-checkbox"><label for="opt-in">Hockey</label></li>
-                    <li><input type="checkbox" name="Baseball-checkbox"><label for="opt-in">Baseball</label></li>
+                    <li><input type="checkbox" id="AllSports-checkbox"><label for="opt-in">All Sports</label></li>
+                    <li><input type="checkbox" id="Soccer-checkbox"><label for="opt-in">Soccer</label></li>
+                    <li><input type="checkbox" id="Football-checkbox"><label for="opt-in">Football</label></li>
+                    <li><input type="checkbox" id="Volleyball-checkbox"><label for="opt-in">Volleyball</label></li>
+                    <li><input type="checkbox" id="Hockey-checkbox"><label for="opt-in">Hockey</label></li>
+                    <li><input type="checkbox" id="Baseball-checkbox"><label for="opt-in">Baseball</label></li>
                 </ul></li>
             <li><input id="check03" type="checkbox" name="menu"/>
             <label id="check3" for="check03">Academic <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id = "Academic-Sublist">
-                    <li><input type="checkbox" name="AccountingClub-checkbox"><label for="opt-in">Accounting Club</label></li>
-                    <li><input type="checkbox" name="ACM-checkbox"><label for="opt-in">Association for Computing Machinery</label></li>
-                    <li><input type="checkbox" name="GEMS-checkbox"><label for="opt-in">GEMS</label></li>
-                    <li><input type="checkbox" name="SignLanguage-checkbox"><label for="opt-in">Sign Language Club</label></li>
-                    <li><input type="checkbox" name="EngineeringClub-checkbox"><label for="opt-in">Engineering Club</label></li>
+                    <li><input type="checkbox" id="AllAcademics-checkbox"><label for="opt-in">All Academics</label></li>
+                    <li><input type="checkbox" id="AccountingClub-checkbox"><label for="opt-in">Accounting Club</label></li>
+                    <li><input type="checkbox" id="ACM-checkbox"><label for="opt-in">Association for Computing Machinery</label></li>
+                    <li><input type="checkbox" id="GEMS-checkbox"><label for="opt-in">GEMS</label></li>
+                    <li><input type="checkbox" id="SignLanguage-checkbox"><label for="opt-in">Sign Language Club</label></li>
+                    <li><input type="checkbox" id="EngineeringClub-checkbox"><label for="opt-in">Engineering Club</label></li>
                 </ul></li>
             <li><input id="check04" type="checkbox" name="menu"/>
             <label id="check4" for="check04">Religious <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id = "Religious-Sublist">
-                    <li><input type="checkbox" name="7Thunders-checkbox"><label for="opt-in">7 Thunders Club</label></li>
-                    <li><input type="checkbox" name="FaithLife-checkbox"><label for="opt-in">Faith Life</label></li>
-                    <li><input type="checkbox" name="GrandValleyCM-checkbox"><label for="opt-in">Grand Valley Campus Ministry</label></li>
-                    <li><input type="checkbox" name="MesaCatholic-checkbox"><label for="opt-in">Mesa Catholic Campus Ministry</label></li>
-                    <li><input type="checkbox" name="YoungLife-checkbox"><label for="opt-in">Young Life Grand Valley</label></li>
+                    <li><input type="checkbox" id="AllReligious-checkbox"><label for="opt-in">All Religious</label></li>
+                    <li><input type="checkbox" id="7Thunders-checkbox"><label for="opt-in">7 Thunders Club</label></li>
+                    <li><input type="checkbox" id="FaithLife-checkbox"><label for="opt-in">Faith Life</label></li>
+                    <li><input type="checkbox" id="GrandValleyCM-checkbox"><label for="opt-in">Grand Valley Campus Ministry</label></li>
+                    <li><input type="checkbox" id="MesaCatholic-checkbox"><label for="opt-in">Mesa Catholic Campus Ministry</label></li>
+                    <li><input type="checkbox" id="YoungLife-checkbox"><label for="opt-in">Young Life Grand Valley</label></li>
                 </ul>
             <li><input id="check05" type="checkbox" name="menu"/>
             <label id="check5" for="check05">Other <i class="fas fa-angle-down" id ="down-carrot"></i></label>
                 <ul id = "Other-Sublist">
-                     <li><input type="checkbox" name="FishWildlife-checkbox"><label for="opt-in">Fish and Wildlife Club</label></li>
-                    <li><input type="checkbox" name="CMUTV-checkbox"><label for="opt-in">CMU-TV Club</label></li>
-                    <li><input type="checkbox" name="Aggies-checkbox"><label for="opt-in">Aggies</label></li>
-                    <li><input type="checkbox" name="CircleK-checkbox"><label for="opt-in">Circle K International</label></li>
-                    <li><input type="checkbox" name="Alumni-checkbox"><label for="opt-in">CMU Alumni Association</label></li>
+                    <li><input type="checkbox" id="AllOther-checkbox"><label for="opt-in">All Other</label></li>
+                     <li><input type="checkbox" id="FishWildlife-checkbox"><label for="opt-in">Fish and Wildlife Club</label></li>
+                    <li><input type="checkbox" id="CMUTV-checkbox"><label for="opt-in">CMU-TV Club</label></li>
+                    <li><input type="checkbox" id="Aggies-checkbox"><label for="opt-in">Aggies</label></li>
+                    <li><input type="checkbox" id="CircleK-checkbox"><label for="opt-in">Circle K International</label></li>
+                    <li><input type="checkbox" id="Alumni-checkbox"><label for="opt-in">CMU Alumni Association</label></li>
                 </ul></li>
         </ul>
     </div>
-
+        
         <div id="calendar">
             <div class="Top-Cal">
                 <button class="button" style="vertical-align:middle" onclick="window.location.href = '/March2019.html';"> <i class="arrow left"></i>   </button>
-
+                
                 <h2>April</h2>
-
+                
                 <button class="button" style="vertical-align:middle" onclick="window.location.href = '/May2019.html';">    <i class="arrow right"></i>   </button>
-
+                
                 </div>
             <div class="parent">
                     <span class="itemleft">
@@ -105,7 +112,7 @@
                    <span class="itemright">
                         <button class="bs">Month</button>
                        </span>
-
+            
             </div>
             <ul class="weekdays">
                 <li>Sunday</li>
@@ -135,14 +142,16 @@
                     <div class="date">5</div>
                 </li>
                  <li class="day">
-                    <div class="date">6</div>
-                     <div class="Event">
-                         <div class="Event-Name"><span class="dot"></span>     Frisbee</div>
-                         <div class="Event-Time">1:00 PM - 3:00 PM</div>
+                     <div class="date">6</div>
+                    <div class="Soccer-EVENTS" style = "display: none;">
+                         <div><span class="dot"></span> Men's Soccer Match</div>
+                         <div class="Event-Time">7:00 PM - 9:00 PM</div>
+                         <div class="Event-Location">Walker Field</div>
+                         <div class="Event-Desc">CMU Men's Soccer vs Fort Lewis</div>
                      </div>
                 </li>
             </ul>
-
+            
             <ul class="days"> <!-- Week 2 -->
                 <li class="day">
                     <div class="date">7</div>
@@ -151,8 +160,24 @@
                 </li>
                  <li class="day">
                     <div class="date">9</div>
-                     <div class="Event-Name"><span class="dot"></span> PAC</div>
+                     <div class="PAC-EVENTS" style = "display: none;">
+                         <div><span class="dot"></span> PAC Meeting</div>
                          <div class="Event-Time">10:00 AM - 12:00 PM</div>
+                         <div class="Event-Location">Escalante 211</div>
+                         <div class="Event-Desc">Discuss Budget</div>
+                     </div>
+                     <div class="GEMS-EVENTS" style = "display: none;">
+                     <div><span class="dot"></span> GEMS Meeting</div>
+                         <div class="Event-Time">5:00 PM - 6:00 PM</div>
+                         <div class="Event-Location">Wubben 137</div>
+                         <div class="Event-Desc">MCAT Prep</div>
+                    </div>
+                     <div class = "CAB-EVENTS" style = "display: none;">
+                       <div><span class="dot"></span> CAB Meeting</div>
+                         <div class="Event-Time">4:00 PM - 4:30 PM</div>
+                         <div class="Event-Location">UC Student Life</div>
+                         <div class="Event-Desc">Vote for Leaders</div>
+                     </div>
                 </li>
                  <li class="day">
                     <div class="date">10</div>
@@ -162,12 +187,14 @@
                 </li>
                  <li class="day">
                     <div class="date">12</div>
+                      <div class="Event-Name" id="TableTopGames-EVENTS" style = "display: none;"><span class="dot"></span> Table Top Club Practice</div>
+                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
                 </li>
                  <li class="day">
                     <div class="date">13</div>
                 </li>
             </ul>
-
+            
             <ul class="days"> <!-- Week 3 -->
                 <li class="day">
                     <div class="date">14</div>
@@ -185,12 +212,18 @@
                 </li>
                  <li class="day">
                     <div class="date">19</div>
+                      <div class="PAC-EVENTS" style = "display: none;">
+                         <div><span class="dot"></span> Flap Jack Friday</div>
+                         <div class="Event-Time">9:00 AM - 11:00 AM</div>
+                         <div class="Event-Location">University Center</div>
+                         <div class="Event-Desc">Free Pancakes to Students!</div>
+                     </div>
                 </li>
                  <li class="day">
                     <div class="date">20</div>
                 </li>
             </ul>
-
+            
             <ul class="days"> <!-- Week 4 -->
                 <li class="day">
                     <div class="date">21</div>
@@ -213,7 +246,7 @@
                     <div class="date">27</div>
                 </li>
             </ul>
-
+            
              <ul class="days"> <!-- Week 4 -->
                 <li class="day">
                     <div class="date">21</div>
@@ -236,7 +269,7 @@
                     <div class="date">27</div>
                 </li>
             </ul>
-
+            
              <ul class="days"> <!-- Week 5 -->
                 <li class="day">
                     <div class="date">28</div>
@@ -259,37 +292,14 @@
                     <div class="date">4</div>
                 </li>
             </ul>
-
-           <!-- <ul class="days">  Week 6 
-                <li class="day-other-month">
-                    <div class="date">5</div>
-                <li class="day-other-month">
-                    <div class="date">6</div>
-                </li>
-                 <li class="day-other-month">
-                    <div class="date">7</div>
-                </li>
-                 <li class="day-other-month">
-                    <div class="date">8</div>
-                </li>
-                 <li class="day-other-month">
-                    <div class="date">9</div>
-                </li>
-                 <li class="day-other-month">
-                    <div class="date">10</div>
-                </li>
-                 <li class="day-other-month">
-                    <div class="date">11</div>
-                </li>
-            </ul> -->
-
-        </div><!-- End Calendar -->
+            
+         </div><!-- End Calendar -->
     </div> <!-- End Calendar Wrap -->
     <div id="bg-right"></div>
     <div id="bg-left"></div>
     <div id="bg-top"></div>
     <footer>
-
+            
     </footer>
 </body>
 </html>
