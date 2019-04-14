@@ -5,12 +5,11 @@ const mongoose = require('mongoose');
 const EventSchema = new mongoose.Schema({
   club: {
     type: String,
-    required: true,
+    required: true
   },
   userID: {
     type: Number,
-    required: true,
-    unique: true
+    required: true
   },
   eventID: {
     type: Number,

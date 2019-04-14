@@ -7,6 +7,8 @@ const Event = require('../models/Event');
 
 // Create Event Page
 router.get('/createevent', (req, res) => res.render('createevent'));
+
+router.get('/successfulEvent', (req, res) => res.render('successfulEvent'));
 // Create event
 router.post('/createevent', (req, res) => {
   const { club, userID, eventID, name, description, location, date, startTime, endTime, Approved } = req.body;
@@ -24,7 +26,7 @@ router.post('/createevent', (req, res) => {
       var currentDate = new Date();
       var check = new Date();
       check.setDate(d1.getDate()-1);
-      
+
     // Checking if the dates/times are correct
     if (check < currentDate) {
       errors.push({ msg: 'You must create an event at least one day in advance' });
@@ -51,15 +53,15 @@ router.post('/createevent', (req, res) => {
   if (errors.length > 0) {
     res.render('createevent', {
       errors,
-      club, 
-      userID, 
-      eventID, 
-      name, 
+      club,
+      userID,
+      eventID,
+      name,
       description,
       location,
-      date, 
+      date,
       startTime,
-      endTime, 
+      endTime,
       Approved
     });
   } else {
@@ -68,27 +70,27 @@ router.post('/createevent', (req, res) => {
         errors.push({ msg: 'Event already exists' });
         res.render('createevent', {
           errors,
-          club, 
-          userID, 
-          eventID, 
-          name, 
+          club,
+          userID,
+          eventID,
+          name,
           description,
           location,
-          date, 
+          date,
           startTime,
-          endTime, 
+          endTime,
           Approved
         });
       } else {
         const newEvent = new Event({
-          club, 
-          userID, 
-          eventID, 
-          name, 
+          club,
+          userID,
+          eventID,
+          name,
           description,
-          location, 
-          StartTime, 
-          EndTime, 
+          location,
+          StartTime,
+          EndTime,
           Approved
         });
 
@@ -101,7 +103,7 @@ router.post('/createevent', (req, res) => {
               'Your event was submitted and is waiting for approval'
             );
             // Redirecting user to login page!
-            res.redirect('/dashboard'); // Should redirect back to calendar
+            res.render('/successfulEvent'); // Should redirect back to calendar
           })
           .catch(err => console.log(err));
       }
