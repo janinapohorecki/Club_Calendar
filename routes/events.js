@@ -102,8 +102,8 @@ router.post('/createevent', (req, res) => {
               'success_msg',
               'Your event was submitted and is waiting for approval'
             );
-            // Redirecting user to login page!
-            res.render('successfulEvent'); // Should redirect back to calendar
+            
+            res.render('successfulEvent'); // Redirects to success page
           })
           .catch(err => console.log(err));
       }
