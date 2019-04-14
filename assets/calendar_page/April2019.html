@@ -19,17 +19,30 @@
 /* End "All" Toggles */
         
 /* Start Social Toggles */
-       /* $(document).ready(function(){
+       /*$(document).ready(function(){
   $("#PAC-checkbox").click(function(){
     $(".PAC-EVENTS").toggle();
+      alert('MATT YESSS');
   });
 });*/
         
-        $(document).ready(function(){
-  if ($('input.checkbox_check').is(':checked')) {(function(){
-    $(".PAC-EVENTS").toggle();
-  });
-});
+    /*     $(document).ready(function(){
+  if($('#PAC-checkbox').prop("checked") == true){
+      alert("Checkbox is checked.");
+  }
+  else if($(this).prop("checked") == false)
+  {
+      alert("Checkbox is unchecked.");
+  }
+  });*/
+      
+  if(($('#PAC-checkbox').prop('checked')) {
+    $('.PAC-EVENTS').show();
+      alert('MATT IT IS TRYING');
+  } else {
+    $('.PAC_EVENTS').hide();
+  }
+        
         $(document).ready(function(){
   $("#CAB-checkbox").click(function(){
     $(".CAB-EVENTS").toggle();
@@ -172,6 +185,16 @@ $(document).ready(function(){
 });
 /* End Other Toggles */
     </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+            if($('#PAC-checkbox').is(":checked")){
+                alert("Checkbox is checked.");
+            }
+            else if($('#PAC-checkbox').is(":not(:checked)")){
+                alert("Checkbox is unchecked.");
+            }
+    });
+</script>
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
