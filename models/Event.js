@@ -38,8 +38,8 @@ const EventSchema = new mongoose.Schema({
     },
   Approved: {
     type: Boolean,
-    required: false,
-    default: true
+    required: true,
+    default: false
     }
 });
 
