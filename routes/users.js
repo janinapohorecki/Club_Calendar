@@ -6,9 +6,6 @@ const passport = require('passport');
 const User = require('../models/User');
 const { forwardAuthenticated } = require('../config/auth');
 
-// Clicking Login/SignUp Page
-// router.get('/login', r)
-
 // Login Page
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 
@@ -91,21 +88,6 @@ router.post('/login', (req, res, next) => {
     failureFlash: true
   })(req, res, next);
 });
-
-/*
-// Testing unique user page with name displayed
-router.post('/dashboard', function(req, res, next) {
-  passport.authenticate('local', function(err, user, info) {
-    if (err) { return next(err); }
-    if (!user) { res.render('/users/login'); }
-    req.logIn(user, function(err) {
-      if (err) { return next(err); }
-      res.render('/dashboard', {Display_Name: 'Terry'});
-    });
-  })(req, res, next);
-});
-*/
-
 
 // Logout
 router.get('/logout', (req, res) => {
