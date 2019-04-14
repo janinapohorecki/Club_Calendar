@@ -8,7 +8,7 @@ const ClubSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  name: {
+  Clubname: {
     type: String,
     required: true
   },

@@ -1,12 +1,13 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Club Calendar</title>
-    <link rel="stylesheet" type="text/css" href="/assets/Style.css">
      <link rel="title icon" type="image/png" href="/assets/colorado-mesa-logo.png">
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/calendar_page/Style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/Style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -20,68 +21,8 @@
             <h1><span>Club Calendar</span></h1>
         </div>
 
-
         <nav>
-            <a href="/dashboard"><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calender  </span></button></a>
-        </nav>
-
-    </header>
-    <body>
-      <p>Event Name</p> <p>description</p>
-      <table>
-        <% for(var i=0; i < blah.length; i++) { %>
-           <tr>
-             <td><%= blah[i].name%></td>
-             <td><%= blah[i].description%></td>
-           </tr>
-        <% } %>
-      </table>
-  </body>
-
-        <footer>
-
-        </footer>
-    </div>
-
-    <div id="bg-right"></div>
-    <div id="bg-left"></div>
-    <div id="bg-top"></div>
-
-</body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Club Calendar</title>
-    <!-- <link rel="stylesheet" type="text/css" href="Style.css">
-     <link rel="title icon" type="image/png" href="CalImages/colorado-mesa-logo.png">
-    <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
-     <link rel="title icon" type="image/png" href="/assets/colorado-mesa-logo.png">
-    <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/calendar_page/Style.css">
-    <link rel="stylesheet" type="text/css" href="/assets/Style.css">
-
-
-</head>
-
-<body>
-    <div class="wrapper">
-    <header>
-
-        <div class="logo">
-            <img src="CalImages/colorado-mesa-logo.png">
-        </div>
-
-        <div class="headtit">
-            <h1><span>Club Calendar</span></h1>
-            <!--<img src="LoginImages/cce7e979-783a-49da-a126-7bf8855ba52e.png">-->
-        </div>
-
-        <nav>
-            <button class="button" style="vertical-align:middle" onclick="window.location.href = '/April2019.html';"><span> <i class="arrow left"></i> Back to Calander  </span></button>
+            <a href='/dashboard'><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calander  </span></button></a>
         </nav>
 
         </header>
@@ -97,36 +38,32 @@
                 <li>Event Name</li>
                 <li>Date</li>
                 <li>Time</li>
+                <!-- <li>Description</li> -->
                 <li>Organization</li>
+
                 <li>Approve</li>
             </ul>
 
-            <% for(var i=0; i < blah.length; i++) { %>
-            <% var date;
-               date = blah[i].StartTime;
+            <% for(var i=0; i < events.length; i++) { %>
+            <% 
+               dateday = events[i].StartTime.getDate();
+               datemonth = events[i].StartTime.getMonth() + 1;
+               dateyear = events[i].StartTime.getYear();
+               name = events[i].name;
+               clubName = events[i].club;
+
+               stimeH = events[i].StartTime.getHours();
+               stimeM = events[i].StartTime.getMinutes();
+               if (stimeM={}) stimeM = ":00";
+               etimeH = events[i].EndTime.getHours();
+               etimeM = events[i].EndTime.getMinutes();
+               if (etimeM={}) etimeM = ":00";
             %>
-
             <ul class="AT-Record" id="row-1" >
-                <li>Puppy Petting</li>
-                <li><%=date%></li>
-
-                <!-- <li>80/04/2020</li> -->
-                <li>10:00 AM - 11:00 AM</li>
-                <li>PAC</li>
-                <li><input type="checkbox"></li>
-            </ul>
-            <br>
-            <br>
-            <br>
-            <ul class="AT-Record" id="row-2">
-                <!-- <li>Puppy Petting 2</li> -->
-                <li><%= blah[i].name%></li>
-
-                <li>07/04/2020</li>
-                <li><%= blah[i].StartTime%></li>
-                <li><%= blah[i].EndTime%></li>
-
-                <li>PAC</li>
+                <li><%=name%></li>
+                <li><%=datemonth + "/" + dateday%></li>
+                <li><%=stimeH + stimeM + " - " + etimeH + etimeM%></li>
+                <li><%=clubName%></li>
                 <li><input type="checkbox"></li>
             </ul>
             <br>
@@ -134,39 +71,9 @@
             <br>
             <% } %>
 
-            <ul class="AT-Record" id="row-3" >
-                <li>Puppy Petting 3</li>
-                <li>07/04/2020</li>
-                <li>12:00 PM - 1:00 PM</li>
-                <li>PAC</li>
-                <li><input type="checkbox"></li>
-            </ul>
-            <br>
-            <br>
-            <br>
-            <!-- <ul class="AT-Record" id="row-4">
-                <li>Puppy Petting 4</li>
-                <li>07/04/2020</li>
-                <li>1:00 PM - 2:00 PM</li>
-                <li>PAC</li>
-                <li><input type="checkbox"></li>
-            </ul> -->
-
-
-            <p>Event Name</p> <p>description</p>
-            <table>
-              <% for(var i=0; i < blah.length; i++) { %>
-                 <tr>
-                   <td><%= blah[i].name%></td>
-                   <td><%= blah[i].description%></td>
-                 </tr>
-              <% } %>
-            </table>
-            <button class="button" style="vertical-align:middle" onclick="window.location.href = '/UserApril2019.html';"><span>Submit</span></button>
+            <a href='/dashboard'><button class="button" style="vertical-align:middle"><span>Submit</span></button></a>
         </section>
-        <!--End Third Section-->
         <footer>
-
         </footer>
     </div>
 

@@ -9,11 +9,11 @@ const Event = require('../models/Event');
 router.get('/createevent', (req, res) => res.render('createevent'));
 // Create event
 router.post('/createevent', (req, res) => {
-  const { clubID, userID, eventID, name, description, location, date, startTime, endTime, Approved } = req.body;
+  const { club, userID, eventID, name, description, location, date, startTime, endTime, Approved } = req.body;
   console.log(req.body);
   let errors = [];
 
-  if (!clubID || !userID || !eventID || !name || !description || !location || !date || !startTime || !endTime) {
+  if (!club || !userID || !eventID || !name || !description || !location || !date || !startTime || !endTime) {
     errors.push({ msg: 'Please enter all fields' });
   }
   else {
@@ -51,7 +51,7 @@ router.post('/createevent', (req, res) => {
   if (errors.length > 0) {
     res.render('createevent', {
       errors,
-      clubID, 
+      club, 
       userID, 
       eventID, 
       name, 
@@ -68,7 +68,7 @@ router.post('/createevent', (req, res) => {
         errors.push({ msg: 'Event already exists' });
         res.render('createevent', {
           errors,
-          clubID, 
+          club, 
           userID, 
           eventID, 
           name, 
@@ -81,7 +81,7 @@ router.post('/createevent', (req, res) => {
         });
       } else {
         const newEvent = new Event({
-          clubID, 
+          club, 
           userID, 
           eventID, 
           name, 

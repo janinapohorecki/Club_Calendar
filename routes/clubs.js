@@ -10,11 +10,11 @@ router.get('/createclub', (req, res) => res.render('createclub'));
 
 // Create club
 router.post('/createclub', (req, res) => {
-  const { clubID, name, clubType, clubEmail, followers } = req.body;
+  const { clubID, Clubname, clubType, clubEmail, followers } = req.body;
   console.log(req.body);
   let errors = [];
 
-  if (!clubID || !name || !clubType || !clubEmail) {
+  if (!clubID || !Clubname || !clubType || !clubEmail) {
     errors.push({ msg: 'Please enter all fields' });
   }
   
@@ -22,7 +22,7 @@ router.post('/createclub', (req, res) => {
     res.render('createclub', {
       errors,
       clubID,
-      name,
+      Clubname,
       clubType,
       clubEmail,
       followers 
@@ -34,7 +34,7 @@ router.post('/createclub', (req, res) => {
         res.render('createclub', {
           errors,
           clubID,
-          name,
+          Clubname,
           clubType,
           clubEmail,
           followers 
@@ -42,7 +42,7 @@ router.post('/createclub', (req, res) => {
       } else {
         const newClub = new Club({
           clubID,
-          name,
+          Clubname,
           clubType,
           clubEmail,
           followers 
@@ -57,7 +57,7 @@ router.post('/createclub', (req, res) => {
               'Club added'
             );
             // Redirecting user to login page!
-            res.redirect('createclub'); // Should redirect back to calendar
+            res.redirect('/dashboard'); // Should redirect back to calendar
           })
           .catch(err => console.log(err));
       }
