@@ -22,7 +22,7 @@
         </div>
 
         <nav>
-            <button class="button" style="vertical-align:middle" onclick="window.location.href = '/April2019.html';"><span> <i class="arrow left"></i> Back to Calander  </span></button>
+            <a href='/dashboard'><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calander  </span></button></a>
         </nav>
 
         </header>
@@ -45,13 +45,13 @@
             </ul>
 
             <% for(var i=0; i < events.length; i++) { %>
-            <% var date, name, clubID;
+            <% 
                dateday = events[i].StartTime.getDate();
                datemonth = events[i].StartTime.getMonth() + 1;
                dateyear = events[i].StartTime.getYear();
                name = events[i].name;
                description = events[i].description;
-               clubName = clubs.name;
+               clubName = events[i].club;
 
                stimeH = events[i].StartTime.getHours();
                stimeM = events[i].StartTime.getMinutes();
@@ -64,8 +64,8 @@
                 <li><%=name%></li>
                 <li><%=datemonth + "/" + dateday%></li>
                 <li><%=stimeH + stimeM + " - " + etimeH + etimeM%></li>
-                <li><%=description%></li>
                 <li><%=clubName%></li>
+                <li><%=description%></li>
                 <li><input type="checkbox"></li>
             </ul>
             <br>

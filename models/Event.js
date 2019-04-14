@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const EventSchema = new mongoose.Schema({
   club: {
-    type: Number,
+    type: String,
     required: true,
     unique: true
   },

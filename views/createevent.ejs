@@ -34,13 +34,13 @@
             <%- include ./partials/messages %>
             <form action="/events/createevent" method="POST">
                 <div class="form-group">
-                <label for="clubID">Club ID</label>
+                <label for="club">Club</label>
                 <input
-                    type="clubID"
-                    id="clubID"
-                    name="clubID"
+                    type="club"
+                    id="club"
+                    name="club"
                     class="form-control"
-                    value="<%= typeof clubID != 'undefined' ? clubID : '' %>"
+                    value="<%= typeof club != 'undefined' ? club : '' %>"
                 />
                 </div>
                 <div class="form-group">
