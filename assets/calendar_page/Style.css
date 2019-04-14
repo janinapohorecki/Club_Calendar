@@ -322,6 +322,20 @@ nav i {
     border-radius: 30px;
 }
 
+#calendar .AEvent {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+
 #calendar .PAC-EVENTS {
     clear: both;
     display: block;
@@ -335,6 +349,323 @@ nav i {
     line-height:14px;
     background: transparent;
 }
+
+#calendar .CAB-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+
+#calendar .TableTopGames-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+
+#calendar .ResidenceLife-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .StudentLife-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .Soccer-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .Football-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .Volleyball-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .Hockey-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .Baseball-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .AccountingClub-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .ACM-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+
+#calendar .GEMS-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .SignLanguage-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .EngineeringClub-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .\7Thunders-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .FaithLife-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .GrandValleyCM-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .YoungLife-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .MesaCatholic-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .FishWildlife-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .CMUTV-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .Aggies-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .CircleK-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+#calendar .Alumni-EVENTS {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    font-style: bold;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height:14px;
+    background: transparent;
+}
+
 
 
 
@@ -396,6 +727,13 @@ nav i {
 #sidebar #Begin-List {
     max-height: 600px;
     overflow-y: scroll;
+}
+
+#sidebar li {
+    color: #000;
+    list-style: none;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
 }
 
 #sidebar ul li {
@@ -531,6 +869,14 @@ ul#Other-Sublist {
 }
 
 #sidebar ul li ul li input {
+    position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+#sidebar input {
     position: relative;
   cursor: pointer;
   height: 15px;
