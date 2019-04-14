@@ -19,8 +19,8 @@ router.post('/createevent', (req, res) => {
   else {
       var d1 = new Date(Date.parse(date+"T"+startTime));
       var d2 = new Date(Date.parse(date+"T"+endTime));
-      d1.setHours(d1.getHours()-5);
-      d2.setHours(d2.getHours()-5);
+      d1.setHours(d1.getHours()-5.5);
+      d2.setHours(d2.getHours()-5.5);
       var currentDate = new Date();
       var check = new Date();
       check.setDate(d1.getDate()-1);
