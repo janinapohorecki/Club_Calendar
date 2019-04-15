@@ -11,11 +11,11 @@ router.get('/createevent', (req, res) => res.render('createevent'));
 router.get('/successfulEvent', (req, res) => res.render('successfulEvent'));
 // Create event
 router.post('/createevent', (req, res) => {
-  const { club, userID, eventID, name, description, location, date, startTime, endTime, Approved } = req.body;
+  const { club, name, description, location, date, startTime, endTime, Approved } = req.body;
   console.log(req.body);
   let errors = [];
 
-  if (!club || !userID || !eventID || !name || !description || !location || !date || !startTime || !endTime) {
+  if (!club || !name || !description || !location || !date || !startTime || !endTime) {
     errors.push({ msg: 'Please enter all fields' });
   }
   else {
@@ -54,8 +54,6 @@ router.post('/createevent', (req, res) => {
     res.render('createevent', {
       errors,
       club,
-      userID,
-      eventID,
       name,
       description,
       location,
@@ -65,14 +63,12 @@ router.post('/createevent', (req, res) => {
       Approved
     });
   } else {
-    Event.findOne({ eventID: eventID }).then(event => { // mongoose method that finds one user
+    Event.findOne({ name: name }).then(event => { // mongoose method that finds one user
       if (event) {
         errors.push({ msg: 'Event already exists' });
         res.render('createevent', {
           errors,
           club,
-          userID,
-          eventID,
           name,
           description,
           location,
@@ -84,8 +80,6 @@ router.post('/createevent', (req, res) => {
       } else {
         const newEvent = new Event({
           club,
-          userID,
-          eventID,
           name,
           description,
           location,

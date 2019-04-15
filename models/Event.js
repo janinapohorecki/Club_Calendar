@@ -7,15 +7,6 @@ const EventSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  userID: {
-    type: Number,
-    required: true
-  },
-  eventID: {
-    type: Number,
-    required: true,
-    unique: true
-  },
   name: {
     type: String,
     required: true
