@@ -21,8 +21,6 @@ router.post('/createevent', (req, res) => {
   else {
       var d1 = new Date(Date.parse(date+"T"+startTime));
       var d2 = new Date(Date.parse(date+"T"+endTime));
-      d1.setHours(d1.getHours()-5.5);
-      d2.setHours(d2.getHours()-5.5);
       var currentDate = new Date();
       var check = new Date();
       check.setDate(d1.getDate()-1);
@@ -47,6 +45,8 @@ router.post('/createevent', (req, res) => {
   }
 
   // Prepares dates for submission
+  if(d1.getHours()>=13) d1.setHours(d1.getHours()-12);
+  if(d2.getHours()>=13) d2.setHours(d2.getHours()-12);
   var StartTime=d1;
   var EndTime=d2;
 
@@ -97,7 +97,7 @@ router.post('/createevent', (req, res) => {
               'Your event was submitted and is waiting for approval'
             );
             
-            res.render('successfulEvent'); // Redirects to success page
+            res.render('successfulEvent', {event : newEvent}); // Redirects to success page
           })
           .catch(err => console.log(err));
       }

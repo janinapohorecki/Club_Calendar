@@ -26,7 +26,15 @@
         </nav>
 
         </header>
+                <h1>Thanks for submitting your event!</h1>
+                <ul>
+                    <li>Club: <%=event.club%></li>
+                    <li>Event name: <%=event.name%></li>
+                    <li>Description: <%=event.description%></li>
+                    <li>Location: <%=event.location%></li>
+                    <li>Date and Time: <%=event.StartTime.getMonth() + "/" + event.StartTime.getDate() + " " + event.StartTime.getHours() + ":" + event.StartTime.getMinutes() + " - " + event.EndTime.getHours() + ":" + event.EndTime.getMinutes()%></li>
+                </ul>
 
-        <h1>You have successfully added an event!</h1>
+
 </body>
 </html>
