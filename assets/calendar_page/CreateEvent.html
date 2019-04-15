@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Club Calendar</title>
-    <link rel="stylesheet" type="text/css" href="/assets/Style.css">
-     <link rel="title icon" type="image/png" href="/assets/colorado-mesa-logo.png">
+    <link rel="title icon" type="image/png" href="CalImages/colorado-mesa-logo.png">
+    <link rel="stylesheet" type="text/css" href="Style.css">
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
@@ -31,7 +30,7 @@
         <section class="CreateEvent-Section">
 
             <h1>Enter the event details</h1>
-            <%- include ./partials/messages %>
+            <!--<%- include ./partials/messages %>-->
             <form action="/events/createevent" method="POST">
                 <div class="form-group">
                 <label for="club" id = "ClubLabel">Club</label>
@@ -55,7 +54,6 @@
                         id="startTime"
                         name="startTime"
                         class="form-control"
-                        value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
                     /> 
                 </div>
                 <div class="form-group">
