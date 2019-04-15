@@ -54,6 +54,8 @@
                         type="time"
                         id="startTime"
                         name="startTime"
+                        value="12:00"
+                        step="900"
                         class="form-control"
                         value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
                     /> 
@@ -64,6 +66,8 @@
                         type="time"
                         id="endTime"
                         name="endTime"
+                        value="13:00"
+                        step="900"
                         class="form-control"
                     />
                   </div>
@@ -105,13 +109,14 @@
                   <input
                       type="date"
                       id="date"
+                      value="2019-04-01"
                       name="date"
                       class="form-control"
                   />
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" id="cancelBtn">
+                <a href='/dashboard'><button type="button" class="btn btn-primary btn-block" id="cancelBtn">
                 Cancel X
-                </button>
+                </button></a>
                 <button type="submit" class="btn btn-primary btn-block">
                 Submit for Approval
                 </button>
