@@ -1304,13 +1304,14 @@ section.CreateAccount-Section button {
     margin-left: 25%;
     margin-top: -12%;
     border-radius: 8px;
-    padding: 8px;
-    padding-bottom: 13px;
-    width: 190px;
+    /*padding: 8px;*/
+    /*padding-bottom: 13px;*/
+    width: 233px;
+    height: 41px;
     font-size: 17px;
     font-family: "Quicksand", serif;
     border: 2px inset #EBE9ED;
-    
+    text-align: center;
 }
 
 .CreateEvent-Section #NameLabel {

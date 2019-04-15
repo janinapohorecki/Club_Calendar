@@ -1304,13 +1304,14 @@ section.CreateAccount-Section button {
     margin-left: 25%;
     margin-top: -12%;
     border-radius: 8px;
-    padding: 8px;
+    /*padding: 8px;*/
     padding-bottom: 13px;
     width: 190px;
+    height: 43px
     font-size: 17px;
     font-family: "Quicksand", serif;
     border: 2px inset #EBE9ED;
-    
+    text-align: center;
 }
 
 .CreateEvent-Section #NameLabel {
@@ -1455,6 +1456,19 @@ margin-top: .9%;
 
 .CreateEvent-Section #cancelBtn:hover {
     background-color: #a0aaa1;
+}
+
+.CreateEvent-Section select#club:after {
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #0ebeff;
+    right: 11px;
+    top: 6px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer-events: none;
 }
 
 /* End Create Event Page */
