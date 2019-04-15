@@ -15,7 +15,7 @@ function toggleSidebar() {
         $('.PAC').show();
 
         $('#CAB-checkbox').prop('checked', true);
-        $('.CAB-EVENTS').show();
+        $('.CAB').show();
 
         $('#PAC-checkbox').prop('checked', true);
         $('.PAC').show();
@@ -116,7 +116,7 @@ function toggleSidebar() {
         $('.PAC').hide();
 
         $('#CAB-checkbox').prop('checked', false);
-        $('.CAB-EVENTS').hide();
+        $('.CAB').hide();
 
         $('#TableTopGames-checkbox').prop('checked', false);
         $('.TableTopGames-EVENTS').hide();
@@ -220,7 +220,7 @@ function toggleSidebar() {
         $('.PAC').show();
 
         $('#CAB-checkbox').prop('checked', true);
-        $('.CAB-EVENTS').show();
+        $('.CAB').show();
 
         $('#PAC-checkbox').prop('checked', true);
         $('.PAC').show();
@@ -242,7 +242,7 @@ function toggleSidebar() {
         $('.PAC').hide();
 
         $('#CAB-checkbox').prop('checked', false);
-        $('.CAB-EVENTS').hide();
+        $('.CAB').hide();
 
         $('#PAC-checkbox').prop('checked', false);
         $('.PAC').hide();
@@ -473,14 +473,14 @@ $(document).ready(function(){
   $("#CAB-checkbox").click(function(){
     if($('#CAB-checkbox').prop('checked')){
 
-        $('.CAB-EVENTS').show();
+        $('.CAB').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSocial-checkbox').prop('checked', false);
 
-        $('.CAB-EVENTS').hide();
+        $('.CAB').hide();
       }
   });
 });
