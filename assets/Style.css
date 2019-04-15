@@ -1286,10 +1286,183 @@ section.CreateAccount-Section button {
 
 /* End Moderator Page */
 
+/* Start Create Event Page */
+.CreateEvent-Section h1 {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 28px;
+}
+
+.CreateEvent-Section #ClubLabel {
+    margin-left: 25%;
+    margin-top: 3%;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.CreateEvent-Section select {
+    margin-left: 25%;
+    margin-top: -12%;
+    border-radius: 8px;
+    padding: 8px;
+    padding-bottom: 13px;
+    width: 190px;
+    font-size: 17px;
+    font-family: "Quicksand", serif;
+    border: 2px inset #EBE9ED;
+    
+}
+
+.CreateEvent-Section #NameLabel {
+    margin-left: 25%;
+    margin-top: 2.2%;
+    display: block;
+}
+
+.CreateEvent-Section input#name {
+    margin-left: 25%;
+    margin-top: -2.5%;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 17px;
+    font-family: "Quicksand", serif;
+}
+
+.CreateEvent-Section #DescLabel {
+    margin-left: 53%;
+    margin-top: -5.6%;
+    padding-bottom: 100px;
+    position: relative;
+    display: block;
+}
+
+.CreateEvent-Section #description {
+    margin-left: 53%;
+    margin-top: -8.4%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: "Quicksand", serif;
+    height: 260px;
+    border: 2px inset #EBE9ED;
+    
+}
+
+.CreateEvent-Section #LocLabel {
+    margin-left: 25%;
+    margin-top: -15%;
+    display: block
+}
+
+.CreateEvent-Section input#location {
+    margin-left: 25%;
+    margin-top: 1%;
+    border-radius: 10px;
+    padding: 9px;
+    font-size: 17px;
+    font-family: "Quicksand", serif;
+}
+
+.CreateEvent-Section #DateLabel {
+    margin-left: 25%;
+    margin-top: 14%;
+    display: block;
+    margin-top: 2%;
+    
+}
+
+.CreateEvent-Section input#date {
+    margin-left: 25%;
+    margin-top: 1%;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 17px;
+    font-family: "Quicksand", serif;
+}
+
+.CreateEvent-Section #TimeLabel {
+    margin-left: 53.0%;
+    margin-top: -6.10%;
+    
+    display: block;
+    position: relative;
+    
+}
+
+.CreateEvent-Section input#startTime {
+    margin-left: 53%;
+    margin-top: .83%;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 17px;
+    font-family: "Quicksand", serif;
+}
+
+.CreateEvent-Section #ToLabel {
+position: absolute;
+ margin-left: 62.8%;
+margin-top: .9%;
+    display: block;
+}
+
+.CreateEvent-Section input#endTime {
+    margin-left: 65%;
+    margin-top: -3.4%;
+    border-radius: 10px;
+    padding: 8px;
+    display: block;
+    font-size: 17px;
+    font-family: "Quicksand", serif;
+}
+
+.CreateEvent-Section button {
+    position:absolute;
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    margin-left: 52%;
+    margin-top: 3%;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+    margin-bottom: 10px;
+    
+}
+
+.CreateEvent-Section #cancelBtn {
+    background-color: #ccc;
+    border: black 3px;
+    color: black;
+    margin-left: 35%;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+    margin-bottom: 10px;
+    
+}
+.CreateEvent-Section button:hover {
+ background-color: #f29f3a;
+}
+
+.CreateEvent-Section #cancelBtn:hover {
+    background-color: #a0aaa1;
+}
+
+/* End Create Event Page */
+
 /* Start Side Margins */
 #bg-right {
   background-color: #E4E4E4;
-  background: linear-gradient(#c1bfbf, #e4e4e4);
+  background: linear-gradient(#e4e4e4, #e4e4e4);
   position: fixed;
   top: 0;
   bottom: 0;

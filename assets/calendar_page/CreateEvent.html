@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Club Calendar</title>
-    <link rel="stylesheet" type="text/css" href="/assets/Style.css">
-     <link rel="title icon" type="image/png" href="/assets/colorado-mesa-logo.png">
+    <link rel="title icon" type="image/png" href="CalImages/colorado-mesa-logo.png">
+    <link rel="stylesheet" type="text/css" href="Style.css">
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
@@ -31,7 +30,7 @@
         <section class="CreateEvent-Section">
 
             <h1>Enter the event details</h1>
-            <%- include ./partials/messages %>
+            <!--<%- include ./partials/messages %>-->
             <form action="/events/createevent" method="POST">
                 <div class="form-group">
                 <label for="club" id = "ClubLabel">Club</label>
@@ -41,11 +40,6 @@
                     id="club"
                     name="club"
                     class="form-control"
-<<<<<<< HEAD
-                    placeholder=""
-                    value="<%= typeof club != 'undefined' ? club : '' %>"
-                />
-=======
                 >
                 <option value = "PAC">PAC</option>
                 <option value = "CAB">CAB</option>
@@ -60,9 +54,7 @@
                         id="startTime"
                         name="startTime"
                         class="form-control"
-                        value="<%= typeof startTime != 'undefined' ? startTime : '' %>"
                     /> 
->>>>>>> 285097f91d0a8f68beb4efa644fdaef5b0f8c532
                 </div>
                 <div class="form-group">
                     <label for="endTime" id = "ToLabel">To</label>
@@ -82,10 +74,6 @@
                     name="name"
                     class="form-control"
                     placeholder=""
-<<<<<<< HEAD
-                    value="<%= typeof name != 'undefined' ? name : '' %>"
-=======
->>>>>>> 285097f91d0a8f68beb4efa644fdaef5b0f8c532
                 />
                 </div>
                 <div class="form-group">
@@ -97,13 +85,8 @@
                       name="description"
                       class="form-control"
                       placeholder=""
-<<<<<<< HEAD
-                      value="<%= typeof description != 'undefined' ? description : '' %>"
-                  />
-=======
                   >
                     </textarea>
->>>>>>> 285097f91d0a8f68beb4efa644fdaef5b0f8c532
                 </div>
                 <div class="form-group">
                     <label for="location" id = "LocLabel">Location</label>
@@ -113,10 +96,6 @@
                         name="location"
                         class="form-control"
                         placeholder=""
-<<<<<<< HEAD
-                        value="<%= typeof location != 'undefined' ? location : '' %>"
-=======
->>>>>>> 285097f91d0a8f68beb4efa644fdaef5b0f8c532
                     />
                   </div>
                 <div class="form-group">
