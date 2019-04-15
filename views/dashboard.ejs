@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/Style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src ="/assets/CalanderJS.js"></script>
+    <script src ="/assets/popcal.js"></script>
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
@@ -216,12 +217,15 @@
                     </li>
                      <li class="day">
                         <div id="18" class="date">18</div>
+                        <div><span class="dot"></span> <%=events[0].name%></div>
                     </li>
+                    <%
+                     %>
                      <li class="day">
                         <div id="19" class="date">19</div>
-                          <div class="PAC-EVENTS" style = "display: none;">
-                             <div><span class="dot"></span> Flap Jack Friday</div>
-                             <div class="Event-Time">9:00 AM - 11:00 AM</div>
+                        <div class= "<%=events[0].club%>" style="display: none">
+                             <div><span class="dot"></span> <%=events[0].club%></div>
+                             <div class="Event-Time"><%=events[0].club%></div>
                              <div class="Event-Location">University Center</div>
                              <div class="Event-Desc">Free Pancakes to Students!</div>
                          </div>
