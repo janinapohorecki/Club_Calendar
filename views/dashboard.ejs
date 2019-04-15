@@ -22,7 +22,7 @@
         <div class="headtit">
             <h1><span>Club Calendar</span></h1>
         </div>
-        <nav>
+        <!-- <nav> -->
                 <!-- <button id="Add" class="button" style="vertical-align:middle"><span> Add an Event <i class="fa fa-angle-right" id ="right-carrot"></i> </span></button>
                 <span id="MyUser"> -->
 
@@ -104,11 +104,55 @@
             </ul>
         </div>
 
+        <% for(var i=0; i < events.length; i++) { %>
+        <%
+           dateday = events[i].StartTime.getDate();
+           location = events[i].location;
+           name = events[i].name;
+           clubName = events[i].club;
+           description = events[i].description;
+           stimeH = events[i].StartTime.getHours();
+           stimeM = events[i].StartTime.getMinutes();
+           if (stimeM={}) stimeM = "00";
+           etimeH = events[i].EndTime.getHours();
+           etimeM = events[i].EndTime.getMinutes();
+           if (etimeM={}) etimeM = "00";
+           eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
+
+
+        %>
+
+        <div id="new-event" class="date"><%=dateday%></div>
+          <div><span class="dot"></span><%= name%></div>
+          <div class="Event-Time"><%=eventtime%></div>
+          <div class="Event-Location"><%=location%></div>
+          <div class="Event-Desc"><%=description%></div>
+        </div>
+
+        <div id="19" class="date">19
+          <div class= "<%=events[0].club%>" style="display: none">
+               <div><span class="dot"></span> <%=events[0].club%></div>
+               <div class="Event-Time"><%=eventtime%></div>
+               <div class="Event-Location">University Center</div>
+               <div class="Event-Desc">Free Pancakes to Students!</div>
+           </div>
+       </div>
+        <script>
+        var div = document.getElementById('<%=dateday%>');
+        div.innerHTML += '<%= clubName%>';
+        console.log(div);
+        // var newEvent = document.getElementById("new-event").lastChild;
+        // document.getElementById("<%=dateday%>").appendChild(newEvent);
+        // alert("Hello! I am an alert box!!");
+
+        </script>
+        <% } %>
+
             <div id="calendar">
                 <div class="Top-Cal">
                     <button class="button" style="vertical-align:middle" onclick="window.location.href = '/March2019.html';"> <i class="arrow left"></i>   </button>
 
-                    <h2>April</h2>
+                    <h2>April 2019</h2>
 
                     <button class="button" style="vertical-align:middle" onclick="window.location.href = '/May2019.html';">    <i class="arrow right"></i>   </button>
 
@@ -150,7 +194,7 @@
                         <div id="5" class="date">5</div>
                     </li>
                      <li class="day">
-                         <div id="6" class="date">6</div>
+                        <div id="6" class="date">6</div>
                         <div class="Soccer-EVENTS" style = "display: none;">
                              <div><span class="dot"></span> Men's Soccer Match</div>
                              <div class="Event-Time">7:00 PM - 9:00 PM</div>
@@ -222,12 +266,13 @@
                     <%
                      %>
                      <li class="day">
-                        <div id="19" class="date">19</div>
+                        <div id="19" class="date"><p>19</p>
                         <div class= "<%=events[0].club%>" style="display: none">
                              <div><span class="dot"></span> <%=events[0].club%></div>
                              <div class="Event-Time"><%=events[0].club%></div>
                              <div class="Event-Location">University Center</div>
                              <div class="Event-Desc">Free Pancakes to Students!</div>
+                         </div>
                          </div>
                     </li>
                      <li class="day">
