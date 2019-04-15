@@ -21,89 +21,89 @@ function toggleSidebar() {
         $('.PAC').show();
 
         $('#TableTopGames-checkbox').prop('checked', true);
-        $('.TableTopGames-EVENTS').show();
+        $('.TableTopGames').show();
 
         $('#ResidenceLife-checkbox').prop('checked', true);
-        $('.ResidenceLife-EVENTS').show();
+        $('.ResidenceLife').show();
 
         $('#StudentLife-checkbox').prop('checked', true);
-        $('.StudentLife-EVENTS').show();
+        $('.StudentLife').show();
         /* End Social */
 
         /* Start Sports */
         $('#AllSports-checkbox').prop('checked', true);
 
         $('#Soccer-checkbox').prop('checked', true);
-        $('.Soccer-EVENTS').show();
+        $('.Soccer').show();
 
         $('#Football-checkbox').prop('checked', true);
-        $('.Football-EVENTS').show();
+        $('.Football').show();
 
         $('#Volleyball-checkbox').prop('checked', true);
-        $('.Volleyball-EVENTS').show();
+        $('.Volleyball').show();
 
         $('#Hockey-checkbox').prop('checked', true);
-        $('.Hockey-EVENTS').show();
+        $('.Hockey').show();
 
         $('#Baseball-checkbox').prop('checked', true);
-        $('.Baseball-EVENTS').show();
+        $('.Baseball').show();
         /* End Sports */
 
         /* Start Academics */
         $('#AllAcademics-checkbox').prop('checked', true);
 
         $('#AccountingClub-checkbox').prop('checked', true);
-        $('.AccountingClub-EVENTS').show();
+        $('.AccountingClub').show();
 
         $('#ACM-checkbox').prop('checked', true);
-        $('.ACM-EVENTS').show();
+        $('.ACM').show();
 
         $('#GEMS-checkbox').prop('checked', true);
-        $('.GEMS-EVENTS').show();
+        $('.GEMS').show();
 
         $('#SignLanguage-checkbox').prop('checked', true);
-        $('.SignLanguage-EVENTS').show();
+        $('.SignLanguage').show();
 
         $('#EngineeringClub-checkbox').prop('checked', true);
-        $('.EngineeringClub-EVENTS').show();
+        $('.EngineeringClub').show();
         /* End Academics */
 
         /* Start Religious */
         $('#AllReligious-checkbox').prop('checked', true);
 
         $('#7Thunders-checkbox').prop('checked', true);
-        $('.7Thunders-EVENTS').show();
+        $('.7Thunders').show();
 
         $('#FaithLife-checkbox').prop('checked', true);
-        $('.FaithLife-EVENTS').show();
+        $('.FaithLife').show();
 
         $('#MesaCatholic-checkbox').prop('checked', true);
-        $('.MesaCatholic-EVENTS').show();
+        $('.MesaCatholic').show();
 
         $('#GrandValleyCM-checkbox').prop('checked', true);
-        $('.GrandValleyCM-EVENTS').show();
+        $('.GrandValleyCM').show();
 
         $('#YoungLife-checkbox').prop('checked', true);
-        $('.YoungLife-EVENTS').show();
+        $('.YoungLife').show();
         /* End Religious */
 
         /* Start Other */
         $('#AllOther-checkbox').prop('checked', true);
 
         $('#FishWildlife-checkbox').prop('checked', true);
-        $('.FishWildlife-EVENTS').show();
+        $('.FishWildlife').show();
 
         $('#CMUTV-checkbox').prop('checked', true);
-        $('.CMUTV-EVENTS').show();
+        $('.CMUTV').show();
 
         $('#Aggies-checkbox').prop('checked', true);
-        $('.Aggies-EVENTS').show();
+        $('.Aggies').show();
 
         $('#CircleK-checkbox').prop('checked', true);
-        $('.CircleK-EVENTS').show();
+        $('.CircleK').show();
 
         $('#Alumni-checkbox').prop('checked', true);
-        $('.Alumni-EVENTS').show();
+        $('.Alumni').show();
         /* End Other */
 
 
@@ -119,89 +119,89 @@ function toggleSidebar() {
         $('.CAB').hide();
 
         $('#TableTopGames-checkbox').prop('checked', false);
-        $('.TableTopGames-EVENTS').hide();
+        $('.TableTopGames').hide();
 
         $('#ResidenceLife-checkbox').prop('checked', false);
-        $('.ResidenceLife-EVENTS').hide();
+        $('.ResidenceLife').hide();
 
         $('#StudentLife-checkbox').prop('checked', false);
-        $('.StudentLife-EVENTS').hide();
+        $('.StudentLife').hide();
         /* End Social */
 
         /* Start Sports */
         $('#AllSports-checkbox').prop('checked', false);
 
         $('#Soccer-checkbox').prop('checked', false);
-        $('.Soccer-EVENTS').hide();
+        $('.Soccer').hide();
 
         $('#Football-checkbox').prop('checked', false);
-        $('.Football-EVENTS').hide();
+        $('.Football').hide();
 
         $('#Volleyball-checkbox').prop('checked', false);
-        $('.Volleyball-EVENTS').hide();
+        $('.Volleyball').hide();
 
         $('#Hockey-checkbox').prop('checked', false);
-        $('.Hockey-EVENTS').hide();
+        $('.Hockey').hide();
 
         $('#Baseball-checkbox').prop('checked', false);
-        $('.Baseball-EVENTS').hide();
+        $('.Baseball').hide();
         /* End Sports */
 
         /* Start Academics */
         $('#AllAcademics-checkbox').prop('checked', false);
 
         $('#AccountingClub-checkbox').prop('checked', false);
-        $('.AccountingClub-EVENTS').hide();
+        $('.AccountingClub').hide();
 
         $('#ACM-checkbox').prop('checked', false);
-        $('.ACM-EVENTS').hide();
+        $('.ACM').hide();
 
         $('#GEMS-checkbox').prop('checked', false);
-        $('.GEMS-EVENTS').hide();
+        $('.GEMS').hide();
 
         $('#SignLanguage-checkbox').prop('checked', false);
-        $('.SignLanguage-EVENTS').hide();
+        $('.SignLanguage').hide();
 
         $('#EngineeringClub-checkbox').prop('checked', false);
-        $('.EngineeringClub-EVENTS').hide();
+        $('.EngineeringClub').hide();
         /* End Academics */
 
         /* Start Religious */
         $('#AllReligious-checkbox').prop('checked', false);
 
         $('#7Thunders-checkbox').prop('checked', false);
-        $('.7Thunders-EVENTS').hide();
+        $('.7Thunders').hide();
 
         $('#FaithLife-checkbox').prop('checked', false);
-        $('.FaithLife-EVENTS').hide();
+        $('.FaithLife').hide();
 
         $('#MesaCatholic-checkbox').prop('checked', false);
-        $('.MesaCatholic-EVENTS').hide();
+        $('.MesaCatholic').hide();
 
         $('#GrandValleyCM-checkbox').prop('checked', false);
-        $('.GrandValleyCM-EVENTS').hide();
+        $('.GrandValleyCM').hide();
 
         $('#YoungLife-checkbox').prop('checked', false);
-        $('.YoungLife-EVENTS').hide();
+        $('.YoungLife').hide();
         /* End Religious */
 
         /* Start Other */
         $('#AllOther-checkbox').prop('checked', false);
 
         $('#FishWildlife-checkbox').prop('checked', false);
-        $('.FishWildlife-EVENTS').hide();
+        $('.FishWildlife').hide();
 
         $('#CMUTV-checkbox').prop('checked', false);
-        $('.CMUTV-EVENTS').hide();
+        $('.CMUTV').hide();
 
         $('#Aggies-checkbox').prop('checked', false);
-        $('.Aggies-EVENTS').hide();
+        $('.Aggies').hide();
 
         $('#CircleK-checkbox').prop('checked', false);
-        $('.CircleK-EVENTS').hide();
+        $('.CircleK').hide();
 
         $('#Alumni-checkbox').prop('checked', false);
-        $('.Alumni-EVENTS').hide();
+        $('.Alumni').hide();
         /* End Other */
 
       }
@@ -226,13 +226,13 @@ function toggleSidebar() {
         $('.PAC').show();
 
         $('#TableTopGames-checkbox').prop('checked', true);
-        $('.TableTopGames-EVENTS').show();
+        $('.TableTopGames').show();
 
         $('#ResidenceLife-checkbox').prop('checked', true);
-        $('.ResidenceLife-EVENTS').show();
+        $('.ResidenceLife').show();
 
         $('#StudentLife-checkbox').prop('checked', true);
-        $('.StudentLife-EVENTS').show();
+        $('.StudentLife').show();
 
 
   } else {
@@ -248,13 +248,13 @@ function toggleSidebar() {
         $('.PAC').hide();
 
         $('#TableTopGames-checkbox').prop('checked', false);
-        $('.TableTopGames-EVENTS').hide();
+        $('.TableTopGames').hide();
 
         $('#ResidenceLife-checkbox').prop('checked', false);
-        $('.ResidenceLife-EVENTS').hide();
+        $('.ResidenceLife').hide();
 
         $('#StudentLife-checkbox').prop('checked', false);
-        $('.StudentLife-EVENTS').hide();
+        $('.StudentLife').hide();
 
 
       }
@@ -269,19 +269,19 @@ function toggleSidebar() {
        $('#AllSports-checkbox').prop('checked', true);
 
         $('#Soccer-checkbox').prop('checked', true);
-        $('.Soccer-EVENTS').show();
+        $('.Soccer').show();
 
         $('#Football-checkbox').prop('checked', true);
-        $('.Football-EVENTS').show();
+        $('.Football').show();
 
         $('#Volleyball-checkbox').prop('checked', true);
-        $('.Volleyball-EVENTS').show();
+        $('.Volleyball').show();
 
         $('#Hockey-checkbox').prop('checked', true);
-        $('.Hockey-EVENTS').show();
+        $('.Hockey').show();
 
         $('#Baseball-checkbox').prop('checked', true);
-        $('.Baseball-EVENTS').show();
+        $('.Baseball').show();
 
 
   } else {
@@ -290,19 +290,19 @@ function toggleSidebar() {
        $('#AllSports-checkbox').prop('checked', false);
 
         $('#Soccer-checkbox').prop('checked', false);
-        $('.Soccer-EVENTS').hide();
+        $('.Soccer').hide();
 
         $('#Football-checkbox').prop('checked', false);
-        $('.Football-EVENTS').hide();
+        $('.Football').hide();
 
         $('#Volleyball-checkbox').prop('checked', false);
-        $('.Volleyball-EVENTS').hide();
+        $('.Volleyball').hide();
 
         $('#Hockey-checkbox').prop('checked', false);
-        $('.Hockey-EVENTS').hide();
+        $('.Hockey').hide();
 
         $('#Baseball-checkbox').prop('checked', false);
-        $('.Baseball-EVENTS').hide();
+        $('.Baseball').hide();
 
 
       }
@@ -315,19 +315,19 @@ function toggleSidebar() {
     if($('#AllAcademics-checkbox').prop('checked')){
 
        $('#AccountingClub-checkbox').prop('checked', true);
-        $('.AccountingClub-EVENTS').show();
+        $('.AccountingClub').show();
 
         $('#ACM-checkbox').prop('checked', true);
-        $('.ACM-EVENTS').show();
+        $('.ACM').show();
 
         $('#GEMS-checkbox').prop('checked', true);
-        $('.GEMS-EVENTS').show();
+        $('.GEMS').show();
 
         $('#SignLanguage-checkbox').prop('checked', true);
-        $('.SignLanguage-EVENTS').show();
+        $('.SignLanguage').show();
 
         $('#EngineeringClub-checkbox').prop('checked', true);
-        $('.EngineeringClub-EVENTS').show();
+        $('.EngineeringClub').show();
 
 
   } else {
@@ -336,19 +336,19 @@ function toggleSidebar() {
       $('#AllAcademics-checkbox').prop('checked', false);
 
        $('#AccountingClub-checkbox').prop('checked', false);
-        $('.AccountingClub-EVENTS').hide();
+        $('.AccountingClub').hide();
 
         $('#ACM-checkbox').prop('checked', false);
-        $('.ACM-EVENTS').hide();
+        $('.ACM').hide();
 
         $('#GEMS-checkbox').prop('checked', false);
-        $('.GEMS-EVENTS').hide();
+        $('.GEMS').hide();
 
         $('#SignLanguage-checkbox').prop('checked', false);
-        $('.SignLanguage-EVENTS').hide();
+        $('.SignLanguage').hide();
 
         $('#EngineeringClub-checkbox').prop('checked', false);
-        $('.EngineeringClub-EVENTS').hide();
+        $('.EngineeringClub').hide();
 
 
       }
@@ -363,19 +363,19 @@ function toggleSidebar() {
         $('#AllReligious-checkbox').prop('checked', true);
 
         $('#7Thunders-checkbox').prop('checked', true);
-        $('.7Thunders-EVENTS').show();
+        $('.7Thunders').show();
 
         $('#FaithLife-checkbox').prop('checked', true);
-        $('.FaithLife-EVENTS').show();
+        $('.FaithLife').show();
 
         $('#MesaCatholic-checkbox').prop('checked', true);
-        $('.MesaCatholic-EVENTS').show();
+        $('.MesaCatholic').show();
 
         $('#GrandValleyCM-checkbox').prop('checked', true);
-        $('.GrandValleyCM-EVENTS').show();
+        $('.GrandValleyCM').show();
 
         $('#YoungLife-checkbox').prop('checked', true);
-        $('.YoungLife-EVENTS').show();
+        $('.YoungLife').show();
 
 
   } else {
@@ -384,19 +384,19 @@ function toggleSidebar() {
       $('#AllReligious-checkbox').prop('checked', false);
 
         $('#7Thunders-checkbox').prop('checked', false);
-        $('.7Thunders-EVENTS').hide();
+        $('.7Thunders').hide();
 
         $('#FaithLife-checkbox').prop('checked', false);
-        $('.FaithLife-EVENTS').hide();
+        $('.FaithLife').hide();
 
         $('#MesaCatholic-checkbox').prop('checked', false);
-        $('.MesaCatholic-EVENTS').hide();
+        $('.MesaCatholic').hide();
 
         $('#GrandValleyCM-checkbox').prop('checked', false);
-        $('.GrandValleyCM-EVENTS').hide();
+        $('.GrandValleyCM').hide();
 
         $('#YoungLife-checkbox').prop('checked', false);
-        $('.YoungLife-EVENTS').hide();
+        $('.YoungLife').hide();
 
       }
   });
@@ -410,19 +410,19 @@ function toggleSidebar() {
         $('#AllOther-checkbox').prop('checked', true);
 
         $('#FishWildlife-checkbox').prop('checked', true);
-        $('.FishWildlife-EVENTS').show();
+        $('.FishWildlife').show();
 
         $('#CMUTV-checkbox').prop('checked', true);
-        $('.CMUTV-EVENTS').show();
+        $('.CMUTV').show();
 
         $('#Aggies-checkbox').prop('checked', true);
-        $('.Aggies-EVENTS').show();
+        $('.Aggies').show();
 
         $('#CircleK-checkbox').prop('checked', true);
-        $('.CircleK-EVENTS').show();
+        $('.CircleK').show();
 
         $('#Alumni-checkbox').prop('checked', true);
-        $('.Alumni-EVENTS').show();
+        $('.Alumni').show();
 
 
   } else {
@@ -431,19 +431,19 @@ function toggleSidebar() {
       $('#AllOther-checkbox').prop('checked', false);
 
         $('#FishWildlife-checkbox').prop('checked', false);
-        $('.FishWildlife-EVENTS').hide();
+        $('.FishWildlife').hide();
 
         $('#CMUTV-checkbox').prop('checked', false);
-        $('.CMUTV-EVENTS').hide();
+        $('.CMUTV').hide();
 
         $('#Aggies-checkbox').prop('checked', false);
-        $('.Aggies-EVENTS').hide();
+        $('.Aggies').hide();
 
         $('#CircleK-checkbox').prop('checked', false);
-        $('.CircleK-EVENTS').hide();
+        $('.CircleK').hide();
 
         $('#Alumni-checkbox').prop('checked', false);
-        $('.Alumni-EVENTS').hide();
+        $('.Alumni').hide();
 
       }
   });
@@ -489,14 +489,14 @@ $(document).ready(function(){
   $("#TableTopGames-checkbox").click(function(){
     if($('#TableTopGames-checkbox').prop('checked')){
 
-        $('.TableTopGames-EVENTS').show();
+        $('.TableTopGames').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSocial-checkbox').prop('checked', false);
 
-        $('.TableTopGames-EVENTS').hide();
+        $('.TableTopGames').hide();
       }
   });
 });
@@ -506,14 +506,14 @@ $(document).ready(function(){
   $("#ResidenceLife-checkbox").click(function(){
     if($('#ResidenceLife-checkbox').prop('checked')){
 
-        $('.ResidenceLife-EVENTS').show();
+        $('.ResidenceLife').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSocial-checkbox').prop('checked', false);
 
-        $('.ResidenceLife-EVENTS').hide();
+        $('.ResidenceLife').hide();
       }
   });
 });
@@ -522,14 +522,14 @@ $(document).ready(function(){
   $("#StudentLife-checkbox").click(function(){
     if($('#StudentLife-checkbox').prop('checked')){
 
-        $('.StudentLife-EVENTS').show();
+        $('.StudentLife').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSocial-checkbox').prop('checked', false);
 
-        $('.StudentLife-EVENTS').hide();
+        $('.StudentLife').hide();
       }
   });
 });
@@ -539,14 +539,14 @@ $(document).ready(function(){
   $("#Soccer-checkbox").click(function(){
     if($('#Soccer-checkbox').prop('checked')){
 
-        $('.Soccer-EVENTS').show();
+        $('.Soccer').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSports-checkbox').prop('checked', false);
 
-        $('.Soccer-EVENTS').hide();
+        $('.Soccer').hide();
       }
   });
 });
@@ -555,14 +555,14 @@ $(document).ready(function(){
   $("#Football-checkbox").click(function(){
     if($('#Football-checkbox').prop('checked')){
 
-        $('.Football-EVENTS').show();
+        $('.Football').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSports-checkbox').prop('checked', false);
 
-        $('.Football-EVENTS').hide();
+        $('.Football').hide();
       }
   });
 });
@@ -571,14 +571,14 @@ $(document).ready(function(){
   $("#Volleyball-checkbox").click(function(){
     if($('#Volleyball-checkbox').prop('checked')){
 
-        $('.Volleyball-EVENTS').show();
+        $('.Volleyball').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSports-checkbox').prop('checked', false);
 
-        $('.Volleyball-EVENTS').hide();
+        $('.Volleyball').hide();
       }
   });
 });
@@ -586,14 +586,14 @@ $(document).ready(function(){
   $("#Hockey-checkbox").click(function(){
     if($('#Hockey-checkbox').prop('checked')){
 
-        $('.Hockey-EVENTS').show();
+        $('.Hockey').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSports-checkbox').prop('checked', false);
 
-        $('.Hockey-EVENTS').hide();
+        $('.Hockey').hide();
       }
   });
 });
@@ -601,14 +601,14 @@ $(document).ready(function(){
   $("#Baseball-checkbox").click(function(){
     if($('#Baseball-checkbox').prop('checked')){
 
-        $('.Baseball-EVENTS').show();
+        $('.Baseball').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllSports-checkbox').prop('checked', false);
 
-        $('.Baseball-EVENTS').hide();
+        $('.Baseball').hide();
       }
   });
 });
@@ -617,14 +617,14 @@ $(document).ready(function(){
   $("#AccountingClub-checkbox").click(function(){
     if($('#AccountingClub-checkbox').prop('checked')){
 
-        $('.AccountingClub-EVENTS').show();
+        $('.AccountingClub').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllAcademics-checkbox').prop('checked', false);
 
-      $('.AccountingClub-EVENTS').hide();
+      $('.AccountingClub').hide();
       }
   });
 });
@@ -633,14 +633,14 @@ $(document).ready(function(){
   $("#ACM-checkbox").click(function(){
     if($('#ACM-checkbox').prop('checked')){
 
-        $('.ACM-EVENTS').show();
+        $('.ACM').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllAcademics-checkbox').prop('checked', false);
 
-      $('.ACM-EVENTS').hide();
+      $('.ACM').hide();
       }
   });
 });
@@ -648,14 +648,14 @@ $(document).ready(function(){
   $("#GEMS-checkbox").click(function(){
     if($('#GEMS-checkbox').prop('checked')){
 
-        $('.GEMS-EVENTS').show();
+        $('.GEMS').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllAcademics-checkbox').prop('checked', false);
 
-      $('.GEMS-EVENTS').hide();
+      $('.GEMS').hide();
       }
   });
 });
@@ -664,14 +664,14 @@ $(document).ready(function(){
   $("#SignLanguage-checkbox").click(function(){
     if($('#SignLanguage-checkbox').prop('checked')){
 
-        $('.SignLanguage-EVENTS').show();
+        $('.SignLanguage').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllAcademics-checkbox').prop('checked', false);
 
-      $('.SignLanguage-EVENTS').hide();
+      $('.SignLanguage').hide();
       }
   });
 });
@@ -680,14 +680,14 @@ $(document).ready(function(){
   $("#EngineeringClub-checkbox").click(function(){
     if($('#EngineeringClub-checkbox').prop('checked')){
 
-        $('.EngineeringClub-EVENTS').show();
+        $('.EngineeringClub').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllAcademics-checkbox').prop('checked', false);
 
-      $('.EngineeringClub-EVENTS').hide();
+      $('.EngineeringClub').hide();
       }
   });
 });
@@ -696,14 +696,14 @@ $(document).ready(function(){
   $("#7Thunders-checkbox").click(function(){
     if($('#7Thunders-checkbox').prop('checked')){
 
-        $('.7Thunders-EVENTS').show();
+        $('.7Thunders').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllReligious-checkbox').prop('checked', false);
 
-      $('.7Thunders-EVENTS').hide();
+      $('.7Thunders').hide();
       }
   });
 });
@@ -712,14 +712,14 @@ $(document).ready(function(){
   $("#FaithLife-checkbox").click(function(){
     if($('#FaithLife-checkbox').prop('checked')){
 
-        $('.FaithLife-EVENTS').show();
+        $('.FaithLife').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllReligious-checkbox').prop('checked', false);
 
-      $('.FaithLife-EVENTS').hide();
+      $('.FaithLife').hide();
       }
   });
 });
@@ -727,14 +727,14 @@ $(document).ready(function(){
   $("#GrandValleyCM-checkbox").click(function(){
     if($('#GrandValleyCM-checkbox').prop('checked')){
 
-        $('.GrandValleyCM-EVENTS').show();
+        $('.GrandValleyCM').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllReligious-checkbox').prop('checked', false);
 
-      $('.GrandValleyCM-EVENTS').hide();
+      $('.GrandValleyCM').hide();
       }
   });
 });
@@ -742,14 +742,14 @@ $(document).ready(function(){
   $("#MesaCatholic-checkbox").click(function(){
     if($('#MesaCatholic-checkbox').prop('checked')){
 
-        $('.MesaCatholic-EVENTS').show();
+        $('.MesaCatholic').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllReligious-checkbox').prop('checked', false);
 
-      $('.MesaCatholic-EVENTS').hide();
+      $('.MesaCatholic').hide();
       }
   });
 });
@@ -757,14 +757,14 @@ $(document).ready(function(){
   $("#YoungLife-checkbox").click(function(){
     if($('#YoungLife-checkbox').prop('checked')){
 
-        $('.YoungLife-EVENTS').show();
+        $('.YoungLife').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllReligious-checkbox').prop('checked', false);
 
-      $('.YoungLife-EVENTS').hide();
+      $('.YoungLife').hide();
       }
   });
 });
@@ -773,14 +773,14 @@ $(document).ready(function(){
   $("#FishWildlife-checkbox").click(function(){
     if($('#FishWildlife-checkbox').prop('checked')){
 
-        $('.FishWildlife-EVENTS').show();
+        $('.FishWildlife').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllOther-checkbox').prop('checked', false);
 
-      $('.FishWildlife-EVENTS').hide();
+      $('.FishWildlife').hide();
       }
   });
 });
@@ -788,14 +788,14 @@ $(document).ready(function(){
   $("#CMUTV-checkbox").click(function(){
     if($('#CMUTV-checkbox').prop('checked')){
 
-        $('.CMUTV-EVENTS').show();
+        $('.CMUTV').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllOther-checkbox').prop('checked', false);
 
-      $('.CMUTV-EVENTS').hide();
+      $('.CMUTV').hide();
       }
   });
 });
@@ -804,14 +804,14 @@ $(document).ready(function(){
   $("#Aggies-checkbox").click(function(){
     if($('#Aggies-checkbox').prop('checked')){
 
-        $('.Aggies-EVENTS').show();
+        $('.Aggies').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllOther-checkbox').prop('checked', false);
 
-      $('.Aggies-EVENTS').hide();
+      $('.Aggies').hide();
       }
   });
 });
@@ -820,14 +820,14 @@ $(document).ready(function(){
   $("#CircleK-checkbox").click(function(){
     if($('#CircleK-checkbox').prop('checked')){
 
-        $('.CircleK-EVENTS').show();
+        $('.CircleK').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllOther-checkbox').prop('checked', false);
 
-      $('.CircleK-EVENTS').hide();
+      $('.CircleK').hide();
       }
   });
 });
@@ -836,14 +836,14 @@ $(document).ready(function(){
   $("#Alumni-checkbox").click(function(){
     if($('#Alumni-checkbox').prop('checked')){
 
-        $('.Alumni-EVENTS').show();
+        $('.Alumni').show();
 
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
 
       $('#AllOther-checkbox').prop('checked', false);
 
-      $('.Alumni-EVENTS').hide();
+      $('.Alumni').hide();
       }
   });
 });
