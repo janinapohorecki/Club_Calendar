@@ -7,7 +7,7 @@ const Event = require('../models/Event');
 
 
 var query = Event.where({Approved:false});
-query.select('-_id name description StartTime EndTime club')
+query.select('_id name description StartTime EndTime club Approved')
 router.get('/moderator', function(req,res) {
   query.find(function(err,event) {
     if(err) console.log(err);
