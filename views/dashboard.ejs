@@ -36,284 +36,302 @@
         </nav>
         </header>
 
-        <div id="sidebar">
-            <div class="toggle-sidebar" onclick="toggleSidebar()">
-                <!--<span></span>
-                 <span></span>
-                 <span></span>-->
-                <i class="fas fa-angle-double-right" style="color:white"></i>
-                <i class="fas fa-angle-double-right"></i>
-                <i class="fas fa-angle-double-right"></i>
-            </div>
-            <h2 class="sidebar-header">Edit View</h2>
-            <ul id="Begin-List">
-
-                <!--<li class="SocialDropDown">Social <button id="Social-Drop"><i class="fa fa-angle-double-right"></i></button>-->
-                <li><input type="checkbox" id="AllEvents-checkbox" checked><label for="opt-in">Follow All Events</label></li>
-                <li><input id="check01" type="checkbox" name="menu"/>
-                <label  id="check1" for="check01">Social <i class="fas fa-angle-down" id ="down-carrot"></i></label>
-                    <ul id="Social-Sublist">
-                        <li><input type="checkbox" id="AllSocial-checkbox" checked><label for="opt-in">All Social</label></li>
-                        <li><input type="checkbox" id="PAC-checkbox" checked><label for="opt-in">PAC</label></li>
-                        <li><input type="checkbox" id="CAB-checkbox"><label for="opt-in">CAB</label></li>
-                        <li><input type="checkbox" id="TableTopGames-checkbox" checked><label for="opt-in">Table Top Games</label></li>
-                        <li><input type="checkbox" id="ResidenceLife-checkbox" checked><label for="opt-in">Residence Life</label></li>
-                        <li><input type="checkbox" id="StudentLife-checkbox" checked><label for="opt-in">Student Life</label></li>
-                    </ul>
-                </li>
-                <li><input id="check02" type="checkbox" name="menu"/>
-                <label id="check2" for="check02">Sports <i class="fas fa-angle-down" id ="down-carrot"></i></label>
-                    <ul id="Sport-Sublist">
-                        <li><input type="checkbox" id="AllSports-checkbox" checked><label for="opt-in">All Sports</label></li>
-                        <li><input type="checkbox" id="Soccer-checkbox" checked><label for="opt-in">Soccer</label></li>
-                        <li><input type="checkbox" id="Football-checkbox" checked><label for="opt-in">Football</label></li>
-                        <li><input type="checkbox" id="Volleyball-checkbox" checked><label for="opt-in">Volleyball</label></li>
-                        <li><input type="checkbox" id="Hockey-checkbox" checked><label for="opt-in">Hockey</label></li>
-                        <li><input type="checkbox" id="Baseball-checkbox" checked><label for="opt-in">Baseball</label></li>
-                    </ul></li>
-                <li><input id="check03" type="checkbox" name="menu"/>
-                <label id="check3" for="check03">Academic <i class="fas fa-angle-down" id ="down-carrot"></i></label>
-                    <ul id = "Academic-Sublist">
-                        <li><input type="checkbox" id="AllAcademics-checkbox" checked><label for="opt-in">All Academics</label></li>
-                        <li><input type="checkbox" id="AccountingClub-checkbox" checked><label for="opt-in">Accounting Club</label></li>
-                        <li><input type="checkbox" id="ACM-checkbox" checked><label for="opt-in">Association for Computing Machinery</label></li>
-                        <li><input type="checkbox" id="GEMS-checkbox" checked><label for="opt-in">GEMS</label></li>
-                        <li><input type="checkbox" id="SignLanguage-checkbox" checked><label for="opt-in">Sign Language Club</label></li>
-                        <li><input type="checkbox" id="EngineeringClub-checkbox" checked><label for="opt-in">Engineering Club</label></li>
-                    </ul></li>
-                <li><input id="check04" type="checkbox" name="menu"/>
-                <label id="check4" for="check04">Religious <i class="fas fa-angle-down" id ="down-carrot"></i></label>
-                    <ul id = "Religious-Sublist">
-                        <li><input type="checkbox" id="AllReligious-checkbox" checked><label for="opt-in">All Religious</label></li>
-                        <li><input type="checkbox" id="7Thunders-checkbox" checked><label for="opt-in">7 Thunders Club</label></li>
-                        <li><input type="checkbox" id="FaithLife-checkbox" checked><label for="opt-in">Faith Life</label></li>
-                        <li><input type="checkbox" id="GrandValleyCM-checkbox" checked><label for="opt-in">Grand Valley Campus Ministry</label></li>
-                        <li><input type="checkbox" id="MesaCatholic-checkbox" checked><label for="opt-in">Mesa Catholic Campus Ministry</label></li>
-                        <li><input type="checkbox" id="YoungLife-checkbox" checked><label for="opt-in">Young Life Grand Valley</label></li>
-                    </ul>
-                <li><input id="check05" type="checkbox" name="menu"/>
-                <label id="check5" for="check05">Other <i class="fas fa-angle-down" id ="down-carrot"></i></label>
-                    <ul id = "Other-Sublist">
-                        <li><input type="checkbox" id="AllOther-checkbox" checked><label for="opt-in">All Other</label></li>
-                         <li><input type="checkbox" id="FishWildlife-checkbox" checked><label for="opt-in">Fish and Wildlife Club</label></li>
-                        <li><input type="checkbox" id="CMUTV-checkbox" checked><label for="opt-in">CMU-TV Club</label></li>
-                        <li><input type="checkbox" id="Aggies-checkbox" checked><label for="opt-in">Aggies</label></li>
-                        <li><input type="checkbox" id="CircleK-checkbox" checked><label for="opt-in">Circle K International</label></li>
-                        <li><input type="checkbox" id="Alumni-checkbox" checked><label for="opt-in">CMU Alumni Association</label></li>
-                    </ul></li>
-            </ul>
+    <div id="sidebar">
+        <div class="toggle-sidebar" onclick="toggleSidebar()">
+            <!--<span></span>
+             <span></span>
+             <span></span>-->
+            <i class="fas fa-angle-double-right" style="color:white"></i>
+            <i class="fas fa-angle-double-right"></i>
+            <i class="fas fa-angle-double-right"></i>
         </div>
+        <h2 class="sidebar-header">Edit View</h2>
+        <ul id="Begin-List">
 
-        <%for (i=0; i < events.length; i++) { %>
-          <%
-           dateday = events[i].StartTime.getDate();
-           location = events[i].location;
-           name = events[i].name;
-           clubName = events[i].club;
-           description = events[i].description;
-           stimeH = events[i].StartTime.getHours();
-           stimeM = events[i].StartTime.getMinutes();
-           if (stimeM={}) stimeM = "00";
-           etimeH = events[i].EndTime.getHours();
-           etimeM = events[i].EndTime.getMinutes();
-           if (etimeM={}) etimeM = "00";
-           eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
-          %>
+            <!--<li class="SocialDropDown">Social <button id="Social-Drop"><i class="fa fa-angle-double-right"></i></button>-->
+            <li><input type="checkbox" id="AllEvents-checkbox" checked><label for="opt-in">Follow All Events</label></li>
+            <li><input id="check01" type="checkbox" name="menu"/>
+            <label  id="check1" for="check01">Social <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id="Social-Sublist">
+                    <li><input type="checkbox" id="AllSocial-checkbox" checked><label for="opt-in">All Social</label></li>
+                    <li><input type="checkbox" id="PAC-checkbox" checked><label for="opt-in">PAC</label></li>
+                    <li><input type="checkbox" id="CAB-checkbox"><label for="opt-in">CAB</label></li>
+                    <li><input type="checkbox" id="TableTopGames-checkbox" checked><label for="opt-in">Table Top Games</label></li>
+                    <li><input type="checkbox" id="ResidenceLife-checkbox" checked><label for="opt-in">Residence Life</label></li>
+                    <li><input type="checkbox" id="StudentLife-checkbox" checked><label for="opt-in">Student Life</label></li>
+                </ul>
+            </li>
+            <li><input id="check02" type="checkbox" name="menu"/>
+            <label id="check2" for="check02">Sports <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id="Sport-Sublist">
+                    <li><input type="checkbox" id="AllSports-checkbox" checked><label for="opt-in">All Sports</label></li>
+                    <li><input type="checkbox" id="Soccer-checkbox" checked><label for="opt-in">Soccer</label></li>
+                    <li><input type="checkbox" id="Football-checkbox" checked><label for="opt-in">Football</label></li>
+                    <li><input type="checkbox" id="Volleyball-checkbox" checked><label for="opt-in">Volleyball</label></li>
+                    <li><input type="checkbox" id="Hockey-checkbox" checked><label for="opt-in">Hockey</label></li>
+                    <li><input type="checkbox" id="Baseball-checkbox" checked><label for="opt-in">Baseball</label></li>
+                </ul></li>
+            <li><input id="check03" type="checkbox" name="menu"/>
+            <label id="check3" for="check03">Academic <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id = "Academic-Sublist">
+                    <li><input type="checkbox" id="AllAcademics-checkbox" checked><label for="opt-in">All Academics</label></li>
+                    <li><input type="checkbox" id="AccountingClub-checkbox" checked><label for="opt-in">Accounting Club</label></li>
+                    <li><input type="checkbox" id="ACM-checkbox" checked><label for="opt-in">Association for Computing Machinery</label></li>
+                    <li><input type="checkbox" id="GEMS-checkbox" checked><label for="opt-in">GEMS</label></li>
+                    <li><input type="checkbox" id="SignLanguage-checkbox" checked><label for="opt-in">Sign Language Club</label></li>
+                    <li><input type="checkbox" id="EngineeringClub-checkbox" checked><label for="opt-in">Engineering Club</label></li>
+                </ul></li>
+            <li><input id="check04" type="checkbox" name="menu"/>
+            <label id="check4" for="check04">Religious <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id = "Religious-Sublist">
+                    <li><input type="checkbox" id="AllReligious-checkbox" checked><label for="opt-in">All Religious</label></li>
+                    <li><input type="checkbox" id="7Thunders-checkbox" checked><label for="opt-in">7 Thunders Club</label></li>
+                    <li><input type="checkbox" id="FaithLife-checkbox" checked><label for="opt-in">Faith Life</label></li>
+                    <li><input type="checkbox" id="GrandValleyCM-checkbox" checked><label for="opt-in">Grand Valley Campus Ministry</label></li>
+                    <li><input type="checkbox" id="MesaCatholic-checkbox" checked><label for="opt-in">Mesa Catholic Campus Ministry</label></li>
+                    <li><input type="checkbox" id="YoungLife-checkbox" checked><label for="opt-in">Young Life Grand Valley</label></li>
+                </ul>
+            <li><input id="check05" type="checkbox" name="menu"/>
+            <label id="check5" for="check05">Other <i class="fas fa-angle-down" id ="down-carrot"></i></label>
+                <ul id = "Other-Sublist">
+                    <li><input type="checkbox" id="AllOther-checkbox" checked><label for="opt-in">All Other</label></li>
+                     <li><input type="checkbox" id="FishWildlife-checkbox" checked><label for="opt-in">Fish and Wildlife Club</label></li>
+                    <li><input type="checkbox" id="CMUTV-checkbox" checked><label for="opt-in">CMU-TV Club</label></li>
+                    <li><input type="checkbox" id="Aggies-checkbox" checked><label for="opt-in">Aggies</label></li>
+                    <li><input type="checkbox" id="CircleK-checkbox" checked><label for="opt-in">Circle K International</label></li>
+                    <li><input type="checkbox" id="Alumni-checkbox" checked><label for="opt-in">CMU Alumni Association</label></li>
+                </ul></li>
+        </ul>
+    </div>
 
-        <script>
-        // var newElement = addElement();
-        document.body.onload = addElement;
-        function addElement () {
-        var newDiv = document.createElement("div");
-        var newContent = document.createTextNode("<%=name%>");
-        newDiv.appendChild(newContent);
-        var currentDiv = document.getElementById("div1");
-        document.getElementById("<%=dateday%>").insertBefore(newDiv, currentDiv);
-        console.log(newDiv);
-        console.log("day of event <%=dateday%>");
-        console.log("amount of events <%=events.length%>");
-        // return this;
-        }
-        </script>
-        <% } %>
+    <%for (i=0; i < events.length; i++) { %>
+      <%
+       dateday = events[i].StartTime.getDate();
+       location = events[i].location;
+       name = events[i].name;
+       clubName = events[i].club;
+       description = events[i].description;
+       stimeH = events[i].StartTime.getHours();
+       stimeM = events[i].StartTime.getMinutes();
+       if (stimeM={}) stimeM = "00";
+       etimeH = events[i].EndTime.getHours();
+       etimeM = events[i].EndTime.getMinutes();
+       if (etimeM={}) etimeM = "00";
+       eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
+      %>
 
-            <div id="calendar">
-                <div class="Top-Cal">
-                    <button class="button" style="vertical-align:middle" onclick="window.location.href = '/March2019.html';"> <i class="arrow left"></i>   </button>
+    <script>
+    // var newElement = addElement();
+    document.body.onload = addElement;
+    function addElement () {
+    var newDiv = document.createElement("div");
+    var newContent = document.createTextNode("<%=name%>");
+    newDiv.appendChild(newContent);
+    var currentDiv = document.getElementById("div1");
+    document.getElementById("<%=dateday%>").insertBefore(newDiv, currentDiv);
+    console.log(newDiv);
+    console.log("day of event <%=dateday%>");
+    console.log("amount of events <%=events.length%>");
+    // return this;
+    }
+    </script>
+    <% } %>
 
-                    <h2>April 2019</h2>
+        <div id="calendar">
+            <div class="Top-Cal">
+                <button class="button" style="vertical-align:middle" onclick="window.location.href = '/March2019.html';"> <i class="arrow left"></i>   </button>
 
-                    <button class="button" style="vertical-align:middle" onclick="window.location.href = '/May2019.html';">    <i class="arrow right"></i>   </button>
+                <h2>April 2019</h2>
 
-                    </div>
-                <div class="parent">
-                        <span class="itemleft">
-                            <button class="bs">Week</button>
-                            </span>
-                       <span class="itemright">
-                            <button class="bs">Month</button>
-                           </span>
+                <button class="button" style="vertical-align:middle" onclick="window.location.href = '/May2019.html';">    <i class="arrow right"></i>   </button>
 
                 </div>
-                <ul class="weekdays">
-                    <li>Sunday</li>
-                    <li>Monday</li>
-                    <li>Tuesday</li>
-                    <li>Wednesday</li>
-                    <li>Thursday</li>
-                    <li>Friday</li>
-                    <li>Saturday</li>
-                </ul>
-                <ul class="days"> <!--Week 1 -->
-                    <li class="day-other-month">
-                        <div class="date">31</div>
-                    <li class="day" id="1">
-                        <div class="date">1</div>
-                    </li>
-                     <li class="day" id="2">
-                        <div class="date">2</div>
-                    </li>
-                     <li class="day" id="3">
-                        <div class="date">3</div>
-                    </li>
-                     <li class="day" id="4">
-                        <div class="date">4</div>
-                    </li>
-                     <li class="day"  id="5">
-                        <div class="date">5</div>
-                    </li>
-                     <li class="day" id="6">
-                        <div class="date">6</div>
-                        <div class="Soccer" >
-                             <div><span class="dot"></span> Men's Soccer Match</div>
-                             <div class="Event-Time">7:00 PM - 9:00 PM</div>
-                             <div class="Event-Location">Walker Field</div>
-                             <div class="Event-Desc">CMU Men's Soccer vs Fort Lewis</div>
-                         </div>
-                    </li>
-                </ul>
+            <!--<div class="parent">
+                    <span class="itemleft">
+                        <button class="bs">Week</button>
+                        </span>
+                   <span class="itemright">
+                        <button class="bs">Month</button>
+                       </span>
 
-                <ul class="days"> <!-- Week 2 -->
-                    <li class="day" id="7">
-                        <div class="date">7</div>
-                    <li class="day" id="8">
-                        <div class="date">8</div>
-                    </li>
-                     <li class="day" id="9">
-                        <div class="date">9</div>
-                         <div class="PAC" >
-                             <div><span class="dot"></span> PAC Meeting</div>
-                             <div class="Event-Time">10:00 AM - 12:00 PM</div>
-                             <div class="Event-Location">Escalante 211</div>
-                             <div class="Event-Desc">Discuss Budget</div>
-                         </div>
-                         <div class="GEMS" >
-                         <div><span class="dot"></span> GEMS Meeting</div>
-                             <div class="Event-Time">5:00 PM - 6:00 PM</div>
-                             <div class="Event-Location">Wubben 137</div>
-                             <div class="Event-Desc">MCAT Prep</div>
-                        </div>
-                         <div class = "CAB" >
-                           <div><span class="dot"></span> CAB Meeting</div>
-                             <div class="Event-Time">4:00 PM - 4:30 PM</div>
-                             <div class="Event-Location">UC Student Life</div>
-                             <div class="Event-Desc">Vote for Leaders</div>
-                         </div>
-                    </li>
-                     <li class="day" id="10">
-                        <div class="date">10</div>
-                    </li>
-                     <li class="day" id="11">
-                        <div class="date">11</div>
-                    </li>
-                     <li class="day" id="12">
-                        <div class="date">12</div>
-                    </li>
-                     <li class="day" id="13">
-                        <div class="date">13</div>
-                    </li>
-                </ul>
+            </div>-->
+            <ul class="weekdays">
+                <li>Sunday</li>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+            </ul>
+            <ul class="days"> <!--Week 1 -->
+                <li class="day-other-month">
+                    <div class="date">31</div>
+                <li class="day" id="1">
+                    <div class="date">1</div>
+                </li>
+                 <li class="day" id="2">
+                    <div class="date">2</div>
+                </li>
+                 <li class="day" id="3">
+                    <div class="date">3</div>
+                </li>
+                 <li class="day" id="4">
+                    <div class="date">4</div>
+                </li>
+                 <li class="day"  id="5">
+                    <div class="date">5</div>
+                </li>
+                 <li class="day" id="6">
+                    <div class="date">6</div>
+                    <div class="Soccer" >
+                         <div><span class="dot"></span> Men's Soccer Match</div>
+                         <div class="Event-Time">7:00 PM - 9:00 PM</div>
+                         <div class="Event-Location">Walker Field</div>
+                         <div class="Event-Desc">CMU Men's Soccer vs Fort Lewis</div>
+                     </div>
+                </li>
+            </ul>
 
-                <ul class="days"> <!-- Week 3 -->
-                    <li class="day" id="14">
-                        <div class="date">14</div>
-                    <li class="day" id="15">
-                        <div class="date">15</div>
-                    </li>
-                     <li class="day" id="16">
-                        <div class="date">16</div>
-                    </li>
-                     <li class="day" id="17">
-                        <div class="date">17</div>
-                    </li>
-                     <li class="day" id="18">
-                        <div class="date">18</div>
-                    </li>
-                    <%
-                     %>
-                     <li class="day" id="19">
-                        <div class="date">19</div>
+            <ul class="days"> <!-- Week 2 -->
+                <li class="day" id="7">
+                    <div class="date">7</div>
+                <li class="day" id="8">
+                    <div class="date">8</div>
+                </li>
+                 <li class="day" id="9">
+                    <div class="date">9</div>
+                     <div class="PAC" >
+                         <div><span class="dot"></span> PAC Meeting</div>
+                         <div class="Event-Time">10:00 AM - 12:00 PM</div>
+                         <div class="Event-Location">Escalante 211</div>
+                         <div class="Event-Desc">Discuss Budget</div>
+                     </div>
+                     <div class="GEMS" >
+                     <div><span class="dot"></span> GEMS Meeting</div>
+                         <div class="Event-Time">5:00 PM - 6:00 PM</div>
+                         <div class="Event-Location">Wubben 137</div>
+                         <div class="Event-Desc">MCAT Prep</div>
+                    </div>
+                     <div class = "CAB" >
+                       <div><span class="dot"></span> CAB Meeting</div>
+                         <div class="Event-Time">4:00 PM - 4:30 PM</div>
+                         <div class="Event-Location">UC Student Life</div>
+                         <div class="Event-Desc">Vote for Leaders</div>
+                     </div>
+                </li>
+                 <li class="day" id="10">
+                    <div class="date">10</div>
+                </li>
+                 <li class="day" id="11">
+                    <div class="date">11</div>
+                </li>
+                 <li class="day" id="12">
+                    <div class="date">12</div>
+                </li>
+                 <li class="day" id="13">
+                    <div class="date">13</div>
+                </li>
+            </ul>
 
-                    </li>
-                     <li class="day" id="20">
-                        <div class="date">20</div>
-                    </li>
-                </ul>
+            <ul class="days"> <!-- Week 3 -->
+                <li class="day" id="14">
+                    <div class="date">14</div>
+                <li class="day" id="15">
+                    <div class="date">15</div>
+                </li>
+                 <li class="day" id="16">
+                    <div class="date">16</div>
+                </li>
+                 <li class="day" id="17">
+                    <div class="date">17</div>
+                    <div class="TableTopGames" >
+                        <div><span class="dot"></span> Dungeon's and Drafts</div>
+                        <div class="Event-Time">6:00 PM - 9:00 PM</div>
+                        <div class="Event-Location">The Point</div>
+                        <div class="Event-Desc">Come enjoy rolling dice and drinking beer at the Point.</div>
+                    </div>
+                </li>
+                 <li class="day" id="18">
+                    <div class="date">18</div>
+                </li>
+                <%
+                 %>
+                 <li class="day" id="19">
+                    <div class="date">19</div>
 
-                <ul class="days"> <!-- Week 4 -->
-                    <li class="day" id="21">
-                        <div class="date">21</div>
-                    <li class="day" id="22">
-                        <div class="date">22</div>
-                    </li>
-                     <li class="day" id="23">
-                        <div class="date">23</div>
-                    </li>
-                     <li class="day" id="24">
-                        <div class="date">24</div>
-                    </li>
-                     <li class="day" id="25">
-                        <div class="date">25</div>
-                    </li>
-                     <li class="day" id="26">
-                        <div class="date">26</div>
-                    </li>
-                     <li class="day" id="27">
-                        <div class="date">27</div>
-                    </li>
-                </ul>
+                </li>
+                 <li class="day" id="20">
+                    <div class="date">20</div>
+                </li>
+            </ul>
 
-                 <ul class="days"> <!-- Week 5 -->
-                    <li class="day" id="28">
-                        <div class="date">28</div>
-                    <li class="day" id="29">
-                        <div class="date">29</div>
-                    </li>
-                     <li class="day" id="30">
-                        <div class="date">30</div>
-                    </li>
-                     <li class="day-other-month">
-                        <div class="date">1</div>
-                    </li>
-                     <li class="day-other-month">
-                        <div class="date">2</div>
-                    </li>
-                     <li class="day-other-month">
-                        <div class="date">3</div>
-                    </li>
-                     <li class="day-other-month">
-                        <div class="date">4</div>
-                    </li>
-                </ul>
+            <ul class="days"> <!-- Week 4 -->
+                <li class="day" id="21">
+                    <div class="date">21</div>
+                <li class="day" id="22">
+                    <div class="date">22</div>
+                    <div class="Football" >
+                        <div><span class="dot"></span> Men's Football Match</div>
+                        <div class="Event-Time">7:00 PM - 9:00 PM</div>
+                        <div class="Event-Location">Walker Field</div>
+                        <div class="Event-Desc">CMU Men's Soccer vs Fort Lewis</div>
+                    </div>
+                </li>
+                 <li class="day" id="23">
+                    <div class="date">23</div>
+                </li>
+                 <li class="day" id="24">
+                    <div class="date">24</div>
+                </li>
+                 <li class="day" id="25">
+                    <div class="date">25</div>
+                </li>
+                 <li class="day" id="26">
+                    <div class="date">26</div>
+                </li>
+                 <li class="day" id="27">
+                    <div class="date">27</div>
+                    <div class="FishWildlife" >
+                        <div><span class="dot"></span>Colorado River Nature Walk</div>
+                        <div class="Event-Time">3:00 PM - 5:00 PM</div>
+                        <div class="Event-Location">Colorado River</div>
+                        <div class="Event-Desc">Come walk the Colorado River with our club</div>
+                    </div>
+                </li>
+            </ul>
 
-             </div><!-- End Calendar -->
-        </div> <!-- End Calendar Wrap -->
-        <div id="bg-right"></div>
-        <div id="bg-left"></div>
-        <div id="bg-top"></div>
-        <footer>
+             <ul class="days"> <!-- Week 5 -->
+                <li class="day" id="28">
+                    <div class="date">28</div>
+                <li class="day" id="29">
+                    <div class="date">29</div>
+                </li>
+                 <li class="day" id="30">
+                    <div class="date">30</div>
+                </li>
+                 <li class="day-other-month">
+                    <div class="date">1</div>
+                </li>
+                 <li class="day-other-month">
+                    <div class="date">2</div>
+                </li>
+                 <li class="day-other-month">
+                    <div class="date">3</div>
+                </li>
+                 <li class="day-other-month">
+                    <div class="date">4</div>
+                </li>
+            </ul>
 
-        </footer>
-    </body>
+         </div><!-- End Calendar -->
+    </div> <!-- End Calendar Wrap -->
+    <div id="bg-right"></div>
+    <div id="bg-left"></div>
+    <div id="bg-top"></div>
+    <footer>
 
-    </html>
+    </footer>
+</body>
+
+</html>
