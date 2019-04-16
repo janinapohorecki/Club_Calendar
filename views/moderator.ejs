@@ -38,20 +38,19 @@
                 <li>Event Name</li>
                 <li>Date</li>
                 <li>Time</li>
+                <!-- <li>Description</li> -->
                 <li>Organization</li>
 
                 <li>Approve</li>
             </ul>
-<ul>
+
             <% for(var i=0; i < events.length; i++) { %>
-            <% 
+            <%
                dateday = events[i].StartTime.getDate();
                datemonth = events[i].StartTime.getMonth() + 1;
                dateyear = events[i].StartTime.getYear();
                name = events[i].name;
                clubName = events[i].club;
-               Approved = events[i].Approved;
-               ID = events[i]._id;
 
                stimeH = events[i].StartTime.getHours();
                stimeM = events[i].StartTime.getMinutes();
@@ -60,23 +59,19 @@
                etimeM = events[i].EndTime.getMinutes();
                if (etimeM={}) etimeM = ":00";
             %>
-            <ul class="AT-Record" id="<%=ID%>" >
+            <ul class="AT-Record" id="row-1" >
                 <li><%=name%></li>
                 <li><%=datemonth + "/" + dateday%></li>
                 <li><%=stimeH + stimeM + " - " + etimeH + etimeM%></li>
                 <li><%=clubName%></li>
-                <li><input type="checkbox" name="<%=ID%>" onclick="Check('<%=ID%>','<%=name%>','<%=events[i].StartTime%>','<%=events[i].EndTime%>','<%=events[i].club%>','<%=Approved%>')"></li>
-                <br>
-                <br>
-                <br>
+                <li><input type="checkbox"></li>
             </ul>
+            <br>
+            <br>
+            <br>
             <% } %>
-        </ul>
-        
-        <nav>
-                <a href='/dashboard'><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calendar  </span></button></a>
-        </nav>
 
+            <a href='/dashboard'><button class="button" style="vertical-align:middle"><span>Submit</span></button></a>
         </section>
         <footer>
         </footer>
@@ -86,13 +81,5 @@
     <div id="bg-left"></div>
     <div id="bg-top"></div>
 
-      <script>
-        function Check(_id, name, StartTime, EndTime, club, Approved) {
-            console.log(_id + " " + name + " " + Approved + " Time: " + StartTime);
-            Approved=true;
-            var ele = document.getElementById(_id);
-            ele.remove();
-      }
-      </script>
 </body>
 </html>
