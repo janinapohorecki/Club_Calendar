@@ -750,7 +750,8 @@ nav i {
 
 #sidebar .toggle-sidebar {
     position: absolute;
-    left: 230px;
+    /*left: 230px;*/
+    left: 240px;
     top: 20px;
 }
 
@@ -1305,9 +1306,9 @@ section.CreateAccount-Section button {
     margin-top: -12%;
     border-radius: 8px;
     /*padding: 8px;*/
-    padding-bottom: 13px;
-    width: 190px;
-    height: 43px
+    /*padding-bottom: 13px;*/
+    width: 233px;
+    height: 41px;
     font-size: 17px;
     font-family: "Quicksand", serif;
     border: 2px inset #EBE9ED;
