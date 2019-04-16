@@ -1471,10 +1471,47 @@ margin-top: .9%;
     padding: 15px 0px 0px 8px;
     border-left: 1px solid #0ebeff;
     position: absolute;
-    pointer: none;
 }
 
 /* End Create Event Page */
+
+/* Start Successful Event Page */
+.SuccessEvent-Wrap h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.SuccessEvent-Wrap ul li {
+    margin-left: 37%;
+    font-size: 25px;
+    
+}
+
+.SuccessEvent-Wrap button {
+    width: 150px;
+    height: 50px;
+    background-color: #FFCE56;
+    border: black 3px;
+    color: black;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+.SuccessEvent-Wrap button:hover {
+    background-color: #f29f3a; 
+}
+
+/* End Successful Event Page */
 
 /* Start Side Margins */
 #bg-right {
