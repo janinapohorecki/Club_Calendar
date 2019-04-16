@@ -43,7 +43,7 @@ header div.logo img {
     height: 5%;
     float: left;
     padding-right: 50px;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 20px;
     margin-left: 145px;
 }
@@ -72,7 +72,7 @@ header button {
     float: right;
     display: inline-block;
     margin-right: 142px;
-    margin-top: -4.8%;
+    margin-top: -5.2%;
     margin-bottom: px;
     text-align: center;
     padding: 15px 32px;
@@ -336,7 +336,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .PAC-EVENTS {
+#calendar .PAC {
     clear: both;
     display: block;
     font-weight: bold;
@@ -350,7 +350,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .CAB-EVENTS {
+#calendar .CAB {
     clear: both;
     display: block;
     font-weight: bold;
@@ -364,7 +364,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .TableTopGames-EVENTS {
+#calendar .TableTopGames {
     clear: both;
     display: block;
     font-weight: bold;
@@ -378,7 +378,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .ResidenceLife-EVENTS {
+#calendar .ResidenceLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -391,7 +391,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .StudentLife-EVENTS {
+#calendar .StudentLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -404,7 +404,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Soccer-EVENTS {
+#calendar .Soccer {
     clear: both;
     display: block;
     font-weight: bold;
@@ -417,7 +417,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Football-EVENTS {
+#calendar .Football {
     clear: both;
     display: block;
     font-weight: bold;
@@ -430,7 +430,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Volleyball-EVENTS {
+#calendar .Volleyball {
     clear: both;
     display: block;
     font-weight: bold;
@@ -443,7 +443,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Hockey-EVENTS {
+#calendar .Hockey {
     clear: both;
     display: block;
     font-weight: bold;
@@ -456,7 +456,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Baseball-EVENTS {
+#calendar .Baseball {
     clear: both;
     display: block;
     font-weight: bold;
@@ -469,7 +469,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .AccountingClub-EVENTS {
+#calendar .AccountingClub {
     clear: both;
     display: block;
     font-weight: bold;
@@ -482,7 +482,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .ACM-EVENTS {
+#calendar .ACM {
     clear: both;
     display: block;
     font-weight: bold;
@@ -496,7 +496,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .GEMS-EVENTS {
+#calendar .GEMS {
     clear: both;
     display: block;
     font-weight: bold;
@@ -509,7 +509,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .SignLanguage-EVENTS {
+#calendar .SignLanguage {
     clear: both;
     display: block;
     font-weight: bold;
@@ -522,7 +522,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .EngineeringClub-EVENTS {
+#calendar .EngineeringClub {
     clear: both;
     display: block;
     font-weight: bold;
@@ -535,7 +535,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .\7Thunders-EVENTS {
+#calendar .\7Thunders {
     clear: both;
     display: block;
     font-weight: bold;
@@ -548,7 +548,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .FaithLife-EVENTS {
+#calendar .FaithLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -561,7 +561,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .GrandValleyCM-EVENTS {
+#calendar .GrandValleyCM {
     clear: both;
     display: block;
     font-weight: bold;
@@ -574,7 +574,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .YoungLife-EVENTS {
+#calendar .YoungLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -587,7 +587,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .MesaCatholic-EVENTS {
+#calendar .MesaCatholic {
     clear: both;
     display: block;
     font-weight: bold;
@@ -600,7 +600,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .FishWildlife-EVENTS {
+#calendar .FishWildlife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -613,7 +613,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .CMUTV-EVENTS {
+#calendar .CMUTV {
     clear: both;
     display: block;
     font-weight: bold;
@@ -626,7 +626,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Aggies-EVENTS {
+#calendar .Aggies {
     clear: both;
     display: block;
     font-weight: bold;
@@ -639,7 +639,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .CircleK-EVENTS {
+#calendar .CircleK {
     clear: both;
     display: block;
     font-weight: bold;
@@ -652,7 +652,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Alumni-EVENTS {
+#calendar .Alumni {
     clear: both;
     display: block;
     font-weight: bold;

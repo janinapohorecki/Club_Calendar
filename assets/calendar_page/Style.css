@@ -52,7 +52,7 @@ header div.headtit  {
     width: 20%;
     text-align: left;
     font-size: 100%;
-    padding-top: 60px;
+    padding-top: 65px;
     border: transparent;
     display: inline;
     margin-right: 30px;
@@ -72,7 +72,7 @@ header button {
     float: right;
     display: inline-block;
     margin-right: 142px;
-    margin-top: -4.8%;
+    margin-top: -5%;
     margin-bottom: px;
     text-align: center;
     padding: 15px 32px;
@@ -1099,7 +1099,7 @@ section.CreateAccount-Section button {
   margin-left: 1px;
  padding: 0;
   height: 95%;
-  width: 200px;
+  width: 192px;
   font-size: 16px;
 }
 
