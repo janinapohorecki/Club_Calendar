@@ -118,12 +118,11 @@
            etimeM = events[i].EndTime.getMinutes();
            if (etimeM={}) etimeM = "00";
            eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
-
-
           %>
 
         <script>
-        document.body.onload = addElement;
+        // var newElement = addElement();
+        // document.body.onload = addElement;
         function addElement () {
         var newDiv = document.createElement("div");
         var newContent = document.createTextNode("<%=name%>");
@@ -133,6 +132,7 @@
         console.log(newDiv);
         console.log("day of event <%=dateday%>");
         console.log("amount of events <%=events.length%>");
+        // return this;
         }
         </script>
         <% } %>
@@ -255,14 +255,14 @@
                     <%
                      %>
                      <li class="day" id="19">
-                        <div class="date"><p>19</p>
-                        <div class= "<%=events[0].club%>" style="display: none">
-                             <div><span class="dot"></span> <%=events[0].club%></div>
-                             <div class="Event-Time"><%=events[0].club%></div>
+                        <div class="date">19</div>
+
+                        <!-- <div class= "<%=events[0].club%>" style="display: none">
+                             <div><span class="dot"></span> <%=events[1].club%></div>
+                             <div class="Event-Time"><%=events[1].club%></div>
                              <div class="Event-Location">University Center</div>
                              <div class="Event-Desc">Free Pancakes to Students!</div>
-                         </div>
-                         </div>
+                         </div> -->
                     </li>
                      <li class="day" id="20">
                         <div class="date">20</div>
@@ -324,4 +324,5 @@
 
         </footer>
     </body>
+
     </html>
