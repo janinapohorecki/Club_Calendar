@@ -38,6 +38,8 @@ header {
     width: 100%;
 }
 
+
+
 header div.logo img {
     width: 5%;
     height: 5%;
@@ -100,6 +102,11 @@ nav #MyUser {
 
 nav #Add {
     margin-right: 350px;
+}
+
+nav #check00:hover {
+cursor: pointer;
+color: #A62645;
 }
 
 

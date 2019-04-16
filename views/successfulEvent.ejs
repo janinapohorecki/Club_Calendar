@@ -22,7 +22,7 @@
         </div>
 
         <nav>
-            <a href="/dashboard"><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calender  </span></button></a>
+            <a href="/dashboard"><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calendar  </span></button></a>
         </nav>
 
         </header>
@@ -32,7 +32,7 @@
                     <li>Event name: <%=event.name%></li>
                     <li>Description: <%=event.description%></li>
                     <li>Location: <%=event.location%></li>
-                    <li>Date and Time: <%=event.StartTime.getMonth() + "/" + event.StartTime.getDate() + " " + event.StartTime.getHours() + ":" + event.StartTime.getMinutes() + " - " + event.EndTime.getHours() + ":" + event.EndTime.getMinutes()%></li>
+                    <li>Date and Time: <%=event.StartTime.getMonth() + "/" + event.StartTime.getDate() + " " + event.StartTime.getHours() + ":" + event.StartTime.getMinutes() + "0 - " + event.EndTime.getHours() + ":" + event.EndTime.getMinutes() + "0"%></li>
                 </ul>
 
 
