@@ -720,9 +720,11 @@ nav i {
     border-color: #A62645;
 }
 
+    
 #sidebar.active {
-    left: 10px;
+    left: 1px;
 }
+
 
 #sidebar #Begin-List {
     max-height: 600px;
