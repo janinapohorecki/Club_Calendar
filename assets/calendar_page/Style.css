@@ -43,7 +43,7 @@ header div.logo img {
     height: 5%;
     float: left;
     padding-right: 50px;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 20px;
     margin-left: 145px;
 }
@@ -72,7 +72,7 @@ header button {
     float: right;
     display: inline-block;
     margin-right: 142px;
-    margin-top: -4.8%;
+    margin-top: -3.1%;
     margin-bottom: px;
     text-align: center;
     padding: 15px 32px;
@@ -153,7 +153,7 @@ nav i {
     float: center;
     margin-top: 5.5%;
     margin-bottom: 2.5%;
-    margin-left: 43%;
+    margin-left: 35%;
 }
 
 
@@ -336,7 +336,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .PAC-EVENTS {
+#calendar .PAC {
     clear: both;
     display: block;
     font-weight: bold;
@@ -350,7 +350,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .CAB-EVENTS {
+#calendar .CAB {
     clear: both;
     display: block;
     font-weight: bold;
@@ -364,7 +364,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .TableTopGames-EVENTS {
+#calendar .TableTopGames {
     clear: both;
     display: block;
     font-weight: bold;
@@ -378,7 +378,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .ResidenceLife-EVENTS {
+#calendar .ResidenceLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -391,7 +391,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .StudentLife-EVENTS {
+#calendar .StudentLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -404,7 +404,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Soccer-EVENTS {
+#calendar .Soccer {
     clear: both;
     display: block;
     font-weight: bold;
@@ -417,7 +417,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Football-EVENTS {
+#calendar .Football {
     clear: both;
     display: block;
     font-weight: bold;
@@ -430,7 +430,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Volleyball-EVENTS {
+#calendar .Volleyball {
     clear: both;
     display: block;
     font-weight: bold;
@@ -443,7 +443,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Hockey-EVENTS {
+#calendar .Hockey {
     clear: both;
     display: block;
     font-weight: bold;
@@ -456,7 +456,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Baseball-EVENTS {
+#calendar .Baseball {
     clear: both;
     display: block;
     font-weight: bold;
@@ -469,7 +469,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .AccountingClub-EVENTS {
+#calendar .AccountingClub {
     clear: both;
     display: block;
     font-weight: bold;
@@ -482,7 +482,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .ACM-EVENTS {
+#calendar .ACM {
     clear: both;
     display: block;
     font-weight: bold;
@@ -496,7 +496,7 @@ nav i {
     background: transparent;
 }
 
-#calendar .GEMS-EVENTS {
+#calendar .GEMS {
     clear: both;
     display: block;
     font-weight: bold;
@@ -509,7 +509,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .SignLanguage-EVENTS {
+#calendar .SignLanguage {
     clear: both;
     display: block;
     font-weight: bold;
@@ -522,7 +522,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .EngineeringClub-EVENTS {
+#calendar .EngineeringClub {
     clear: both;
     display: block;
     font-weight: bold;
@@ -535,7 +535,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .\7Thunders-EVENTS {
+#calendar .\7Thunders {
     clear: both;
     display: block;
     font-weight: bold;
@@ -548,7 +548,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .FaithLife-EVENTS {
+#calendar .FaithLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -561,7 +561,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .GrandValleyCM-EVENTS {
+#calendar .GrandValleyCM {
     clear: both;
     display: block;
     font-weight: bold;
@@ -574,7 +574,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .YoungLife-EVENTS {
+#calendar .YoungLife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -587,7 +587,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .MesaCatholic-EVENTS {
+#calendar .MesaCatholic {
     clear: both;
     display: block;
     font-weight: bold;
@@ -600,7 +600,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .FishWildlife-EVENTS {
+#calendar .FishWildlife {
     clear: both;
     display: block;
     font-weight: bold;
@@ -613,7 +613,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .CMUTV-EVENTS {
+#calendar .CMUTV {
     clear: both;
     display: block;
     font-weight: bold;
@@ -626,7 +626,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Aggies-EVENTS {
+#calendar .Aggies {
     clear: both;
     display: block;
     font-weight: bold;
@@ -639,7 +639,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .CircleK-EVENTS {
+#calendar .CircleK {
     clear: both;
     display: block;
     font-weight: bold;
@@ -652,7 +652,7 @@ nav i {
     line-height:14px;
     background: transparent;
 }
-#calendar .Alumni-EVENTS {
+#calendar .Alumni {
     clear: both;
     display: block;
     font-weight: bold;
@@ -721,7 +721,7 @@ nav i {
 }
 
 #sidebar.active {
-    left: 10px;
+    left: -1px;
 }
 
 #sidebar #Begin-List {
@@ -792,7 +792,9 @@ nav i {
     margin-top: 25px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
+    
 }
+
 
 ul#Social-Sublist{
   /*max-height:0;*/
@@ -1071,11 +1073,11 @@ section.CreateAccount-Section button {
 /* Start Login Page */
 .Login-Section .Elements {
   display: inline-flex;
-  width: 280px;
+  width: 300px;
   height: 40px;
   background-color:  transparent;
   border-width: 2px;
-  margin-left: 41%;
+  margin-left: 38.5%;
   margin-top: 30px;
     
   border-style: solid;
@@ -1085,7 +1087,7 @@ section.CreateAccount-Section button {
 
 .Login-Section h1 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 55px;
 } 
 
 .Login-Section .itemright input{
@@ -1095,10 +1097,10 @@ section.CreateAccount-Section button {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 6px;
   margin-left: 1px;
+ padding: 0;
   height: 95%;
-  width: 165px;
-    font-size: 16px;
-  
+  width: 192px;
+  font-size: 16px;
 }
 
 .Login-Section .itemright input:hover{
@@ -1113,9 +1115,10 @@ section.CreateAccount-Section button {
   border-color: #A62645;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 6px;
-  width: 100px;
-  padding-top: 3px;
+  width: 1px;
+  padding-top: 4px;
   padding-left: 4px;
+    padding-right: 95px;
 }
 
 .Login-Section .itemright input:focus{
@@ -1129,8 +1132,8 @@ section.CreateAccount-Section button {
     border: black 3px;
     color: black;
     display: inline-block;
-    margin-left: -72%;
-    margin-top: 30%;
+    margin-left: -159%;
+    margin-top: 55%;
     margin-bottom: 10px;
     text-align: center;
     padding: 15px 32px;
@@ -1304,13 +1307,14 @@ section.CreateAccount-Section button {
     margin-left: 25%;
     margin-top: -12%;
     border-radius: 8px;
-    padding: 8px;
-    padding-bottom: 13px;
-    width: 190px;
+    /*padding: 8px;*/
+    /*padding-bottom: 13px;*/
+    width: 233px;
+    height: 41px;
     font-size: 17px;
     font-family: "Quicksand", serif;
     border: 2px inset #EBE9ED;
-    
+    text-align: center;
 }
 
 .CreateEvent-Section #NameLabel {
@@ -1455,6 +1459,19 @@ margin-top: .9%;
 
 .CreateEvent-Section #cancelBtn:hover {
     background-color: #a0aaa1;
+}
+
+.CreateEvent-Section select#club:after {
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: #0ebeff;
+    right: 11px;
+    top: 6px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer: none;
 }
 
 /* End Create Event Page */
