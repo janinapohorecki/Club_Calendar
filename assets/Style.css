@@ -1070,121 +1070,122 @@ section.CreateAccount-Section button {
 
 /* Start Login Page */
 .Login-Section .Elements {
-  display: inline-flex;
-  width: 280px;
-  height: 40px;
-  background-color:  transparent;
-  border-width: 2px;
-  margin-left: 41%;
-  margin-top: 30px;
+    display: inline-flex;
+    width: 300px;
+    height: 40px;
+    background-color:  transparent;
+    border-width: 2px;
+    margin-left: 38.5%;
+    margin-top: 30px;
+      
+    border-style: solid;
+    border-color: #A62645;
+    border-radius: 12px;
+  }
+  
+  .Login-Section h1 {
+      text-align: center;
+      margin-top: 55px;
+  } 
+  
+  .Login-Section .itemright input{
+    text-align: center;
+    border: 0px solid;
+    border-color: transparent;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 6px;
+    margin-left: 1px;
+   padding: 0;
+    height: 95%;
+    width: 200px;
+    font-size: 16px;
+  }
+  
+  .Login-Section .itemright input:hover{
+   
+      background-color: #E4E4E4;
     
-  border-style: solid;
-  border-color: #A62645;
-  border-radius: 12px;
-}
-
-.Login-Section h1 {
-    text-align: center;
-    margin-top: 50px;
-} 
-
-.Login-Section .itemright input{
-  text-align: center;
-  border: 0px solid;
-  border-color: transparent;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 6px;
-  margin-left: 1px;
-  height: 95%;
-  width: 165px;
-    font-size: 16px;
+  }
+  .Login-Section .itemleft {
+    color: #FFF;
+    background-color: #A62645;
+    border-style: solid;
+    border-color: #A62645;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 6px;
+    width: 1px;
+    padding-top: 4px;
+    padding-left: 4px;
+      padding-right: 85px;
+  }
   
-}
-
-.Login-Section .itemright input:hover{
- 
-    background-color: #E4E4E4;
+  .Login-Section .itemright input:focus{
+      outline: none;
+  }
   
-}
-.Login-Section .itemleft {
-  color: #FFF;
-  background-color: #A62645;
-  border-style: solid;
-  border-color: #A62645;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 6px;
-  width: 100px;
-  padding-top: 3px;
-  padding-left: 4px;
-}
-
-.Login-Section .itemright input:focus{
-    outline: none;
-}
-
-.Login-Section button {
-    width: 130px;
-    height: 50px;
-    background-color: #FFCE56;
-    border: black 3px;
-    color: black;
-    display: inline-block;
-    margin-left: -72%;
-    margin-top: 30%;
-    margin-bottom: 10px;
-    text-align: center;
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.5s;
-    cursor: pointer;
-    border-radius: 30px; 
-}
-
-
-.Login-Section button i {
-    margin-top: -4px;
-}
-
-
-.Login-Section button:hover {
- background-color: #f29f3a;
-}
-
-.Revert-To-Sign-Up h1{
-    text-align: center;
-    margin-top: 220px;
-}
-
-.Revert-To-Sign-Up p{
-    text-align: center;
-    width: 40%;
-    margin-top: 20px;
-    margin-left: 30%;
-}
-
-.Revert-To-Sign-Up button {
-    width: 150px;
-    height: 50px;
-    background-color: #FFCE56;
-    border: black 3px;
-    color: black;
-    display: inline-block;
-    margin-left: 45%;
-    margin-top: 2%;
-    margin-bottom: 10px;
-    text-align: center;
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.5s;
-    cursor: pointer;
-    border-radius: 30px; 
-}
-
-.Revert-To-Sign-Up button:hover {
-    background-color: #f29f3a; 
-}
+  .Login-Section button {
+      width: 130px;
+      height: 50px;
+      background-color: #FFCE56;
+      border: black 3px;
+      color: black;
+      display: inline-block;
+      margin-left: -159%;
+      margin-top: 55%;
+      margin-bottom: 10px;
+      text-align: center;
+      padding: 15px 32px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.5s;
+      cursor: pointer;
+      border-radius: 30px; 
+  }
+  
+  
+  .Login-Section button i {
+      margin-top: -4px;
+  }
+  
+  
+  .Login-Section button:hover {
+   background-color: #f29f3a;
+  }
+  
+  .Revert-To-Sign-Up h1{
+      text-align: center;
+      margin-top: 220px;
+  }
+  
+  .Revert-To-Sign-Up p{
+      text-align: center;
+      width: 40%;
+      margin-top: 20px;
+      margin-left: 30%;
+  }
+  
+  .Revert-To-Sign-Up button {
+      width: 150px;
+      height: 50px;
+      background-color: #FFCE56;
+      border: black 3px;
+      color: black;
+      display: inline-block;
+      margin-left: 45%;
+      margin-top: 2%;
+      margin-bottom: 10px;
+      text-align: center;
+      padding: 15px 32px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.5s;
+      cursor: pointer;
+      border-radius: 30px; 
+  }
+  
+  .Revert-To-Sign-Up button:hover {
+      background-color: #f29f3a; 
+  }
 /* End Login Page */
 
 /* Start Moderator Page */
