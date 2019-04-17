@@ -10,7 +10,6 @@ body {
     z-index: 7;
 }
 
-
 .wrapper {
     width: 100%;
     
@@ -28,6 +27,17 @@ section:after {
     content: " ";
     display: block;
     clear: both;
+}
+
+#overlay {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  display:none;
+  background-color:#000;
+  opacity:0.5;
 }
 
 header {
@@ -1512,6 +1522,58 @@ margin-top: .9%;
 }
 
 /* End Successful Event Page */
+
+/* Start Day Modal Box */
+
+.forms-wrapper {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 2rem;
+    border: .1rem solid #A62645;
+    border-radius: 10px;
+    display: none;
+}
+
+.x-btn {
+    font-size: 1.7rem;
+    color: #000;
+    font-weight: bolder;
+    position:absolute;
+    bottom: 7.1rem;
+    right: .2rem;
+    cursor: pointer;
+    border: 1px solid  #FFCE56;
+    background-color: #FFCE56;
+    border-radius: 10px;
+    width: 40px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.x-btn:hover {
+    background-color:#f29f3a; 
+}
+
+#show-hide-forms:checked ~ .forms-wrapper {
+    display: block;
+}
+
+
+
+#show-hide-forms:checked ~ #overlay {
+    display: block;
+}
+
+
+#calendar .date:hover {
+    background: #FFCE56;
+    cursor: pointer;
+}
+/* End Day Modal Box */
 
 /* Start Side Margins */
 #bg-right {
