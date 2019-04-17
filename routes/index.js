@@ -25,15 +25,4 @@ router.get('/dashboard', ensureAuthenticated, function(req,res) {
   })
 });
 
-// Dashboard
-var query2 = Event.where({Approved:true});
-query2.select('-_id club name StartTime EndTime description location')
-query2.find(function(err,event) {
-  router.get('/dashboard', ensureAuthenticated, (req, res) =>
-  res.render('dashboard', {
-    user: req.user,
-    events : event
-  })
-)});
-
 module.exports = router;
