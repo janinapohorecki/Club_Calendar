@@ -23,7 +23,6 @@ mongoose
   .catch(err => console.log(err));
 
 // EJS
-//app.use(expressLayouts);
 app.use('/assets', express.static('assets'));
 app.set('view engine', 'ejs');
 

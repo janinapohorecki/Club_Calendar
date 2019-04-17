@@ -29,7 +29,7 @@
 
 
         <section class="ApproveEvent-Section">
-
+            <form id="mod-form" method="POST" action="/moderator">
              <h1>Approve Events</h1>
 
             <br>
@@ -60,7 +60,7 @@
                etimeM = events[i].EndTime.getMinutes();
                if (etimeM={}) etimeM = ":00";
             %>
-            <ul class="AT-Record" id="<%=ID%>" >
+            <ul class="AT-Record" id="<%=ID%>">
                 <li><%=name%></li>
                 <li><%=datemonth + "/" + dateday%></li>
                 <li><%=stimeH + stimeM + " - " + etimeH + etimeM%></li>
@@ -76,7 +76,7 @@
         <nav>
                 <a href='/dashboard'><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calendar  </span></button></a>
         </nav>
-
+    </form>
         </section>
         <footer>
         </footer>
