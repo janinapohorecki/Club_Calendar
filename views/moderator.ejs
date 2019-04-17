@@ -29,8 +29,9 @@
 
 
         <section class="ApproveEvent-Section">
-            <form id="mod-form" method="POST" action="/moderator">
-             <h1>Approve Events</h1>
+            <%- include ./partials/messages %>
+            <form action="/events/createevent" method="POST">
+            <h1>Approve Events</h1>
 
             <br>
 
@@ -42,7 +43,7 @@
 
                 <li>Approve</li>
             </ul>
-<ul>
+        <ul>
             <% for(var i=0; i < events.length; i++) { %>
             <% 
                dateday = events[i].StartTime.getDate();
@@ -65,7 +66,7 @@
                 <li><%=datemonth + "/" + dateday%></li>
                 <li><%=stimeH + stimeM + " - " + etimeH + etimeM%></li>
                 <li><%=clubName%></li>
-                <li><input type="checkbox" name="<%=ID%>" onclick="Check('<%=ID%>','<%=name%>','<%=events[i].StartTime%>','<%=events[i].EndTime%>','<%=events[i].club%>','<%=Approved%>')"></li>
+                <li><input type="checkbox" class="submit" name="<%=ID%>" onclick="Check('<%=ID%>','<%=name%>','<%=events[i].StartTime%>','<%=events[i].EndTime%>','<%=events[i].club%>','<%=Approved%>')"></li>
                 <br>
                 <br>
                 <br>
@@ -74,9 +75,9 @@
         </ul>
         
         <nav>
-                <a href='/dashboard'><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calendar  </span></button></a>
+                <a href='/dashboard'><button class="submit" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calendar  </span></button></a>
         </nav>
-    </form>
+        </form>
         </section>
         <footer>
         </footer>
@@ -86,12 +87,13 @@
     <div id="bg-left"></div>
     <div id="bg-top"></div>
 
-      <script>
+      <script src="/approve/approve.js">
+        
         function Check(_id, name, StartTime, EndTime, club, Approved) {
             console.log(_id + " " + name + " " + Approved + " Time: " + StartTime);
-            Approved=true;
             var ele = document.getElementById(_id);
             ele.remove();
+            test(_id);
       }
       </script>
 </body>

@@ -58,6 +58,7 @@ app.use('/', require('./routes/index.js'));
 app.use('/users', require('./routes/users.js'));
 app.use('/events', require('./routes/events.js'));
 app.use('/mod', require('./routes/moderator.js'));
+app.use('/approve', require('./routes/approve.js'));
 //app.use('/users/login', require('./routes/users/login.js'));
 const PORT = process.env.PORT || 5000;
 
