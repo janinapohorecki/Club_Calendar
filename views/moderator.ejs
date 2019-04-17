@@ -29,8 +29,6 @@
 
 
         <section class="ApproveEvent-Section">
-            <%- include ./partials/messages %>
-            <form action="/events/createevent" method="POST">
             <h1>Approve Events</h1>
 
             <br>
@@ -75,9 +73,8 @@
         </ul>
         
         <nav>
-                <a href='/dashboard'><button class="submit" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calendar  </span></button></a>
+                <a href='/_dashboard'><button class="button" style="vertical-align:middle"><span> <i class="arrow left"></i> Back to Calendar  </span></button></a>
         </nav>
-        </form>
         </section>
         <footer>
         </footer>
@@ -87,13 +84,12 @@
     <div id="bg-left"></div>
     <div id="bg-top"></div>
 
-      <script src="/approve/approve.js">
+      <script>
         
         function Check(_id, name, StartTime, EndTime, club, Approved) {
             console.log(_id + " " + name + " " + Approved + " Time: " + StartTime);
             var ele = document.getElementById(_id);
             ele.remove();
-            test(_id);
       }
       </script>
 </body>

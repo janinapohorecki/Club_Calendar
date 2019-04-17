@@ -4,6 +4,10 @@ const { ensureAuthenticated } = require('../config/auth');
 
 const Event = require('../models/Event');
 
+router.get('/_', function(req,res) {
+  res.render('_homepage');
+})
+
 var query1 = Event.where({Approved:true});
 query1.select('-_id club name StartTime EndTime description location')
 router.get('/', function(req,res) {
@@ -35,5 +39,17 @@ query2.find(function(err,event) {
     events : event
   })
 )});
+
+// Dashboard
+var query3 = Event.where({Approved:true});
+query3.select('-_id club name StartTime EndTime description location')
+query3.find(function(err,event) {
+  router.get('/_dashboard', ensureAuthenticated, (req, res) =>
+  res.render('_dashboard', {
+    user: req.user,
+    events : event
+  })
+)});
+
 
 module.exports = router;
