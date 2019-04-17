@@ -8,6 +8,7 @@ const { forwardAuthenticated } = require('../config/auth');
 
 // Login Page
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
+router.get('/_login', forwardAuthenticated, (req, res) => res.render('_login'));
 
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
@@ -89,11 +90,19 @@ router.post('/login', (req, res, next) => {
   })(req, res, next);
 });
 
+router.post('/_login', (req, res, next) => {
+  passport.authenticate('local', {
+    successRedirect: '/_dashboard',
+    failureRedirect: '/users/_login',
+    failureFlash: true
+  })(req, res, next);
+});
+
 // Logout
 router.get('/logout', (req, res) => {
   req.logout();
   req.flash('success_msg', 'You are logged out');
-  res.redirect('/_homepage');
+  res.redirect('/_');
 });
 
 
