@@ -10,7 +10,7 @@
     <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="overlay"></div>
     <div id="calendar-wrap">
         <header>
             
@@ -211,7 +211,20 @@
                     <div class="date">18</div>
                 </li>
                  <li class="day">
-                    <div class="date">19</div>
+                     <!-- Modal Box -->
+                     <input type = "checkbox" id = "show-hide-forms" hidden>
+                    <div class = "forms-wrapper">
+                         <label for = "show-hide-forms" class="x-btn">&#10005;</label>
+                         <input type = "checkbox" id = "show-form" hidden>
+                         <div class="PAC">
+                            <div><span class="dot"></span> Flap Jack Friday</div>
+                            <div class="Modal-Day-Event-Time">9:00 AM - 11:00 AM</div>
+                            <div class="Modal-Day-Event-Location">University Center</div>
+                            <div class="Modal-Day-Event-Desc">Free Pancakes to Students!</div>
+                        </div>
+                     </div>
+                     <!-- End Modal Box -->
+                    <label for = "show-hide-forms"><div class="date">19</div></label>
                       <div class="PAC">
                          <div><span class="dot"></span> Flap Jack Friday</div>
                          <div class="Event-Time">9:00 AM - 11:00 AM</div>
