@@ -103,40 +103,6 @@
                 </ul></li>
         </ul>
     </div>
-
-    <%for (i=0; i < events.length; i++) { %>
-      <%
-       dateday = events[i].StartTime.getDate();
-       location = events[i].location;
-       name = events[i].name;
-       clubName = events[i].club;
-       description = events[i].description;
-       stimeH = events[i].StartTime.getHours();
-       stimeM = events[i].StartTime.getMinutes();
-       if (stimeM={}) stimeM = "00";
-       etimeH = events[i].EndTime.getHours();
-       etimeM = events[i].EndTime.getMinutes();
-       if (etimeM={}) etimeM = "00";
-       eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
-      %>
-
-    <script>
-    // var newElement = addElement();
-    document.body.onload = addElement;
-    function addElement () {
-    var newDiv = document.createElement("div");
-    var newContent = document.createTextNode("<%=name%>");
-    newDiv.appendChild(newContent);
-    var currentDiv = document.getElementById("div1");
-    document.getElementById("<%=dateday%>").insertBefore(newDiv, currentDiv);
-    console.log(newDiv);
-    console.log("day of event <%=dateday%>");
-    console.log("amount of events <%=events.length%>");
-    // return this;
-    }
-    </script>
-    <% } %>
-
         <div id="calendar">
             <div class="Top-Cal">
                 <button class="button" style="vertical-align:middle" onclick="window.location.href = '/March2019.html';"> <i class="arrow left"></i>   </button>
