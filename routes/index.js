@@ -8,6 +8,14 @@ router.get('/_', function(req,res) {
   res.render('_homepage');
 })
 
+router.get('/march', function(req,res) {
+  res.render('march');
+})
+
+router.get('/may', function(req,res) {
+  res.render('may');
+})
+
 var query1 = Event.where({Approved:true});
 query1.select('-_id club name StartTime EndTime description location')
 router.get('/', function(req,res) {
