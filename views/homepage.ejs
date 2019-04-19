@@ -160,25 +160,54 @@
                         <div class="date">8</div>
                     </li>
                      <li class="day" id="9">
-                        <div class="date">9</div>
-                         <div class="PAC" >
-                             <div><span class="dot"></span> PAC Meeting</div>
-                             <div class="Event-Time">10:00 AM - 12:00 PM</div>
-                             <div class="Event-Location">Escalante 211</div>
-                             <div class="Event-Desc">Discuss Budget</div>
+                         <!-- Modal Box -->
+                     <input type = "checkbox" id = "show-hide-forms-nine" hidden>
+                     <div class = "forms-wrapper" id = "modal-nine">
+                          <label for = "show-hide-forms-nine" class="x-btn">&#10005;</label>
+                          <input type = "checkbox" id = "show-form" hidden>
+                         <h1>Events - April 9</h1>
+                          <div class="PAC-Modal">
+                             <div> PAC Meeting</div>
+                             <div class="Modal-Day-Event-Time">10:00 AM - 12:00 PM</div>
+                             <div class="Modal-Day-Event-Location">Escalante 211</div>
+                             <div class="Modal-Day-Event-Desc">Discuss Budget</div>
                          </div>
-                         <div class="GEMS" >
-                         <div><span class="dot"></span> GEMS Meeting</div>
-                             <div class="Event-Time">5:00 PM - 6:00 PM</div>
-                             <div class="Event-Location">Wubben 137</div>
-                             <div class="Event-Desc">MCAT Prep</div>
-                        </div>
-                         <div class = "CAB" >
-                           <div><span class="dot"></span> CAB Meeting</div>
-                             <div class="Event-Time">4:00 PM - 4:30 PM</div>
-                             <div class="Event-Location">UC Student Life</div>
-                             <div class="Event-Desc">Vote for Leaders</div>
-                         </div>
+                         <br>
+                         <div class="CAB-Modal">
+                           <div>CAB Meeting</div>
+                          <div class="Modal-Day-Event-Time">4:00 PM - 4:30 PM</div>
+                          <div class="Modal-Day-Event-Location">UC Student Life</div>
+                          <div class="Modal-Day-Event-Desc">Vote for Leaders</div>
+                      </div>
+                         <br>
+                         <div class="GEMS-Modal">
+                           <div>GEMS Meeting</div>
+                          <div class="Modal-Day-Event-Time">5:00 PM - 6:00 PM</div>
+                          <div class="Modal-Day-Event-Location">Wubben 137</div>
+                          <div class="Modal-Day-Event-Desc">MCAT Prep</div>
+                      </div>
+                      </div>
+                      <div class="overlay" hidden></div>
+                      <!-- End Modal Box -->
+                      <label for = "show-hide-forms-nine"><div class="date">9</div></label>
+                      <div class="PAC">
+                          <div><span class="dot"></span> PAC Meeting</div>
+                          <div class="Event-Time">10:00 AM - 12:00 PM</div>
+                          <div class="Event-Location">Escalante 211</div>
+                          <div class="Event-Desc">Discuss Budget</div>
+                      </div>
+                      <div class = "CAB">
+                        <div><span class="dot"></span> CAB Meeting</div>
+                          <div class="Event-Time">4:00 PM - 4:30 PM</div>
+                          <div class="Event-Location">UC Student Life</div>
+                          <div class="Event-Desc">Vote for Leaders</div>
+                      </div>
+                      <div class="GEMS">
+                      <div><span class="dot"></span> GEMS Meeting</div>
+                          <div class="Event-Time">5:00 PM - 6:00 PM</div>
+                          <div class="Event-Location">Wubben 137</div>
+                          <div class="Event-Desc">MCAT Prep</div>
+                     </div>
                     </li>
                      <li class="day" id="10">
                         <div class="date">10</div>
@@ -228,11 +257,11 @@
                         <div class="date">18</div>
                     </li>
                 </li>
-                <li class="day">
+                <li class="day" id = "19">
                     <!-- Modal Box -->
-                    <input type = "checkbox" id = "show-hide-forms" hidden>
-                   <div class = "forms-wrapper">
-                        <label for = "show-hide-forms" class="x-btn">&#10005;</label>
+                    <input type = "checkbox" id = "show-hide-forms-nineteen" hidden>
+                   <div class = "forms-wrapper" id = "modal-nineteen">
+                        <label for = "show-hide-forms-nineteen" class="x-btn">&#10005;</label>
                         <input type = "checkbox" id = "show-form" hidden>
                        <h1>Events - April 19</h1>
                         <div class="PAC-Modal">
@@ -248,23 +277,11 @@
                         <div class="Modal-Day-Event-Location">Twisted Turtle</div>
                         <div class="Modal-Day-Event-Desc">Monthly Pub Night!</div>
                     </div>
-                       <br>
-                       <div class="PAC-Modal">
-                         <div> Free Candy</div>
-                        <div class="Modal-Day-Event-Time">12:00 PM - 1:00 PM</div>
-                        <div class="Modal-Day-Event-Location">Escalante Hall</div>
-                        <div class="Modal-Day-Event-Desc">Get Some Free Candy</div>
+                       
                     </div>
-                       <br>
-                       <div class="PAC-Modal">
-                         <div> Water Slides</div>
-                        <div class="Modal-Day-Event-Time">11:00 PM - 12:00 PM</div>
-                        <div class="Modal-Day-Event-Location">UC LAWN</div>
-                        <div class="Modal-Day-Event-Desc">Have some fun under the sun!</div>
-                    </div>
-                    </div>
+                    <div class = "overlay" hidden></div>
                     <!-- End Modal Box -->
-                   <label for = "show-hide-forms"><div class="date">19</div></label>
+                   <label for = "show-hide-forms-nineteen"><div class="date">19</div></label>
                      <div class="PAC">
                          <div><span class="dot"></span> Flap Jack Friday</div>
                         <div class="Event-Time">9:00 AM - 11:00 AM</div>
@@ -311,7 +328,18 @@
                         <div class="date">23</div>
                     </li>
                      <li class="day" id="24">
-                        <div class="date">24</div>
+                        <input type = "checkbox" id = "show-hide-forms-twentyfour" hidden>
+                   <div class = "forms-wrapper" id = "modal-twentyfour">
+                        <label for = "show-hide-forms-twentyfour" class="x-btn">&#10005;</label>
+                        <input type = "checkbox" id = "show-form" hidden>
+                       <h1>Events - April 24</h1>
+                       <div class="No-Modal">
+                        <h2>No Events Today</h2>
+                   </div>
+                    </div>
+                    <div class = "overlay" hidden></div>
+                    <!-- End Modal Box -->
+                   <label for = "show-hide-forms-twentyfour"><div class="date">24</div></label>
                     </li>
                      <li class="day" id="25">
                         <div class="date">25</div>
