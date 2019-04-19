@@ -1517,7 +1517,7 @@ margin-top: .9%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 2000;
     padding: 2rem;
     border: .4rem solid #A62645;
     border-radius: 10px;
@@ -1525,7 +1525,16 @@ margin-top: .9%;
     width: 400px;
     height: 300px;
     overflow: scroll;
+    transition: all 0.5s;
 }
+#modal-nineteen {
+    display: none;
+}
+
+#modal-nine {
+    display: none;
+}
+
 .forms-wrapper h1 {
     text-align: center;
     padding-bottom: 15px;
@@ -1554,15 +1563,21 @@ margin-top: .9%;
     border-color: #661629;
 }
 
-#show-hide-forms:checked ~ .forms-wrapper {
+#show-hide-forms-nineteen:checked ~ #modal-nineteen {
+    display: block;
+}
+
+#show-hide-forms-nine:checked ~ #modal-nine {
+    display: block;
+}
+
+#show-hide-forms-twentyfour:checked ~ #modal-twentyfour {
     display: block;
 }
 
 
 
-#show-hide-forms:checked ~ #overlay {
-    display: block;
-}
+
 
 
 #calendar .date:hover {
@@ -1571,10 +1586,308 @@ margin-top: .9%;
     cursor: pointer;
 }
 
+.No-Modal {
+    text-align: center;
+    margin-top: 10%;
+} 
+
 .PAC-Modal {
     border: 2px solid #FFCE56;
     border-radius: 10px;
-    background-color: #FFCE56; 
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+} 
+
+
+.CAB-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+
+.TableTopGames-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+
+.ResidenceLife-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.StudentLife-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Soccer-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Football-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Volleyball-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Hockey-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Baseball-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.AccountingClub-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.ACM-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+
+.GEMS-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.SignLanguage-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.EngineeringClub-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.\7Thunders-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.FaithLife-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.GrandValleyCM-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.YoungLife-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.MesaCatholic-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.FishWildlife-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.CMUTV-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Aggies-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.CircleK-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 80px;
+    z-index: 1005px;
+    font-size: 20px;
+    font-family: "Quicksand", serif;
+}
+.Alumni-Modal {
+    border: 2px solid #FFCE56;
+    border-radius: 10px;
+    background-color: #FFCE56;
     text-align: center;
     font-weight: bold;
     width: 60%;
@@ -1595,11 +1908,21 @@ margin-top: .9%;
 	background: #000;
 	opacity: .5;
 	z-index: 1500 !important;
+    transition: all 0.5s;
 }
 
-#show-hide-forms:checked ~ .overlay {
+#show-hide-forms-nine:checked ~ .overlay {
     display: block;
 }
+
+#show-hide-forms-nineteen:checked ~ .overlay {
+    display: block;
+}
+
+#show-hide-forms-twentyfour:checked ~ .overlay {
+    display: block;
+}
+
 
 /* End Day Modal Box */
 
