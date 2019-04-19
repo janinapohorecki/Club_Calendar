@@ -27,7 +27,7 @@
             <a href = "/users/login"><button class="button" style="vertical-align:middle"><span> Login or Sign Up </span></button></a>
         </nav>
         </header>
-
+        
         <div id="sidebar">
             <div class="toggle-sidebar" onclick="toggleSidebar()">
                 <!--<span></span>
@@ -115,41 +115,8 @@
                            </span>
 
                 </div>-->
-                <%for (i=0; i < events.length; i++) { %>
-                    <%
-                     dateday = events[i].StartTime.getDate();
-                     location = events[i].location;
-                     name = events[i].name;
-                     clubName = events[i].club;
-                     description = events[i].description;
-                     stimeH = events[i].StartTime.getHours();
-                     stimeM = events[i].StartTime.getMinutes();
-                     if (stimeM={}) stimeM = "00";
-                     etimeH = events[i].EndTime.getHours();
-                     etimeM = events[i].EndTime.getMinutes();
-                     if (etimeM={}) etimeM = "00";
-                     eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
-                    %>
-              
-                  <script>
-                  $(function() {
-                    var container = document.createElement('div');
-                    container.id = "wrapper";
-
-                    $('body').append(container);
-
-                    var html = '<div><ul>';
-
-                    for(var i=1; i<=40; i++){
-                        html+= "<li>Testing: "+i+"</li>";
-                    }
-
-                    html+= '</ul></div>';
-
-                    $('#wrapper').append(html);
-                    });
-                  </script>
-                  <% } %>
+                
+                  <div id="layout"></div>
                 <ul class="weekdays">
                     <li>Sunday</li>
                     <li>Monday</li>
@@ -372,6 +339,41 @@
         <footer>
 
         </footer>
+        <%for (i=0; i < events.length; i++) { %>
+            <%
+             dateday = events[i].StartTime.getDate();
+             location = events[i].location;
+             name = events[i].name;
+             ID=events[i]._id;
+             clubName = events[i].club;
+             description = events[i].description;
+             stimeH = events[i].StartTime.getHours();
+             stimeM = events[i].StartTime.getMinutes();
+             if (stimeM={}) stimeM = "00";
+             etimeH = events[i].EndTime.getHours();
+             etimeM = events[i].EndTime.getMinutes();
+             if (etimeM={}) etimeM = "00";
+             eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
+            %>
+            
+          <script>
+            var container = document.createElement('li');
+            container.id = "wrapper";
+            var layout = document.getElementById('<%=dateday%>');
+            layout.appendChild(container);
+
+            var html = '<div class="date">'+"<%=dateday%>"+'</div>';
+
+            html+='<div class="<%=clubName%>">';
+            html+='<div><span class="dot"></span> <%=name%></div>';
+            html+='<div class="Event-Time">7:00 PM - 9:00 PM</div>';
+            html+='<div class="Event-Location">Walker Field</div>';
+            html+='<div class="Event-Desc">CMU Mens Soccer vs Fort Lewis</div>';
+            html+= '</div>';
+
+            container.innerHTML = html;
+          </script>
+          <% } %>
     </body>
 
     </html>

@@ -59,5 +59,13 @@ query3.find(function(err,event) {
   })
 )});
 
+var query1 = Event.where({Approved:true});
+query1.select('-_id club name StartTime EndTime description location')
+router.get('/homepageTesting', function(req,res) {
+  query1.find(function(err,event) {
+    if(err) console.log(err);
+    else res.render('homepageTesting', {events : event});
+  })
+});
 
 module.exports = router;
