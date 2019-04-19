@@ -13,7 +13,7 @@ body {
 
 .wrapper {
     width: 100%;
-    
+
 }
 
 li {
@@ -63,7 +63,7 @@ header div.headtit  {
 /*header div.headtit {
     float: left;
     margin-right: 30px;
-    margin-top: -47px; 
+    margin-top: -47px;
     transform: scale(1.2, 1.2);
 }*/
 
@@ -82,7 +82,7 @@ header button {
     font-size: 16px;
     transition: all 0.5s;
     cursor: pointer;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 
@@ -99,6 +99,73 @@ nav #MyUser {
     color: black;
     width: 130px;
 }
+
+/* START USER DROP DOWN */
+
+
+nav #MyUser i {
+  border: solid black;
+  border-width: 0 2.5px 2.5px 0;
+  display: inline-block;
+  padding: 2.5px;
+  margin-left: 2px;
+  margin-bottom: 4px;
+  cursor: auto;
+}
+
+.dropdown {
+  float: right;
+  margin-top: -4.3%;
+  margin-right: 12%;
+  color: black;
+  width: 130px;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+  padding: 12px 7px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content:hover {
+  display: block;
+  cursor: pointer;
+  background-color: #f29f3a;
+  transition: 0.3s;
+}
+.dropdown:hover .dropdown-content a label{
+  display: block;
+  cursor: pointer;
+  /* background-color: orange; */
+}
+.dropdown:hover .dropdown-content a label:hover{
+  display: block;
+  cursor: pointer;
+  /* color: green;
+  transition: 0.3s; */
+}
+
+.dropdown:hover .dropdown-content a:visited{
+  color: black;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* END USER DROP DOWN */
+
 
 nav #Add {
     margin-right: 350px;
@@ -168,7 +235,7 @@ i {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 6px; 
+  padding: 6px;
 }
 
 nav i {
@@ -208,7 +275,7 @@ nav i {
 }
 
 #calendar .Top-Cal button:hover {
-    background: #f29f3a; 
+    background: #f29f3a;
 }
 
 .parent {
@@ -217,7 +284,7 @@ nav i {
   background-color: transparent;
   float: right;
   margin-top: 65px;
-  margin-right: 120px;    
+  margin-right: 120px;
 }
 .bs {
   background-color: #FFF;
@@ -226,7 +293,7 @@ nav i {
   width: 110px;
   height: 40px;
   font-size: 16px;
-  
+
 }
 /*.parent > span {
   flex: 1 1 0;
@@ -238,7 +305,7 @@ nav i {
   text-align: right;
 }
 .parent .itemleft .bs {
-	border-top-left-radius: 12px; 
+	border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 .parent .itemright .bs{
@@ -307,7 +374,7 @@ nav i {
     padding: 10px 6px;
     color: #FFF;
     font-size: 18px;
-    
+
 }
 
 
@@ -727,7 +794,7 @@ nav i {
     border-color: #A62645;
 }
 
-    
+
 #sidebar.active {
     left: 1px;
 }
@@ -782,7 +849,7 @@ nav i {
     margin-left:-2px;
     background-color: #A62645;
     color: white !important;
-    
+
 }
 
 .toggle-sidebar:hover {
@@ -790,7 +857,7 @@ nav i {
 }
 
 .toggle-sidebar:hover ~ .toggle-sider bar i {
-    border-color: #FFCE56; 
+    border-color: #FFCE56;
 }
 
 .sidebar-header {
@@ -858,7 +925,7 @@ ul#Other-Sublist {
     height:10px;
     width: 10px;
     transform: rotate(45deg);
-    margin-bottom: 3px; 
+    margin-bottom: 3px;
     margin-left: 3px;
 }
 
@@ -1023,7 +1090,7 @@ section.CreateAccount-Section button {
     font-size: 16px;
     transition: all 0.5s;
     cursor: pointer;
-    border-radius: 30px; 
+    border-radius: 30px;
     margin-bottom: 10px;
 }
 
@@ -1086,17 +1153,17 @@ section.CreateAccount-Section button {
     border-width: 2px;
     margin-left: 38.5%;
     margin-top: 30px;
-      
+
     border-style: solid;
     border-color: #A62645;
     border-radius: 12px;
   }
-  
+
   .Login-Section h1 {
       text-align: center;
       margin-top: 55px;
-  } 
-  
+  }
+
   .Login-Section .itemright input{
     text-align: center;
     border: 0px solid;
@@ -1109,11 +1176,11 @@ section.CreateAccount-Section button {
     width: 192px;
     font-size: 16px;
   }
-  
+
   .Login-Section .itemright input:hover{
-   
+
       background-color: #E4E4E4;
-    
+
   }
   .Login-Section .itemleft {
     color: #FFF;
@@ -1127,11 +1194,11 @@ section.CreateAccount-Section button {
     padding-left: 4px;
       padding-right: 95px;
   }
-  
+
   .Login-Section .itemright input:focus{
       outline: none;
   }
-  
+
   .Login-Section button {
       width: 130px;
       height: 50px;
@@ -1148,31 +1215,31 @@ section.CreateAccount-Section button {
       font-size: 16px;
       transition: all 0.5s;
       cursor: pointer;
-      border-radius: 30px; 
+      border-radius: 30px;
   }
-  
-  
+
+
   .Login-Section button i {
       margin-top: -4px;
   }
-  
-  
+
+
   .Login-Section button:hover {
    background-color: #f29f3a;
   }
-  
+
   .Revert-To-Sign-Up h1{
       text-align: center;
       margin-top: 220px;
   }
-  
+
   .Revert-To-Sign-Up p{
       text-align: center;
       width: 40%;
       margin-top: 20px;
       margin-left: 30%;
   }
-  
+
   .Revert-To-Sign-Up button {
       width: 150px;
       height: 50px;
@@ -1189,11 +1256,11 @@ section.CreateAccount-Section button {
       font-size: 16px;
       transition: all 0.5s;
       cursor: pointer;
-      border-radius: 30px; 
+      border-radius: 30px;
   }
-  
+
   .Revert-To-Sign-Up button:hover {
-      background-color: #f29f3a; 
+      background-color: #f29f3a;
   }
 /* End Login Page */
 
@@ -1204,7 +1271,7 @@ section.CreateAccount-Section button {
     text-align: center;
     margin-top: 70px;
     padding-bottom: 50px;
-    
+
 }
 
 .ApproveEvent-Section button {
@@ -1223,11 +1290,11 @@ section.CreateAccount-Section button {
     font-size: 16px;
     transition: all 0.5s;
     cursor: pointer;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 .ApproveEvent-Section button:hover {
-    background-color: #f29f3a; 
+    background-color: #f29f3a;
 }
 
 
@@ -1251,7 +1318,7 @@ section.CreateAccount-Section button {
     margin-left: 20%;
     color: #fff;
     text-align: center;
-    
+
 }
 
 #ApproveEvent-Section ul.Approve-Table li {
@@ -1263,7 +1330,7 @@ section.CreateAccount-Section button {
     color: #FFCE56;
     font-size: 18px;
     display:inline-flex;
-    
+
 }
 
 .ApproveEvent-Section ul.AT-Record li {
@@ -1356,7 +1423,7 @@ section.CreateAccount-Section button {
     font-family: "Quicksand", serif;
     height: 260px;
     border: 2px inset #EBE9ED;
-    
+
 }
 
 .CreateEvent-Section #LocLabel {
@@ -1379,7 +1446,7 @@ section.CreateAccount-Section button {
     margin-top: 14%;
     display: block;
     margin-top: 2%;
-    
+
 }
 
 .CreateEvent-Section input#date {
@@ -1394,10 +1461,10 @@ section.CreateAccount-Section button {
 .CreateEvent-Section #TimeLabel {
     margin-left: 53.0%;
     margin-top: -6.10%;
-    
+
     display: block;
     position: relative;
-    
+
 }
 
 .CreateEvent-Section input#startTime {
@@ -1440,9 +1507,9 @@ margin-top: .9%;
     font-size: 16px;
     transition: all 0.5s;
     cursor: pointer;
-    border-radius: 30px; 
+    border-radius: 30px;
     margin-bottom: 10px;
-    
+
 }
 
 .CreateEvent-Section #cancelBtn {
@@ -1457,9 +1524,9 @@ margin-top: .9%;
     font-size: 16px;
     transition: all 0.5s;
     cursor: pointer;
-    border-radius: 30px; 
+    border-radius: 30px;
     margin-bottom: 10px;
-    
+
 }
 .CreateEvent-Section button:hover {
  background-color: #f29f3a;
@@ -1481,7 +1548,7 @@ margin-top: .9%;
 .SuccessEvent-Wrap ul li {
     margin-left: 37%;
     font-size: 25px;
-    
+
 }
 
 .SuccessEvent-Wrap button {
@@ -1500,11 +1567,11 @@ margin-top: .9%;
     font-size: 16px;
     transition: all 0.5s;
     cursor: pointer;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 .SuccessEvent-Wrap button:hover {
-    background-color: #f29f3a; 
+    background-color: #f29f3a;
 }
 
 /* End Successful Event Page */
@@ -1555,11 +1622,11 @@ margin-top: .9%;
     height: 40px;
     text-align: center;
     transition: all 0.5s;
-    
+
 }
 
 .x-btn:hover {
-    background-color: #661629; 
+    background-color: #661629;
     border-color: #661629;
 }
 
@@ -1589,7 +1656,7 @@ margin-top: .9%;
 .No-Modal {
     text-align: center;
     margin-top: 10%;
-} 
+}
 
 .PAC-Modal {
     border: 2px solid #FFCE56;
@@ -1602,7 +1669,7 @@ margin-top: .9%;
     z-index: 1005px;
     font-size: 20px;
     font-family: "Quicksand", serif;
-} 
+}
 
 
 .CAB-Modal {
@@ -1901,7 +1968,7 @@ margin-top: .9%;
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;	
+	right: 0;
 	bottom: 0;
 	width: 100%;
 	height: 100%;
@@ -1959,5 +2026,5 @@ filter: blur(2px);
   right: 0;
   z-index: -1;
     height: 140px;
-} 
+}
 /* End Side Margins */

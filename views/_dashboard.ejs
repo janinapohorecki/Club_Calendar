@@ -27,15 +27,27 @@
                 <span id="MyUser"> -->
 
         <nav>
-            <a href="/events/createevent"> <button id="Add" class="button" style="vertical-align:middle"><span> Add an Event <i class="fa fa-angle-right" id ="right-carrot"></i> </span></button></a>
-                <span id="MyUser">
-                      <input id="NameDrop" type="checkbox" name="menu"/>
-                      <a href="/users/logout"><label id="check00" rsfor="NameDrop"><%= user.name%></label></a>
-                </span>
+          <!-- DIFFERENT CODE -->
+                    <a href="/events/createevent"> <button id="Add" class="button" style="vertical-align:middle"><span> Add an Event <i class="fa fa-angle-right" id ="right-carrot"></i> </span></button></a>
+                        <span id="MyUser">
+                              <input id="NameDrop" type="checkbox" name="menu"/>
+                              <a href="/users/logout"><label id="check00" rsfor="NameDrop"><%= user.name%> <i class="arrow down"></i></label></a>
 
-        </nav>
-        </header>
+                        </span>
 
+                </nav>
+                </header>
+                <div class="dropdown">
+                  <span><%= user.name%></span>
+                  <div class="dropdown-content">
+                    <a href="/users/logout"><label id="check00" rsfor="NameDrop">Logout</label></a>
+                    <!-- <p> </p>
+                    <p> </p> -->
+
+                  </div>
+                </div>
+
+                <!-- DIFFERENT CODE -->
         <div id="sidebar">
             <div class="toggle-sidebar" onclick="toggleSidebar()">
                 <!--<span></span>
