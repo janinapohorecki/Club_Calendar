@@ -120,6 +120,7 @@
                      dateday = events[i].StartTime.getDate();
                      location = events[i].location;
                      name = events[i].name;
+                     ID=events[i]._id;
                      clubName = events[i].club;
                      description = events[i].description;
                      stimeH = events[i].StartTime.getHours();
@@ -132,24 +133,25 @@
                     %>
               
                   <script>
-                  $(function() {
-                    var container = document.createElement('div');
-                    container.id = "wrapper";
+                      document.body.onload(test());
+                      function test(){
+                        var container = document.createElement('div');
+                        container.id = "wrapper";
 
-                    $('body').append(container);
+                        var layout = document.getElementById('layout');
+                        layout.appendChild(container);
 
-                    var html = '<div><ul>';
+                        var html = '<div><ul>';
+                        html+='Jeff';
 
-                    for(var i=1; i<=40; i++){
-                        html+= "<li>Testing: "+i+"</li>";
+                        html+= '</ul></div>';
+
+                        container.innerHTML = html;
                     }
 
-                    html+= '</ul></div>';
-
-                    $('#wrapper').append(html);
-                    });
                   </script>
                   <% } %>
+                  <div id="layout"></div>
                 <ul class="weekdays">
                     <li>Sunday</li>
                     <li>Monday</li>

@@ -37,7 +37,7 @@ router.get('/dashboard', ensureAuthenticated, function(req,res) {
   })
 });
 
-// Dashboard
+// Real Dashboard
 var query2 = Event.where({Approved:true});
 query2.select('-_id club name StartTime EndTime description location')
 query2.find(function(err,event) {
@@ -48,7 +48,7 @@ query2.find(function(err,event) {
   })
 )});
 
-// Dashboard
+// Fake Dashboard
 var query3 = Event.where({Approved:true});
 query3.select('-_id club name StartTime EndTime description location')
 query3.find(function(err,event) {
@@ -59,5 +59,13 @@ query3.find(function(err,event) {
   })
 )});
 
-
+//Testing Dash
+var query4 = Event.where({Approved:true});
+query4.select('-_id club name StartTime EndTime description location')
+router.get('/homepageTesting', function(req,res) {
+  query4.find(function(err,event) {
+    if(err) console.log(err);
+    else res.render('homepageTesting', {events : event});
+  })
+});
 module.exports = router;
