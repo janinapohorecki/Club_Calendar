@@ -358,13 +358,11 @@
             
           <script>
             var container = document.createElement('li');
-            container.id = "wrapper";
+            container.id = "<%=dateday%>";
             var layout = document.getElementById('<%=dateday%>');
             layout.appendChild(container);
 
-            var html = '<div class="date">'+"<%=dateday%>"+'</div>';
-
-            html+='<div class="<%=clubName%>">';
+            var html ='<div class="<%=clubName%>">';
             html+='<div><span class="dot"></span> <%=name%></div>';
             html+='<div class="Event-Time">7:00 PM - 9:00 PM</div>';
             html+='<div class="Event-Location">Walker Field</div>';
