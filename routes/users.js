@@ -90,14 +90,6 @@ router.post('/login', (req, res, next) => {
   })(req, res, next);
 });
 
-router.post('/_login', (req, res, next) => {
-  passport.authenticate('local', {
-    successRedirect: '/_dashboard',
-    failureRedirect: '/users/_login',
-    failureFlash: true
-  })(req, res, next);
-});
-
 // Logout
 router.get('/logout', (req, res) => {
   req.logout();

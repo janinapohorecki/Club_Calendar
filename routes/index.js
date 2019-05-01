@@ -4,10 +4,6 @@ const { ensureAuthenticated } = require('../config/auth');
 
 const Event = require('../models/Event');
 
-router.get('/_', function(req,res) {
-  res.render('_homepage');
-})
-
 router.get('/march', function(req,res) {
   res.render('march');
 })
@@ -37,35 +33,4 @@ router.get('/dashboard', ensureAuthenticated, function(req,res) {
   })
 });
 
-// Real Dashboard
-var query2 = Event.where({Approved:true});
-query2.select('-_id club name StartTime EndTime description location')
-query2.find(function(err,event) {
-  router.get('/dashboard', ensureAuthenticated, (req, res) =>
-  res.render('dashboard', {
-    user: req.user,
-    events : event
-  })
-)});
-
-// Fake Dashboard
-var query3 = Event.where({Approved:true});
-query3.select('-_id club name StartTime EndTime description location')
-query3.find(function(err,event) {
-  router.get('/_dashboard', ensureAuthenticated, (req, res) =>
-  res.render('_dashboard', {
-    user: req.user,
-    events : event
-  })
-)});
-
-//Testing Dash
-var query4 = Event.where({Approved:true});
-query4.select('-_id club name StartTime EndTime description location')
-router.get('/homepageTesting', function(req,res) {
-  query4.find(function(err,event) {
-    if(err) console.log(err);
-    else res.render('homepageTesting', {events : event});
-  })
-});
 module.exports = router;
