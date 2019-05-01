@@ -13,12 +13,14 @@ function toggleSidebar() {
         
         $('#PAC-checkbox').prop('checked', true);
         $('.PAC').show();
+        $('.PAC-Modal').show();
     
         $('#CAB-checkbox').prop('checked', true);
         $('.CAB').show();
     
         $('#PAC-checkbox').prop('checked', true);
         $('.PAC').show();
+        $('.PAC-Modal').show();
         
         $('#TableTopGames-checkbox').prop('checked', true);
         $('.TableTopGames').show();
@@ -114,6 +116,7 @@ function toggleSidebar() {
         
         $('#PAC-checkbox').prop('checked', false);
         $('.PAC').hide();
+        $('.PAC-Modal').hide();
     
         $('#CAB-checkbox').prop('checked', false);
         $('.CAB').hide();
@@ -218,12 +221,14 @@ function toggleSidebar() {
         
         $('#PAC-checkbox').prop('checked', true);
         $('.PAC').show();
+        $('.PAC-Modal').show();
     
         $('#CAB-checkbox').prop('checked', true);
         $('.CAB').show();
     
         $('#PAC-checkbox').prop('checked', true);
         $('.PAC').show();
+        $('.PAC-Modal').show();
         
         $('#TableTopGames-checkbox').prop('checked', true);
         $('.TableTopGames').show();
@@ -240,12 +245,14 @@ function toggleSidebar() {
       
        $('#PAC-checkbox').prop('checked', false);
         $('.PAC').hide();
+       $('.PAC-Modal').hide();
     
         $('#CAB-checkbox').prop('checked', false);
         $('.CAB').hide();
     
         $('#PAC-checkbox').prop('checked', false);
         $('.PAC').hide();
+        $('.PAC-Modal').hide();
         
         $('#TableTopGames-checkbox').prop('checked', false);
         $('.TableTopGames').hide();
@@ -458,6 +465,7 @@ $(document).ready(function(){
     if($('#PAC-checkbox').prop('checked')){
         
         $('.PAC').show();
+        $('.PAC-Modal').show();
         
   } else {
       $('#AllEvents-checkbox').prop('checked', false);
@@ -465,6 +473,8 @@ $(document).ready(function(){
       $('#AllSocial-checkbox').prop('checked', false);
         
         $('.PAC').hide();
+        $('.PAC-Modal').hide();
+      
       }
   });
 });

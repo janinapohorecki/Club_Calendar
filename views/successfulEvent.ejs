@@ -27,16 +27,34 @@
 
         </header>
         <div class = "SuccessEvent-Wrap">
-                <h1>Thanks for submitting your event!</h1>
-                <ul>
-                    <li>Club: <%=event.club%></li>
-                    <li>Event name: <%=event.name%></li>
-                    <li>Description: <%=event.description%></li>
-                    <li>Location: <%=event.location%></li>
-                    <li>Date and Time: <%=event.StartTime.getMonth() + "/" + event.StartTime.getDate() + " " + event.StartTime.getHours() + ":" + event.StartTime.getMinutes() + "0 - " + event.EndTime.getHours() + ":" + event.EndTime.getMinutes() + "0"%></li>
-                </ul>
-                <a href='/dashboard'><button class="button" style="vertical-align:middle"><span> 
-                    <i class="arrow left"></i> Back to Calendar  </span></button></a>
+            <h1>Thanks for submitting your event!</h1>
+        <br>
+        <br>
+            <ul>
+                <li class = "Event-Label">Club:</li>
+                <li id = "ClubLabel"><%=event.club%></li>
+                <br>
+                <br>
+                <li class = "Event-Label">Event name:</li>
+                <li id = "NameLabel"><%=event.name%></li>
+                <br>
+                <br>
+                <li class = "Event-Label">Location:  </li>
+                 <li id = "LocLabel"><%=event.location%></li>
+                <br>
+                <br>
+                <li class = "Event-Label">Date and Time:  </li>
+                 <li id = "TimeLabel"><%=event.StartTime.getMonth() + 1 + "/" + event.StartTime.getDate() + " " + event.StartTime.getHours() + ":" + event.StartTime.getMinutes() + "0 PM to " + event.EndTime.getHours() + ":" + event.EndTime.getMinutes() + "0 PM"%></li>
+                <br>
+                <br>
+                <li class = "Event-Label">Description:  </li>
+                <li id = "DescLabel"><%=event.description%></li>
+                <br>
+                <br>
+                
+            </ul>
+        <a href='/dashboard'><button class="button" style="vertical-align:middle" id = "Changes"> Cancel</button></a>
+        <a href='/dashboard'><button class="button" style="vertical-align:middle" id = "finalize"> Finalize </button></a>
                 <footer>
 
                 </footer>
