@@ -538,6 +538,38 @@
     <footer>
 
     </footer>
+    <%for (i=0; i < events.length; i++) { %>
+        <%
+         dateday = events[i].StartTime.getDate();
+         location = events[i].location;
+         name = events[i].name;
+         ID=events[i]._id;
+         clubName = events[i].club;
+         description = events[i].description;
+         stimeH = events[i].StartTime.getHours();
+         stimeM = events[i].StartTime.getMinutes();
+         if (stimeM={}) stimeM = "00";
+         etimeH = events[i].EndTime.getHours();
+         etimeM = events[i].EndTime.getMinutes();
+         if (etimeM={}) etimeM = "00";
+         eventtime = stimeH + ":" + stimeM + " - " + etimeH + ":" + etimeM;
+        %>
+        
+      <script>
+        var container = document.createElement('div');
+        var layout = document.getElementById('<%=dateday%>');
+        layout.appendChild(container);
+        
+        var html ='<div class="<%=clubName%>">';
+        html+='<div><span class="dot"></span> <%=name%></div>';
+        html+='<div class="Event-Time">7:00 PM - 9:00 PM</div>';
+        html+='<div class="Event-Location">Walker Field</div>';
+        html+='<div class="Event-Desc">CMU Mens Soccer vs Fort Lewis</div>';
+        html+= '</div>';
+
+        container.innerHTML = html;
+      </script>
+      <% } %>
 </body>
 
 </html>
